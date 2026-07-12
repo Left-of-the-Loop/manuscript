@@ -48,10 +48,8 @@ When a new draft is committed here:
 ## Analytics
 
 Pageviews are tracked with [GoatCounter](https://www.goatcounter.com/),
-same account as schrottner.at, under a separate site code. The script tag
-in `index.html` currently points at a placeholder site
-(`left-of-the-loop.goatcounter.com`) — swap in the real site code once
-it's created in the GoatCounter dashboard.
+same account as schrottner.at, under a separate site code
+(`left-of-the-loop.goatcounter.com`).
 
 The PDF download link is tracked as a GoatCounter click event
 (`data-goatcounter-click="pdf-download"`). Direct hits on the PDF URL
