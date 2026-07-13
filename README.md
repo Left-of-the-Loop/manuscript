@@ -2,7 +2,7 @@
 
 Landing page and draft PDF for *Left of the Loop*, a book by Simon Schrottner.
 
-Live at [leftoftheloop.ai](https://leftoftheloop.ai).
+Live at [leftoftheloop.dev](https://leftoftheloop.dev).
 
 > As implementation becomes abundant, shared understanding becomes the
 > scarce resource, and constructive friction is the mechanism that
