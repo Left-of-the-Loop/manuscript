@@ -11,6 +11,15 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-22 — manuscript `9ffbdb8`
+
+Site: `(pending)`
+
+- PO chapter: personal opener, cut restatements, tightened the
+  spec-review beat
+- Fool with a Tool: italicized "recognition work" as a defined term
+- Agora: tightened three sentences
+
 ## 2026-07-22 — manuscript `e9f0cb2`
 
 Site: `a58b480`
