@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-22 — manuscript `e9f0cb2`
 
-Site: `(pending)`
+Site: `a58b480`
 
 - Acknowledgments: added a thesis-reframe opener, cut a hedge word
 
