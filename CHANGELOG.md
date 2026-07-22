@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-22 — manuscript `9fe61ed`
 
-Site: `(pending)`
+Site: `c1f05aa`
 
 - Acknowledgments: wrote the full back matter draft
 
