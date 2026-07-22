@@ -54,8 +54,11 @@ When a new draft is committed here:
    commit the build was pulled from, this repo's commit once it exists,
    and a plain-language bullet list of what changed upstream since the
    last entry (summarized from the source repo's commit log).
-4. Update the "Current draft" line in the version-history `<details>` in
-   `index.html`'s footer to match the new changelog entry.
+4. Update the version-history `<details>` in `index.html`'s footer: the
+   "Current draft" commit line and the "What changed in this update" list
+   should mirror the new changelog entry (the same bullets, or a shorter
+   version of them — this one is reader-facing and inline, so keep it
+   tight).
 
 ## Analytics
 
