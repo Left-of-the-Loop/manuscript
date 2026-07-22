@@ -11,6 +11,13 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-22 — manuscript `27a29f4`
+
+Site: `(pending)`
+
+- PO chapter: added a lineage footnote for minimum viable context
+- End of a Craft: swapped the opening line back to prompt/prompted
+
 ## 2026-07-22 — manuscript `9ffbdb8`
 
 Site: `0c65a92`
