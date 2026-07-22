@@ -11,6 +11,12 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-22 — manuscript `9fe61ed`
+
+Site: `(pending)`
+
+- Acknowledgments: wrote the full back matter draft
+
 ## 2026-07-22 — manuscript `c794363`
 
 Site: `2a193fb`
