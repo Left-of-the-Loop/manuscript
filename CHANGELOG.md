@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-22 — manuscript `c794363`
 
-Site: `(pending)`
+Site: `2a193fb`
 
 - Intro, Sisyphus, End of a Craft: de-spec word-choice pass. Changes
   the landing-page excerpt: "we never quite specced it together"
