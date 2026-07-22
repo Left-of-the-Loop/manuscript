@@ -16,6 +16,9 @@ Live at [leftoftheloop.dev](https://leftoftheloop.dev).
   filename; the URL never changes, only the file behind it.
 - `left-of-the-loop-draft.epub` — the current working draft (EPUB). Same
   stable-filename convention as the PDF.
+- `CHANGELOG.md` — what changed in the manuscript between each PDF/EPUB
+  update, newest first. Linked from the "Version history" details on the
+  landing page.
 - `CNAME` — GitHub Pages custom domain config.
 - `LICENSE` — CC BY-NC-ND 4.0.
 
@@ -47,6 +50,15 @@ When a new draft is committed here:
    commit if the opening has changed. The excerpt is verbatim text, not a
    summary — it should read exactly as edited, cut where marked "The full
    draft continues in the PDF."
+3. Add an entry to the top of `CHANGELOG.md`: the date, the manuscript
+   commit the build was pulled from, this repo's commit once it exists,
+   and a plain-language bullet list of what changed upstream since the
+   last entry (summarized from the source repo's commit log).
+4. Update the version-history `<details>` in `index.html`'s footer: the
+   "Current draft" commit line and the "What changed in this update" list
+   should mirror the new changelog entry (the same bullets, or a shorter
+   version of them — this one is reader-facing and inline, so keep it
+   tight).
 
 ## Analytics
 
