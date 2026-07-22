@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-22 — manuscript `27a29f4`
 
-Site: `(pending)`
+Site: `7e74223`
 
 - PO chapter: added a lineage footnote for minimum viable context
 - End of a Craft: swapped the opening line back to prompt/prompted
