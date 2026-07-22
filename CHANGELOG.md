@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-22 — manuscript `9ffbdb8`
 
-Site: `(pending)`
+Site: `0c65a92`
 
 - PO chapter: personal opener, cut restatements, tightened the
   spec-review beat
