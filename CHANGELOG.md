@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-23 — manuscript `a338151`
 
-Site: `(pending)`
+Site: `bc8dc2b`
 
 - Alexandria: broadened the code-review opener, tightened a few beats
 - Ever-Agreeing Genie: cut a KubeCon reference, italicized weighted
