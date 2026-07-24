@@ -73,6 +73,8 @@ That's the signal that the process is working. That the specs are good enough to
 
 Predictability doesn't require the work to be foreseeable. In domains where answers only show up by building, the team changes what it promises, not whether it keeps promises: by Thursday we'll know whether approach A holds, instead of the feature ships Thursday. Shaping the commitment to what the team can actually know is itself understanding, made visible to the people outside the room.
 
+This is also why this chapter won't tell you how to become predictable. Chasing predictability directly produces padding, not understanding. Build the understanding; predictability is what it looks like from the outside.
+
 A team with high velocity and low predictability is guessing fast. A team with lower velocity and high predictability has shared understanding. The second team is more valuable, more trustworthy, and more capable of scaling, because when capacity is added to a predictable process, the predictability holds.
 
 When AI is added to a broken process, the breakage accelerates.

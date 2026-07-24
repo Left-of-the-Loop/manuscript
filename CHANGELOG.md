@@ -11,6 +11,15 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-24 — manuscript `5f436a1`
+
+Site: `(pending)`
+
+- Oracle: applied two decided-but-unapplied paper-pass edits; split
+  AI-accelerates-breakage into its own beat and tightened the team
+  comparison; added and tightened the anti-prescription paragraph after
+  the Thursday-commitment line
+
 ## 2026-07-24 — manuscript `b49303c`
 
 Site: `dbbe195`
