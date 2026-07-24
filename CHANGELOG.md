@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-24 — manuscript `45c4632`
 
-Site: `(pending)`
+Site: `90569f6`
 
 - Retitled chapter 10 to "The Forest and the Desert" (was "Desert and
   Forest"). Its reading page moved to /chapters/forest-and-the-desert;
