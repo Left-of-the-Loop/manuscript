@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-24 — manuscript `b49303c`
 
-Site: `(pending)`
+Site: `dbbe195`
 
 - A note on how this book was made: use first names only for the first
   readers
