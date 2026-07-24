@@ -26,15 +26,30 @@
     { slug: "about-the-author", file: "92-about-the-author", title: "About the Author" }
   ];
 
+  // Non-chapter markdown pages served through the same 404 route.
+  var PAGES = {
+    changelog: { path: "/CHANGELOG.md", title: "Changelog" }
+  };
+
   var content = document.getElementById("content");
 
   // Accept /chapters/<slug> (with or without trailing slash or .html), a
-  // ?chapter=<slug> query, and the md/pdf file basename as an alias.
+  // ?chapter=<slug> query, the md/pdf file basename as an alias, and
+  // top-level pages like /changelog.
   function requestedSlug() {
     var query = new URLSearchParams(location.search).get("chapter");
     if (query) { return query; }
-    var match = location.pathname.match(/^\/chapters\/([^/]+?)(?:\.html)?\/?$/);
+    var match = location.pathname.match(/^\/chapters\/([^/]+?)(?:\.html)?\/?$/) ||
+      location.pathname.match(/^\/(changelog)\/?$/);
     return match ? match[1] : null;
+  }
+
+  function renderMarkdown(text) {
+    // Strip pandoc heading attributes like "# Glossary {-}".
+    text = text.replace(/^(#{1,6} .*?)\s*\{[^}]*\}\s*$/gm, "$1");
+    return window.markdownit({ html: true, typographer: true })
+      .use(window.markdownitFootnote)
+      .render(text);
   }
 
   function notFound() {
@@ -50,6 +65,25 @@
   }
 
   var slug = requestedSlug();
+
+  if (slug !== null && PAGES[slug]) {
+    var page = PAGES[slug];
+    document.title = page.title + " — Left of the Loop";
+    fetch(page.path)
+      .then(function (response) {
+        if (!response.ok) { throw new Error("HTTP " + response.status); }
+        return response.text();
+      })
+      .then(function (text) {
+        var body = document.createElement("div");
+        body.innerHTML = renderMarkdown(text);
+        content.innerHTML = "";
+        content.appendChild(body);
+      })
+      .catch(notFound);
+    return;
+  }
+
   var index = slug === null ? -1 : CHAPTERS.findIndex(function (c) {
     return c.slug === slug || c.file === slug;
   });
@@ -67,12 +101,6 @@
       return response.text();
     })
     .then(function (text) {
-      // Strip pandoc heading attributes like "# Glossary {-}".
-      text = text.replace(/^(#{1,6} .*?)\s*\{[^}]*\}\s*$/gm, "$1");
-
-      var md = window.markdownit({ html: true, typographer: true })
-        .use(window.markdownitFootnote);
-
       var meta = document.createElement("p");
       meta.className = "chapter-meta";
       meta.innerHTML =
@@ -80,7 +108,7 @@
         " · <a href=\"/left-of-the-loop-draft.pdf\">full draft</a>";
 
       var body = document.createElement("div");
-      body.innerHTML = md.render(text);
+      body.innerHTML = renderMarkdown(text);
 
       // The markdown references figures relative to the source repo root;
       // anchor them to /chapters/ regardless of the current URL's shape.
