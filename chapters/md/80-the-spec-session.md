@@ -1,4 +1,6 @@
-# The Spec Session: a working template
+# Appendix B: The Spec Session, a working template
+
+*A starting shape, frozen at printing. Take it, run it, and rebuild it for your team.*
 
 I don't have years of experience running these. Nobody does, because the ritual is younger than the problem it solves. What follows is a construction from the rituals we know, and it inherits from refinement, not sprint planning. Capacity stops being the constraint when the agent implements, so the capacity arithmetic of planning has nothing left to do. What survives is refinement's content with mob programming's mechanics. Run it, break it, tell me where it fails.
 

@@ -11,14 +11,22 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
-## 2026-07-24 — manuscript `5f436a1`
+## 2026-07-24 — manuscript `03c4fc3`
 
-Site: `333e112`
+Site: `(pending)`
 
-- Oracle: applied two decided-but-unapplied paper-pass edits; split
-  AI-accelerates-breakage into its own beat and tightened the team
-  comparison; added and tightened the anti-prescription paragraph after
-  the Thursday-commitment line
+- New appendix: "What the room costs", readable at
+  /chapters/what-the-room-costs; the Spec Session template is now
+  Appendix B
+- Oracle: applied paper-pass edits; split AI-accelerates-breakage into
+  its own beat; added the anti-prescription paragraph after the
+  Thursday-commitment line
+- Foreword: led with the irony, merged the Claude paragraphs
+- Phoenix: collapsed the drift paragraph to its two beats
+- Astrolabe: cut two paragraphs, landed the left/right ends of the loop
+- Spec Session: added the Appendix designation and the
+  frozen-at-printing epigraph
+- Glossary: three-zone geography fix and completeness pass
 
 ## 2026-07-24 — manuscript `b49303c`
 

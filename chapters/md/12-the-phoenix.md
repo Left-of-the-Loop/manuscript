@@ -16,7 +16,7 @@ At some point — in your team, your organization, your career — someone decid
 
 So they went. Or they shrank. Or they became ceremonies that everyone attended without really being present. And for a while it felt like freedom. Faster. Lighter. More autonomous.
 
-The decisions that used to get made in the room started getting made alone. The junior who would have raised the concern stayed quiet because there was no moment to raise it. The senior's reasoning stopped transferring because the senior was heads down in their own context. The system accumulated decisions that each made sense in isolation and didn't fit together.
+The decisions that used to get made in the room started getting made alone. Each one made sense in isolation. Together they didn't fit.
 
 ---
 
