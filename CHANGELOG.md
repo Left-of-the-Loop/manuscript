@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-24 — manuscript `5f436a1`
 
-Site: `(pending)`
+Site: `333e112`
 
 - Oracle: applied two decided-but-unapplied paper-pass edits; split
   AI-accelerates-breakage into its own beat and tightened the team
