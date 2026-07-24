@@ -11,6 +11,13 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-24 — manuscript `b49303c`
+
+Site: `dbbe195`
+
+- A note on how this book was made: use first names only for the first
+  readers
+
 ## 2026-07-24 — manuscript `45c4632`
 
 Site: `90569f6`
