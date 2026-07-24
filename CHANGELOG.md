@@ -11,6 +11,20 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-23 — manuscript `a338151`
+
+Site: `bc8dc2b`
+
+- Alexandria: broadened the code-review opener, tightened a few beats
+- Ever-Agreeing Genie: cut a KubeCon reference, italicized weighted
+  validation, reworked the structural-answer line
+- Desert and Forest: italicized epistemic safety on first use; tightened
+  the Trireme recap, cut two restatement passages, landed the forest
+  line as the closer
+- Oracle: applied two decided-but-unapplied paper-pass edits
+- Trireme: moved the minimum-viable-unit conclusion after the
+  OpenFeature story, cut a prescription hedge
+
 ## 2026-07-22 — manuscript `27a29f4`
 
 Site: `7e74223`
