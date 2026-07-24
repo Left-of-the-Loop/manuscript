@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-24 — manuscript `03c4fc3`
 
-Site: `(pending)`
+Site: `356a35e`
 
 - New appendix: "What the room costs", readable at
   /chapters/what-the-room-costs; the Spec Session template is now
