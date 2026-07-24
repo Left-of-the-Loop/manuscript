@@ -19,12 +19,37 @@ Live at [leftoftheloop.dev](https://leftoftheloop.dev).
 - `CHANGELOG.md` — what changed in the manuscript between each PDF/EPUB
   update, newest first. Linked from the "Version history" details on the
   landing page.
+- `chapters/` — unlisted per-chapter reading pages (see below).
 - `CNAME` — GitHub Pages custom domain config.
 - `LICENSE` — CC BY-NC-ND 4.0.
 
-This repo intentionally does **not** contain the chapter sources or the
-pandoc build tooling yet. Those live in a private working repo. This repo
-is where reader feedback happens and where the built PDF/EPUB get published.
+The pandoc build tooling lives in a private working repo; this repo is
+where reader feedback happens and where the built PDF/EPUB get published.
+The `chapters/md/` files are copies pulled from that repo at update time,
+not the working sources.
+
+## Chapter pages
+
+Each chapter is readable online at `/chapters/<slug>.html` (e.g.
+`/chapters/05-the-agora.html`). These pages are **unlisted**: nothing on
+the landing page links to them and they carry `noindex`, but the URLs are
+stable and meant for sharing individual chapters directly — nicer than
+mailing someone a PDF attachment.
+
+How they work — there is no build step:
+
+- Each `<slug>.html` is a tiny static stub, identical except for its
+  `<title>`. It fetches `chapters/md/<slug>.md` and renders it in the
+  browser with [markdown-it](https://github.com/markdown-it/markdown-it)
+  plus its footnote plugin (vendored in `chapters/vendor/`, no CDN at
+  runtime).
+- `chapters/reader.js` holds the ordered chapter manifest and drives
+  rendering, prev/next navigation, and the per-chapter PDF link
+  (`chapters/pdf/<slug>.pdf`).
+- Figures referenced by the markdown live in `chapters/figures/`.
+
+To add a chapter: copy any stub to `<slug>.html`, adjust its `<title>`,
+and add one entry to the manifest in `reader.js` in reading order.
 
 ## How feedback flows
 
@@ -59,6 +84,12 @@ When a new draft is committed here:
    should mirror the new changelog entry (the same bullets, or a shorter
    version of them — this one is reader-facing and inline, so keep it
    tight).
+5. Refresh the chapter pages from the same manuscript commit the build
+   was pulled from: re-download `chapters/md/*.md`, `chapters/pdf/*.pdf`
+   (per-chapter A4 PDFs from the release), and `chapters/figures/*` if
+   figures changed. If a chapter was added, renamed, or removed upstream,
+   update the manifest in `chapters/reader.js` and the stub `.html` files
+   to match.
 
 ## Analytics
 
@@ -70,6 +101,9 @@ The PDF and EPUB download links are tracked as GoatCounter click events
 (`data-goatcounter-click="pdf-download"` / `"epub-download"`). Direct hits
 on the file URLs (e.g. shared links, crawlers) bypass the page's JS
 entirely and are not counted. Acceptable for now.
+
+Chapter pages load the same GoatCounter script, so shared-chapter reads
+show up as pageviews on `/chapters/<slug>.html`.
 
 ## License
 
