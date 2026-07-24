@@ -4,7 +4,8 @@
   // Book order. `slug` is the share URL (/chapters/<slug>), `file` is the
   // basename of both the markdown source (chapters/md/<file>.md) and the
   // per-chapter PDF (chapters/pdf/<file>.pdf). To add a chapter: add one
-  // entry here in reading order.
+  // entry here in reading order. When a chapter is retitled, change the
+  // slug and keep the old one in `aliases` so shared links stay alive.
   var CHAPTERS = [
     { slug: "how-this-book-was-made", file: "00-a-note-on-how-this-book-was-made", title: "A note on how this book was made" },
     { slug: "introduction", file: "00-introduction", title: "Introduction" },
@@ -17,7 +18,7 @@
     { slug: "alexandria-problem", file: "07-the-alexandria-problem", title: "The Alexandria Problem" },
     { slug: "oracle", file: "08-the-oracle", title: "The Oracle" },
     { slug: "trireme", file: "09-the-trireme", title: "The Trireme" },
-    { slug: "desert-and-forest", file: "10-desert-and-forest", title: "Desert and Forest" },
+    { slug: "forest-and-the-desert", file: "10-desert-and-forest", title: "The Forest and the Desert", aliases: ["desert-and-forest"] },
     { slug: "astrolabe", file: "11-the-astrolabe", title: "The Astrolabe" },
     { slug: "phoenix", file: "12-the-phoenix", title: "The Phoenix" },
     { slug: "spec-session", file: "80-the-spec-session", title: "The Spec Session: a working template" },
@@ -85,7 +86,8 @@
   }
 
   var index = slug === null ? -1 : CHAPTERS.findIndex(function (c) {
-    return c.slug === slug || c.file === slug;
+    return c.slug === slug || c.file === slug ||
+      (c.aliases && c.aliases.indexOf(slug) !== -1);
   });
   if (index === -1) {
     notFound();

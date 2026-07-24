@@ -1,11 +1,11 @@
-# Desert and Forest
+# The Forest and the Desert
 
-*Kent Beck describes two working environments: the desert, open, fast, unobstructed, where you can move without friction, and the forest, dense, slower, where the ecosystem is richer and learning accumulates in the undergrowth.*[^c10-forest]
+*Beth Andres-Beck and Kent Beck describe two working environments, the Forest and the Desert: the desert, open, fast, unobstructed, where you can move without friction, and the forest, dense, slower, where the ecosystem is richer and learning accumulates in the undergrowth.*[^c10-forest]
 
 
 *If the right structure holds understanding, what keeps it alive over time?*
 
-Beck built Extreme Programming[^c10-xp] on the conviction that software development is a social activity, that the team is not overhead but the mechanism through which good software gets made. XP was largely set aside in favor of frameworks that separated thinking from building, planning from implementation, people from each other. This book is, in part, an argument that XP was right, and that AI is forcing us to rediscover why.
+Kent Beck built Extreme Programming[^c10-xp] on the conviction that software development is a social activity, that the team is not overhead but the mechanism through which good software gets made. XP was largely set aside in favor of frameworks that separated thinking from building, planning from implementation, people from each other. This book is, in part, an argument that XP was right, and that AI is forcing us to rediscover why.
 
 AI is the most powerful desert tool ever built. It removes almost every obstacle to individual speed, and a developer can move faster alone with an agent than any 10x engineer[^c10-10x] could move alone before. The desert has never been more accessible, or more tempting.
 
