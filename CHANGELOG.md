@@ -11,6 +11,16 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-24 — manuscript `45c4632`
+
+Site: `90569f6`
+
+- Retitled chapter 10 to "The Forest and the Desert" (was "Desert and
+  Forest"). Its reading page moved to /chapters/forest-and-the-desert;
+  the old URL still works.
+- Forest and Desert: credited Beth Andres-Beck in the epigraph, named
+  Kent Beck in the body
+
 ## 2026-07-23 — manuscript `a338151`
 
 Site: `bc8dc2b`
