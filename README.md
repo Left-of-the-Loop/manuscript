@@ -30,26 +30,36 @@ not the working sources.
 
 ## Chapter pages
 
-Each chapter is readable online at `/chapters/<slug>.html` (e.g.
-`/chapters/05-the-agora.html`). These pages are **unlisted**: nothing on
-the landing page links to them and they carry `noindex`, but the URLs are
-stable and meant for sharing individual chapters directly — nicer than
-mailing someone a PDF attachment.
+Each chapter is readable online at `/chapters/<slug>` (e.g.
+`/chapters/agora`). These pages are **unlisted**: nothing on the landing
+page links to them and they carry `noindex`, but the URLs are stable and
+meant for sharing individual chapters directly — nicer than mailing
+someone a PDF attachment.
 
-How they work — there is no build step:
+How they work — there is no build step and no page per chapter:
 
-- Each `<slug>.html` is a tiny static stub, identical except for its
-  `<title>`. It fetches `chapters/md/<slug>.md` and renders it in the
+- GitHub Pages serves `404.html` for any URL that doesn't match a file
+  (the standard single-page-app fallback). That page is the chapter
+  reader: `chapters/reader.js` matches `/chapters/<slug>` against its
+  manifest, fetches `chapters/md/<file>.md`, and renders it in the
   browser with [markdown-it](https://github.com/markdown-it/markdown-it)
   plus its footnote plugin (vendored in `chapters/vendor/`, no CDN at
-  runtime).
-- `chapters/reader.js` holds the ordered chapter manifest and drives
-  rendering, prev/next navigation, and the per-chapter PDF link
-  (`chapters/pdf/<slug>.pdf`).
+  runtime). Unmatched URLs show a plain "page not found".
+- The manifest maps a short share slug (`agora`) to the upstream file
+  basename (`05-the-agora`), which names both the markdown source and
+  the per-chapter PDF (`chapters/pdf/<file>.pdf`). The file basename
+  works as a URL alias, and `/404.html?chapter=<slug>` works too.
 - Figures referenced by the markdown live in `chapters/figures/`.
+- Known tradeoff of the 404 route: responses carry HTTP status 404, so
+  link unfurls in messengers won't show a preview or chapter title. The
+  pages themselves render normally, and GoatCounter still counts them.
 
-To add a chapter: copy any stub to `<slug>.html`, adjust its `<title>`,
-and add one entry to the manifest in `reader.js` in reading order.
+To add a chapter: add one entry to the manifest in `reader.js` in
+reading order.
+
+`scripts/serve.py` mimics both GitHub Pages behaviors locally
+(extensionless URLs and the 404 fallback) for testing:
+`python scripts/serve.py`.
 
 ## How feedback flows
 
@@ -88,8 +98,7 @@ When a new draft is committed here:
    was pulled from: re-download `chapters/md/*.md`, `chapters/pdf/*.pdf`
    (per-chapter A4 PDFs from the release), and `chapters/figures/*` if
    figures changed. If a chapter was added, renamed, or removed upstream,
-   update the manifest in `chapters/reader.js` and the stub `.html` files
-   to match.
+   update the manifest in `chapters/reader.js` to match.
 
 ## Analytics
 
