@@ -81,7 +81,7 @@ Predictability is also the metric that can't be easily gamed. Either it was call
 
 And predictability is a team metric, not an individual one. One person can't be predictable alone. Predictability requires shared understanding of the work, shared ownership of the sizing, shared commitment to what goes through the gate. It requires the Spec Session, or something like it: a moment where the team agrees on what is being built and how big it is, while the work is still on the page.
 
-No points, no poker — estimation was how teams committed when implementation capacity was the constraint, and the constraint moved. What sizing looks like instead is in the working template at the back.
+No points, no poker — estimation was how teams committed when implementation capacity was the constraint, and the constraint moved. What sizing looks like instead is in the working template at the back. What the room costs, honestly counted, is the appendix beside it.
 
 None of this makes predictability immune to gaming. A team can pad the estimate, promise six weeks for work that takes three, and hit the date every time. But that only holds as long as nobody outside the team asks why three-week features take six, and stakeholders eventually do. Sandbagging predictability takes the whole team agreeing to the same lie and holding it quarter after quarter. Inflating throughput takes one person and an agent for an afternoon.
 

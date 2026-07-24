@@ -45,6 +45,8 @@ And underneath them, redundancy. The fix didn't go through on one person's say-s
 
 So how many people does that take? As many as the process requires, as few as it can sustain. The functions don't answer that: the seats overlap, and one person can hold two. Two people can build a shared understanding, but a pair converges: the angles that started different grow shared, until nobody is left outside the framing. Three creates the triangle, the space where a third perspective surfaces what two people, heads down together, stop seeing.
 
+None of this is against pairing, or against the pair the Agora's door opens with: one task, two people, is how you learn the shape. Convergence is a drift, not an event; it takes weeks of planning together for the angles to fuse. An experiment doesn't live that long, and a pair executing an agreed direction was never the risk. The floor is about the standing practice.
+
 One person holding critical system knowledge is a single point of failure. Two creates a dependency. Three creates a floor that survives someone going heads down, someone leaving, someone getting pulled onto something else.
 
 The minimum viable unit is three.

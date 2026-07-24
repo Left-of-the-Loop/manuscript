@@ -16,7 +16,9 @@ At some point — in your team, your organization, your career — someone decid
 
 So they went. Or they shrank. Or they became ceremonies that everyone attended without really being present. And for a while it felt like freedom. Faster. Lighter. More autonomous.
 
-The decisions that used to get made in the room started getting made alone. The junior who would have raised the concern stayed quiet because there was no moment to raise it. The senior's reasoning stopped transferring because the senior was heads down in their own context. The system accumulated decisions that each made sense in isolation and didn't fit together.
+The decisions that used to get made in the room started getting made alone. Each one made sense in isolation. Together they didn't fit.
+
+XP didn't lose an argument. It lost a cost calculation. The practices demanded a colocation many organizations couldn't provide, scaled badly past the single team, fit distributed work poorly, and the whole bundle was priced in the scarcest resource of that era: human implementation time. Cutting the conversation bought real capacity. Teams dropped the practices for reasons, not out of forgetfulness.
 
 ---
 
@@ -29,6 +31,8 @@ The illusion is more powerful now. The output is real. The review requests are r
 But the room is emptier. The understanding is thinner. The junior is learning alone. The senior is prompting alone. The architect is deciding alone. And somewhere in the gap between all that individual speed, the system is accumulating something that will surface later as something nobody can quite explain. You can feel it before you can name it, and that feeling is the signal.
 
 ---
+
+What changed is the denominator. When agents carry implementation, the hours the room costs no longer come out of the hours the code needs, and the calculation that killed XP runs the other way. The rediscovery isn't nostalgia. The economics flipped.
 
 This book is an argument for a different choice.
 
@@ -52,7 +56,7 @@ The Phoenix doesn't rise by accident; it chooses to. That choice is the differen
 
 The renewal is also a choice. Keep the team. Protect the room. Slow down for the conversation that feels like it's getting in the way — because that conversation is often the work. Push back when the metric replaces the judgment. Say the thing that's uncomfortable to say in the Spec Session. Ask the question that surfaces the XY problem before the agent runs.
 
-Choose the forest. Even when the desert is faster. Especially when the desert is faster.
+Choose the forest. Even when the desert feels faster. Especially when it feels faster.
 
 Understanding what to build, together, before anyone builds it was always the hard part. AI didn't change that; it just made it easier to forget.
 

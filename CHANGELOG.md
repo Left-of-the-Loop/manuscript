@@ -11,6 +11,29 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-24 — manuscript `335b352`
+
+Site: `b8a246a`
+
+- New appendix: "What the room costs", readable at
+  /chapters/what-the-room-costs; the Spec Session template is now
+  Appendix B
+- The seven-hole batch: targeted fixes across End of a Craft (the hinge
+  unpacked), Trireme (the pairing tension resolved), Astrolabe
+  (signal-law self-applied, convergence confession), Phoenix (the
+  concession and the denominator flip, plus a repeated-noun trim), and
+  both appendices (denominator clause; scope clause and async
+  adaptation)
+- Oracle: applied paper-pass edits; split AI-accelerates-breakage into
+  its own beat; added the anti-prescription paragraph after the
+  Thursday-commitment line
+- Foreword: led with the irony, merged the Claude paragraphs
+- Phoenix: collapsed the drift paragraph to its two beats
+- Astrolabe: cut two paragraphs, landed the left/right ends of the loop
+- Spec Session: added the Appendix designation and the
+  frozen-at-printing epigraph
+- Glossary: three-zone geography fix and completeness pass
+
 ## 2026-07-24 — manuscript `b49303c`
 
 Site: `dbbe195`

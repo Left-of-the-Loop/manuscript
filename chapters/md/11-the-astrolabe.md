@@ -19,9 +19,7 @@ The same dynamic is playing out now with AI infrastructure. And the solution is 
 
 ---
 
-The cost of a bad prompt is currently invisible.
-
-When an engineer runs the agent against a thin spec and gets the wrong output, they rerun it. Better prompt this time, or different framing, or more context. The agent runs again. Maybe it works. Maybe it runs again.
+First, the cost. When an engineer runs the agent against a thin spec and gets the wrong output, they rerun it. Better prompt this time, or different framing, or more context. The agent runs again. Maybe it works. Maybe it runs again.
 
 That cost, in tokens, in time, in engineering attention, goes nowhere. No ticket captures it. No metric tracks it. The AI budget is treated like electricity: a fixed cost of doing business, not something traced back to individual decisions or process failures.
 
@@ -98,6 +96,8 @@ The platform team can facilitate that. They know which teams improved their reru
 
 That's organizational learning at scale. The platform sees what works, the outlier gets a signal, the improvement spreads. The Alexandria Problem in reverse: knowledge flowing from the center outward, continuously, as the organization learns what good looks like.
 
+The line is thin, and the Oracle's law applies: the moment the rerun count becomes a comparison, a leaderboard, a target a manager asks a team to improve, specs get narrow, ambitions shrink, and the number gets better while the learning stops. The signal works because the team reads it. The platform only carries the mirror.
+
 ---
 
 While writing this book, I shared the draft with a CTO who had independently built an AI-native workflow called PullOps. The conversation felt less like introducing new ideas and more like comparing notes. The workflow had converged on many of the same conclusions: specification before implementation, human validation at decision points, shared capabilities instead of individual tooling, and team review as a cultural practice that infrastructure alone cannot replace.
@@ -106,11 +106,11 @@ Interestingly, he started building it before he knew about the book.
 
 Convergence on its own proves little. Put enough people on the same hype cycle, the same conference talks and the same launch posts, and they reach the same answer because they read the same things, not because the answer is true. What matters is what they converge *on*. The hype cycle pushes one way: more autonomy, fewer humans, the agent running unsupervised. PullOps went the other way: human validation at decision points, team review as a practice infrastructure can't replace. That's not the fashionable conclusion. It's the inconvenient one, and he reached it independently, by hitting the same wall. The book names the pattern. The pattern was already emerging.
 
-Charity Majors reached a version of the same conclusion from a different angle: production, not the spec.[^c11-majors] Once code is cheap to regenerate, she argues, discipline relocates to wherever judgment still has to happen; for her, that's the telemetry and evals that catch what already shipped. This book relocates it into the room before the agent runs instead. Same anxiety, opposite pole of the loop. Maybe both are true. A spec nobody understood doesn't get safer because the telemetry after it is precise, and precise telemetry doesn't help if nobody held the intent behind what shipped.
+Convergence isn't validation, and I'm not counting it as one. Nobody evaluated my claim; two people arrived at it separately, which is weaker in one way, nobody tried to break it, and stronger in another, nobody was asked. And honestly: converging voices are the ones you hear about. The people who reached the opposite conclusion didn't call me.
+
+Charity Majors reached a version of the same conclusion from a different angle: production, not the spec.[^c11-majors] Once code is cheap to regenerate, she argues, discipline relocates to wherever judgment still has to happen; for her, that's the telemetry and evals that catch what already shipped. This book relocates it into the room before the agent runs instead. Same anxiety, opposite ends of the loop: hers on the right, where what shipped meets reality; this one on the left, in the room. Maybe both are true. A spec nobody understood doesn't get safer because the telemetry after it is precise, and precise telemetry doesn't help if nobody held the intent behind what shipped.
 
 ---
-
-This chapter is itself a reading of the instrument: where the tooling stands as I write, not where it will be when you read. The names will change. The economics won't.
 
 A platform can make the cost visible. It can't make the choice. The data can show that the room is emptying, but whether it gets filled again is the one decision no instrument makes. That's the astrolabe: it tells you where you are, but never where you go.
 
