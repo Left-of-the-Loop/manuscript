@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-25 — manuscript `829bb14`
 
-Site: `(pending)`
+Site: `9435509`
 
 - Em-dash near-zero pass across the Introduction, Agora, Genie,
   Alexandria, and Oracle; Appendix C consistency fixes
