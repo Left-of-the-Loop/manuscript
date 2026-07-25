@@ -79,7 +79,9 @@ A team with a safe room and moderate individual capability will outperform a col
 
 ---
 
-Two things hold at any size. A team needs friction: a team where everyone always agrees is a mirror, and mirrors don't catch mistakes. And a team needs the room: without people saying what they actually think, nothing else holds.
+Set the controls beside each other and they are one apparatus. Consent instead of consensus, so agreement is never performed as unanimity. A rotating lead whose job is closing, not winning. The third seat, the first one from which the pair can be seen at all. And the mirror-law: a team that always agrees is not converging, it is reflecting.
+
+Two things hold at any size. A team needs friction, because mirrors don't catch mistakes. And a team needs the room: without people saying what they actually think, nothing else holds.
 
 The desert produces output. The forest produces learning. And the learning is the cost that stays quiet, which is why the desert always looks cheaper than it is.
 

@@ -3,7 +3,7 @@
 *Sisyphus was condemned by the gods to roll a boulder up a hill for eternity, only to watch it roll back down each time he neared the top. Not punishment for failure, but punishment for believing he could outsmart the system.*
 
 
-*If implementation is the cheap part now, where does the hard part go?*
+*If implementation is the cheap part, where does the hard part go?*
 
 I was the problem.
 
@@ -58,6 +58,8 @@ Eliyahu Goldratt's Theory of Constraints[^c1-goldratt] says one simple thing: op
 The boulder goes up faster. The constraint was never the pushing.
 
 Some teams will read this and disagree. They removed the planning sessions, went AI-first, doubled their output, and things are working fine. They might be right. For now. What "for now" means varies: sometimes it's the first time a senior engineer leaves and the system becomes inexplicable to the people who remain. Sometimes it's the first time a feature request surfaces a decision nobody remembered making. Sometimes it's the moment the codebase gets complex enough that the informal knowledge can't hold it together anymore. Speed without shared understanding creates debt that compounds invisibly.
+
+That paragraph is unfalsifiable as written, and saying so is better than letting it stand. If every team that disagrees is simply pre-symptomatic, nothing counts as evidence against me, and an argument that cannot lose is not worth your time. So here is what would settle it: run deliberate sessions for a quarter and watch whether the numbers move. The Oracle names what to count. Appendix A runs the arithmetic. If nothing moves, the book was wrong about that team, and the debt I just described was a story I told myself. I would rather hand you the test at the front than at the back.
 
 Most teams I see have done the same thing I did. They've added AI to the implementation end of the process and called it transformation.
 

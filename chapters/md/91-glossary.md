@@ -2,6 +2,8 @@
 
 The terms this book leans on, defined once. Some have ancestors, credited in the chapters that introduce them. The definitions here are how this book uses them.
 
+**The Agora** — The condition that makes a room more than a collection of individuals: the shared awareness a team builds before acting, and the disposition to keep building it. Not the session itself; what the session exists to produce. Named in the chapter of the same name.
+
 **The Alexandria Problem** — Not an event but a process: the library doesn't burn in one dramatic fire, it burns one skipped conversation at a time. The knowledge that used to accumulate through proximity and repetition stops the moment AI removes the friction of asking. Named for what happens when nobody notices the smoke until it's already gone.
 
 **Constructive friction** — Disagreement from someone independent of your framing, arriving before the agent runs. The mechanism that tests shared understanding, and the thing an ever-agreeing tool cannot supply. Not an obstacle to remove; the reason the team's judgment is worth more than the model's agreement.
@@ -24,7 +26,7 @@ The terms this book leans on, defined once. Some have ancestors, credited in the
 
 **Recognition work** — Catching the wrong shape before it compounds: the drift from intent nobody had encoded yet, before there's a test to write. Quiet, constant, and learned from being in the system: the check an eval can't run.
 
-**The room** — Wherever a team builds shared understanding together. A condition, not a location; the best room can have no walls at all. It has to be made, and protected, because everything the agent produces is downstream of what happens in it.
+**The room** — Wherever a team builds shared understanding together. A condition, not a location; the best room can have no walls at all. It has to be made, and protected.
 
 **The spec** — Shared understanding of what to build and why, held in common. Not a document; the document is the record of the convergence. Where the formal sense is meant — a contract, like the OpenFeature specification — this book uses the full word.
 

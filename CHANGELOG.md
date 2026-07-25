@@ -11,9 +11,34 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
-## 2026-07-24 — manuscript `335b352`
+## 2026-07-25 — manuscript `c173348`
 
-Site: `b8a246a`
+Site: `5a39467`
+
+- Oracle: led with the absorption-gap claim, recruited the data to it
+  (with a knock-on trim in The Curse of Sisyphus)
+- New appendix: "A session that failed the gate", readable at
+  /chapters/session-that-failed-the-gate
+- Citation verification pass: DORA supersession, three error fixes,
+  one mischaracterization
+- Reviewer round: falsifiability, premise-status consistency, and the
+  wanting claim narrowed to what it covers; premise tense sweep
+
+- Introduction: reframed the thesis (abundance demoted to accelerant,
+  erosion of incidental friction made the mechanism); added the
+  "this has happened before" lineage paragraph with a Brooks footnote.
+  The landing page's summary paragraph was updated to match.
+- Ever-Agreeing Genie: assembled the groupthink objection and answered
+  it (split with The Forest and the Desert), un-contradicted the
+  weights claim, cut restatements
+- Agora: moved the tooling-landscape block earlier, cut a redundant
+  closer, made the Bewusstsein line personal
+- Trireme: the Simmel structural axis, restatement cuts
+- Phoenix & Glossary: fixed the sentence the glossary was patching;
+  glossary gained the Agora entry and a repaired "room" drift
+- Appendix A: added and repositioned the refinement-swap clause,
+  revised the opener
+- Oracle and Forest and Desert: placement fixes and post-batch cleanup
 
 - New appendix: "What the room costs", readable at
   /chapters/what-the-room-costs; the Spec Session template is now

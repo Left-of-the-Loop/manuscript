@@ -24,7 +24,7 @@ That's why the path is the goal. A team could be handed a perfectly written spec
 
 ---
 
-I run climbing courses for children. At the start of every session we sit in a circle: everyone speaks, everyone listens, no rushing past. We reflect on the last time. We let the room breathe. We create what in German has a better word than English offers: Bewusstsein. A shared awareness. A common consciousness of where everyone is before anyone starts climbing.[^c5-tomasello]
+I run climbing courses for children. At the start of every session we sit in a circle: everyone speaks, everyone listens, no rushing past. We reflect on the last time. We let the room breathe. We create what I think of as a shared Bewusstsein: a common consciousness of where everyone is before anyone starts climbing.[^c5-tomasello]
 
 What happens after that circle isn't engineered. The peer learning emerges. The child who felt heard speaks up on the wall. The one who listened offers help without being asked. The group becomes something that supports itself.
 
@@ -60,9 +60,7 @@ The Spec Session makes that culture structural rather than personal. It says: th
 
 The Spec Session produces minimum viable context: the agent runs without guessing, the team reviews without re-learning, the stakeholder recognizes what they asked for when they see it.
 
-Acceptance criteria are a contract, not an understanding.
-
-The session needs to surface three things before it closes.
+Acceptance criteria are a contract, not an understanding. The session needs to surface three things before it closes.
 
 What are we actually building. The specific behavior, the boundary conditions, the thing that would make a skeptic say "yes, that's done." The team needs to be able to describe it without looking at the document.
 
@@ -106,7 +104,17 @@ The antidote is a rotating session lead: someone whose job that day is to get to
 
 Most teams never make that space intentional. The thinking happens, but it happens in fragments. The Spec Session is the one place where the thinking that was happening anyway gets done together, gets documented, gets owned by the whole team. Not a ceremony added to a full calendar; the replacement for the fragments.
 
-The room has to be made, and protected; everything the agent produces is downstream of what happens in it.
+---
+
+Tools are beginning to encode this instinct.[^c5-further] Birgitta Böckeler[^c5-sdd], a Distinguished Engineer at ThoughtWorks, has analyzed the leading tools and identified the central gap: all of them assume a single developer does the requirements analysis. None address what happens when multiple people need to arrive at the same picture together. That's the Agora, the human condition that makes any spec-first approach work. A tool can encode the instinct, but it can't replace the room. A CONTEXT.md nobody owns is just a Confluence page.
+
+ThoughtWorks, in their Technology Radar[^c5-radar], flag a real risk: spec-driven workflows become "lengthy" and "elaborate and opinionated" when the spec becomes the goal. The Spec Session is the antidote, not an instance of it. The document is proof the conversation happened, a record of reasoning.
+
+Kief Morris[^c5-morris] introduces the closest external framing to this book's argument: humans "on the loop," building and maintaining the harness. The difference is precise: Morris solves where humans sit in the process. This book solves what they need to do before it starts — the harness enforces how code gets written, and the Spec Session ensures the team holds a common picture of what users need before the agent writes a line.[^c5-harness]
+
+The room itself is not entirely missing from the landscape. AWS's AI-DLC puts one back: a ritual called mob elaboration, cross functional and hours long, before any agent runs.[^c5-aidlc] The difference is what each is about. AI-DLC prescribes the ceremony; this book is about what the ceremony exists to produce. And understanding does not require a shared building. The question isn't whether to use these tools. It's whether the conversation happens before or after you do.
+
+The best room I have ever worked in had no walls at all.
 
 ---
 
@@ -123,18 +131,6 @@ If it didn't, ask why together, not each of you privately at your own desk. Wher
 Figure out what works, and build on it. One experiment at a time, one task at a time. That's the thing engineers are good at anyway: fixing broken things.
 
 A fuller starting shape waits in the working template at the back.
-
-Tools will make this easier. They already are: better async collaboration, lighter spec formats, smarter review workflows. The question isn't whether to use them. It's whether the conversation happens before or after you do.
-
----
-
-Tools are beginning to encode this instinct.[^c5-further] Birgitta Böckeler[^c5-sdd], a Distinguished Engineer at ThoughtWorks, has analyzed the leading tools and identified the central gap: all of them assume a single developer does the requirements analysis. None address what happens when multiple people need to arrive at the same picture together. That's the Agora, the human condition that makes any spec-first approach work. A tool can encode the instinct, but it can't replace the room. A CONTEXT.md nobody owns is just a Confluence page.
-
-ThoughtWorks, in their Technology Radar[^c5-radar], flag a real risk: spec-driven workflows become "lengthy" and "elaborate and opinionated" when the spec becomes the goal. The Spec Session is the antidote, not an instance of it. The document is proof the conversation happened, a record of reasoning.
-
-Kief Morris[^c5-morris] introduces the closest external framing to this book's argument: humans "on the loop," building and maintaining the harness. The difference is precise: Morris solves where humans sit in the process. This book solves what they need to do before it starts — the harness enforces how code gets written, and the Spec Session ensures the team holds a common picture of what users need before the agent writes a line.[^c5-harness]
-
-The room itself is not entirely missing from the landscape. AWS's AI-DLC puts one back: a ritual called mob elaboration, cross functional and hours long, before any agent runs.[^c5-aidlc] The difference is what each is about. AI-DLC prescribes the ceremony; this book is about what the ceremony exists to produce. And understanding does not require a shared building. The best room I have ever worked in had no walls at all.
 
 ---
 
