@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-25 — manuscript `d511ae0`
 
-Site: `(pending)`
+Site: `4f09c4e`
 
 - Introduction: reframed the thesis (abundance demoted to accelerant,
   erosion of incidental friction made the mechanism); added the
