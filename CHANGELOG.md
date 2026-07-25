@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-25 — manuscript `c173348`
 
-Site: `(pending)`
+Site: `5a39467`
 
 - Oracle: led with the absorption-gap claim, recruited the data to it
   (with a knock-on trim in The Curse of Sisyphus)
