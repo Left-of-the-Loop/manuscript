@@ -35,6 +35,12 @@ These were correlations, and DORA was careful to say so. The explanation it offe
 
 The dividend arrives at the task level, the system can't absorb it, and that gap is what this book is about. DORA's 2024 numbers said throughput fell, not rose, the wrong direction for anyone who already believed implementation was abundant. DORA's 2025 report is the flip: throughput and time on valuable work both reversed positive.[^c8-dora] What didn't reverse is instability, still climbing on the far side of that flip, and the difference is everything upstream of the agent: the thin spec, the wrong thing built quickly, the rework nobody counts. METR supplies a different kind of evidence, not a dividend that failed to land, but one that wasn't there: experienced developers ran 19% slower on repositories they knew well and came away certain they'd gotten faster,[^c8-metr] the same failure to collect showing up as perception instead of throughput, at the scale of one developer instead of a team. A throughput gain a team cannot land safely is not a dividend it has cashed, and until the process lets it cash, the room costs principal. Appendix A's quarter: gated specs, agent reruns, rework tickets. Flat on all three after a quarter of full sessions, and the premise doesn't hold for that team.
 
+---
+
+One more reading, and it's the one I like least. The evidence I have for implementation getting cheap is my own: an engine I could not have written, a refactor that went from two days to two hours, a pace the team could not absorb. All of it self-reported, and the METR trial in this chapter is precisely a finding that self-reports about AI speed are unreliable, in the direction I would want them to be wrong. Sixteen developers believed they were 20% faster and were 19% slower. I have no reason to think I'm exempt. So the premise this book runs on rests on the kind of evidence the book cites a study to distrust, and the honest position is that I can't establish it from where I'm standing. What I can say is that the prescription doesn't depend on it. If implementation is abundant, the room is how a team lands the dividend. If it isn't yet, the room is how a team stops paying for the wrong thing at speed. The argument holds either way; only the urgency changes.
+
+---
+
 The metrics we use to measure engineering output were already wrong before AI. AI just made them easier to game and faster to break.
 
 Lines of code. Story points. Number of review requests. Tokens burned. Each of these measures something real in isolation. Each becomes meaningless the moment it becomes a target.
@@ -59,7 +65,7 @@ Worse, individual metrics actively work against shared understanding. If story p
 
 The usual response when this becomes visible: add another skill to the agent. Improve the prompt. Use a better model. Find a way to make the AI produce better output with less review.
 
-The output isn't the problem. The process that produces it is. Adding capability to the agent doesn't fix a broken spec; it produces better-written code against the wrong intent, faster — and if that counts as a fix, the incentive has been made more powerful, not less.
+The output isn't the problem. The process that produces it is. Adding capability to the agent doesn't fix a broken spec; it produces better-written code against the wrong intent, faster. If that counts as a fix, the incentive has been made more powerful, not less.
 
 ---
 
@@ -81,7 +87,7 @@ Predictability is also the metric that can't be easily gamed. Either it was call
 
 And predictability is a team metric, not an individual one. One person can't be predictable alone. Predictability requires shared understanding of the work, shared ownership of the sizing, shared commitment to what goes through the gate. It requires the Spec Session, or something like it: a moment where the team agrees on what is being built and how big it is, while the work is still on the page.
 
-No points, no poker — estimation was how teams committed when implementation capacity was the constraint, and the constraint moved. What sizing looks like instead is in the working template at the back. What the room costs, honestly counted, is the appendix beside it.
+No points, no poker. Estimation was how teams committed when implementation capacity was the constraint, and the constraint moved. What sizing looks like instead is in the working template at the back. What the room costs, honestly counted, is the appendix beside it.
 
 None of this makes predictability immune to gaming. A team can pad the estimate, promise six weeks for work that takes three, and hit the date every time. But that only holds as long as nobody outside the team asks why three-week features take six, and stakeholders eventually do. Sandbagging predictability takes the whole team agreeing to the same lie and holding it quarter after quarter. Inflating throughput takes one person and an agent for an afternoon.
 
@@ -103,7 +109,7 @@ From a dashboard, the first team looks more productive. From a planning meeting,
 
 ---
 
-Reliable forecasts tell a manager something deeper than delivery dates. They say the team shares a model of the system, the problem, and the solution — that the alignment was real, and the forecast is the evidence.
+Reliable forecasts tell a manager something deeper than delivery dates. They say the team shares a model of the system, the problem, and the solution. The alignment was real, and the forecast is the evidence.
 
 The thing to measure isn't how much the team is producing.
 
