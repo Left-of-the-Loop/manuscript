@@ -100,7 +100,7 @@ The gate fails. The ticket goes back. The agent does not run.
 
 Elapsed: sixty-two minutes. Nothing built. Forty engineer-hours not spent.
 
-## Open Decisions
+## Open decisions
 
 The honest section, which is the point of having it.
 
@@ -120,4 +120,4 @@ The gate failing is not the session going wrong. It is the session working. The 
 
 ---
 
-*One more time, because the arithmetic is the point: sixty-two minutes against several weeks of calendar time, a review request nobody could close, and a token bill nobody counted. The agent wrote it in an afternoon. That was never the expensive part.*
+*One more time, because the arithmetic is the point: sixty-two minutes against several weeks of calendar time, a pull request nobody could close, and a token bill nobody counted. The agent wrote it in an afternoon. That was never the expensive part.*

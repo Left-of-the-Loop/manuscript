@@ -46,7 +46,7 @@ The industry's response to AI has been, mostly, to go faster.
 
 Add the tool. Ship more. Reduce the headcount that feels redundant when the agent can implement. Optimize the individual. Measure the output. Skip the room.
 
-That's a familiar move. The industry has cut the deliberate conversation before, rationally, because the process it had was tedious and wasn't bringing value — and learned, sometimes painfully, that the conversation was the work. How that happened, and how AI is offering the same deal at a larger scale, is the Phoenix's story to tell.
+That's a familiar move. The industry has cut the deliberate conversation before, rationally, because the process it had was tedious and wasn't bringing value, and learned, sometimes painfully, that the conversation was the work. How that happened, and how AI is offering the same deal at a larger scale, is the Phoenix's story to tell.
 
 Extreme Programming understood what was at stake in the nineties.[^i-xp] Mob programming, pair programming, collective ownership: an entire practice built on the conviction that software development is a social activity. The understanding built through collaboration was the point.
 

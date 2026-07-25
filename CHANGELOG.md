@@ -11,6 +11,15 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-25 — manuscript `829bb14`
+
+Site: `(pending)`
+
+- Em-dash near-zero pass across the Introduction, Agora, Genie,
+  Alexandria, and Oracle; Appendix C consistency fixes
+- Reviewer round: premise circularity (Oracle), symmetry turned inward
+  (Genie)
+
 ## 2026-07-25 — manuscript `c173348`
 
 Site: `5a39467`
