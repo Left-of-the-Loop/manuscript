@@ -35,6 +35,8 @@ These are correlations, and DORA is careful to say so. The explanation it offers
 
 DORA isn't the only signal pointing this way. When METR ran a controlled trial[^c8-metr], experienced developers worked 19% slower with AI on code they knew well, and came away convinced it had sped them up by about as much.
 
+There is a harder reading of those numbers, and this book has to own it. If implementation had already become as abundant as the industry believes, the throughput line would show it, and it shows a decline. Read one way, that undercuts the premise this book runs on. Read another, it says the dividend exists at the task level and has not been collected at the system level, and the difference is everything upstream of the agent: the thin spec, the wrong thing built quickly, the rework nobody counts. That is this book's argument, and it would be too convenient to leave it there, with every direction of the data confirming me. So the concession, with its edges: until a team's process lets the dividend cash, the room costs principal. The test has a shape, and it is Appendix A's quarter: count gated specs, agent reruns, and rework tickets. If a quarter of full sessions moves none of those numbers, the premise was wrong for that team.
+
 The metrics we use to measure engineering output were already wrong before AI. AI just made them easier to game and faster to break.
 
 Lines of code. Story points. Number of review requests. Tokens burned. Each of these measures something real in isolation. Each becomes meaningless the moment it becomes a target.

@@ -4,9 +4,10 @@ Landing page and draft PDF/EPUB for *Left of the Loop*, a book by Simon Schrottn
 
 Live at [leftoftheloop.dev](https://leftoftheloop.dev).
 
-> As implementation becomes abundant, shared understanding becomes the
-> scarce resource, and constructive friction is the mechanism that
-> protects it.
+> AI erodes the incidental friction that used to produce shared
+> understanding as a byproduct of the work. That makes shared
+> understanding the scarce resource, and constructive friction the
+> mechanism that protects and tests it.
 
 ## What's in this repo
 

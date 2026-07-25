@@ -43,9 +43,9 @@ Three kinds of attention, and nobody assigned any of them. Someone with eyes on 
 
 And underneath them, redundancy. The fix didn't go through on one person's say-so. Other maintainers weighed in, pushed on the interface argument, approved it. No single mental model decided the outcome, and no single departure could have taken the understanding with it.
 
-So how many people does that take? As many as the process requires, as few as it can sustain. The functions don't answer that: the seats overlap, and one person can hold two. Two people can build a shared understanding, but a pair converges: the angles that started different grow shared, until nobody is left outside the framing. Three creates the triangle, the space where a third perspective surfaces what two people, heads down together, stop seeing.
+So how many people does that take? As many as the process requires, as few as it can sustain. The functions don't answer that: the seats overlap, and one person can hold two. Two people can build a shared understanding. What a pair can't build is a view of itself. Three creates the triangle, the space where a third perspective surfaces what two people, heads down together, stop seeing.
 
-None of this is against pairing, or against the pair the Agora's door opens with: one task, two people, is how you learn the shape. Convergence is a drift, not an event; it takes weeks of planning together for the angles to fuse. An experiment doesn't live that long, and a pair executing an agreed direction was never the risk. The floor is about the standing practice.
+None of this is against pairing, or against the pair the Agora's door opens with: one task, two people, is how you learn the shape, and a pair executing an agreed direction was never the risk. The floor is about the standing practice, and it is older than software. Sociology has known since 1908 that two and three are different structures, not different sizes[^c9-simmel]. The epistemic version is this book's: a pair has no one who can see the framing from outside it. The third seat isn't extra capacity. It's the first seat that makes the group more than its members.
 
 One person holding critical system knowledge is a single point of failure. Two creates a dependency. Three creates a floor that survives someone going heads down, someone leaving, someone getting pulled onto something else.
 
@@ -69,4 +69,5 @@ That between-domains problem is the layer where Team Topologies operates. Skelto
 
 That's the honest limit. The structure buys aligned domains, not an aligned organization. The only thing that buys the second is the thing the book has been pointing at all along: a room people actually use, repeated at every level that needs one. What has to hold is the room, and the connections between rooms. Whether they exist, and whether people use them, decides everything else.
 
+[^c9-simmel]: Georg Simmel, *Soziologie* (1908); in English, *The Sociology of Georg Simmel*, trans. Kurt H. Wolff (Free Press, 1950), the chapters on the quantitative determination of the group: no majority, no mediating third, no structure that survives either member's departure until the third seat exists. Simmel's third party mediates conflict and interest; applying the structure to shared understanding and blind spots is this book's extension.
 [^c9-tt]: Matthew Skelton and Manuel Pais, *Team Topologies: Organizing Business and Technology Teams for Fast Flow* (IT Revolution, 2019).

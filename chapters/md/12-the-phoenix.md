@@ -32,13 +32,13 @@ But the room is emptier. The understanding is thinner. The junior is learning al
 
 ---
 
-What changed is the denominator. When agents carry implementation, the hours the room costs no longer come out of the hours the code needs, and the calculation that killed XP runs the other way. The rediscovery isn't nostalgia. The economics flipped.
+What changed is the denominator. When agents carry implementation, the hours the room costs no longer come out of the hours the code needs, and the calculation that killed XP runs the other way. Whether your team has collected on that is the question the appendix prices. The rediscovery isn't nostalgia. The economics flipped.
 
 This book is an argument for a different choice.
 
 The argument isn't against AI, and it isn't against speed. It's against the assumption that the team is overhead. Against the idea that shared understanding is a luxury you can't afford when the agent is ready to run. Against the optimization that removes the friction without noticing that the friction was doing something.
 
-The Spec Session is slower than prompting alone. The Agora is harder to maintain than a solo workflow. The room where people say what they actually think is more fragile than a process that runs without it.
+The Spec Session is slower than prompting alone. The Agora is harder to sustain than a solo workflow. The room where people say what they actually think is more fragile than a process that runs without it.
 
 Teams matter — not as an abstract principle, but because the forest produces something the desert cannot. Because the junior watching the senior think out loud is building something that no prompt will ever teach. Because the pushback that changes your direction before the agent runs is cheaper than the rework after. Because the room where uncertainty is discussable is the room where the right thing gets built.
 
