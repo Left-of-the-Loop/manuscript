@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-25 — manuscript `c4bf4d5`
 
-Site: `(pending)`
+Site: `effef87`
 
 - New appendix: "A session that failed the gate", readable at
   /chapters/session-that-failed-the-gate
