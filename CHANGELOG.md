@@ -11,10 +11,12 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
-## 2026-07-25 — manuscript `c4bf4d5`
+## 2026-07-25 — manuscript `c173348`
 
-Site: `effef87`
+Site: `(pending)`
 
+- Oracle: led with the absorption-gap claim, recruited the data to it
+  (with a knock-on trim in The Curse of Sisyphus)
 - New appendix: "A session that failed the gate", readable at
   /chapters/session-that-failed-the-gate
 - Citation verification pass: DORA supersession, three error fixes,
