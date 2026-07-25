@@ -32,7 +32,7 @@ But the room is emptier. The understanding is thinner. The junior is learning al
 
 ---
 
-What changed is the denominator. When agents carry implementation, the hours the room costs no longer come out of the hours the code needs, and the calculation that killed XP runs the other way. Whether your team has collected on that is the question the appendix prices. The rediscovery isn't nostalgia. The economics flipped.
+What changed is the denominator. When agents carry implementation, the hours the room costs no longer come out of the hours the code needs, and the calculation that killed XP runs the other way. Whether your team has collected on that is the question the appendix prices. The rediscovery isn't nostalgia. The economics are flipping, unevenly, and the unevenness is the whole problem.
 
 This book is an argument for a different choice.
 
@@ -42,7 +42,7 @@ The Spec Session is slower than prompting alone. The Agora is harder to sustain 
 
 Teams matter — not as an abstract principle, but because the forest produces something the desert cannot. Because the junior watching the senior think out loud is building something that no prompt will ever teach. Because the pushback that changes your direction before the agent runs is cheaper than the rework after. Because the room where uncertainty is discussable is the room where the right thing gets built.
 
-And this isn't only conviction. The numbers from the measurement chapter point the same way[^c12-dora]: DORA found AI lifting local speed while overall delivery slowed, and a controlled trial found experienced developers working slower with AI even as they felt faster. The desert's promise has evidence against it, not just feeling. The forest is still a bet, and predictability is how a team finds out whether it's paying.
+And this isn't only conviction. The numbers from the measurement chapter point the same way[^c12-dora]: DORA's later data shows the throughput gain is real, but delivery instability keeps climbing, and a controlled trial found experienced developers working slower with AI even as they felt faster. Speed and safety turned out to be two different metrics, and only one of them moved. That gap is not just a feeling. The forest is still a bet, and predictability is how a team finds out whether it's paying.
 
 ---
 
@@ -62,4 +62,4 @@ Understanding what to build, together, before anyone builds it was always the ha
 
 We can choose to remember.
 
-[^c12-dora]: DORA, *Impact of Generative AI in Software Development*, and METR's July 2025 controlled trial. Both are discussed, with citations, in the Oracle chapter.
+[^c12-dora]: DORA's 2024 and 2025 reports (*Impact of Generative AI in Software Development*; *State of AI-assisted Software Development*), and METR's July 2025 controlled trial. All three are discussed, with citations, in the Oracle chapter.

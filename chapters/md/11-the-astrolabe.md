@@ -108,7 +108,11 @@ Convergence on its own proves little. Put enough people on the same hype cycle, 
 
 Convergence isn't validation, and I'm not counting it as one. Nobody evaluated my claim; two people arrived at it separately, which is weaker in one way, nobody tried to break it, and stronger in another, nobody was asked. And honestly: converging voices are the ones you hear about. The people who reached the opposite conclusion didn't call me.
 
-Charity Majors reached a version of the same conclusion from a different angle: production, not the spec.[^c11-majors] Once code is cheap to regenerate, she argues, discipline relocates to wherever judgment still has to happen; for her, that's the telemetry and evals that catch what already shipped. This book relocates it into the room before the agent runs instead. Same anxiety, opposite ends of the loop: hers on the right, where what shipped meets reality; this one on the left, in the room. Maybe both are true. A spec nobody understood doesn't get safer because the telemetry after it is precise, and precise telemetry doesn't help if nobody held the intent behind what shipped.
+Charity Majors reached the same conclusion from the production end.[^c11-majors] Code, she argues, is a materialized view of understanding, useful while it's current and disposable once it's stale. The real product of a software team was never lines of code. It was always shared understanding and production behavior, and what used to limit an organization was the speed of delivery. What limits it now is how swiftly it can validate and understand what it already delivered. That is this book's thesis, arrived at from the far end of the loop: she starts at what's running, this book starts at the room before the agent runs. Same claim, read from opposite ends.
+
+Convergence isn't validation here either. She reached it from production. This book reached it from the room. Neither checked the other's work, and naming the overlap is as far as that goes.
+
+She draws, in turn, on Chad Fowler's Phoenix Architecture, the same Fowler already cited earlier in this book for the Deletion Test.[^c11-fowler]
 
 ---
 
@@ -117,3 +121,4 @@ A platform can make the cost visible. It can't make the choice. The data can sho
 [^c11-agents]: AGENTS.md is discussed, with citation, in the End of a Craft chapter.
 [^c11-ocp]: The open/closed principle, one of the five SOLID principles, originated with Bertrand Meyer (*Object-Oriented Software Construction*, 1988) and was later popularized as part of SOLID by Robert C. Martin. Applied here metaphorically to platform architecture, not OOP design.
 [^c11-majors]: Charity Majors, "AI Demands More Engineering Discipline. Not Less." (charitydotwtf.substack.com, June 2026).
+[^c11-fowler]: Chad Fowler's Phoenix Architecture. The same Fowler whose Deletion Test is cited, with full citation, in the Agora chapter.

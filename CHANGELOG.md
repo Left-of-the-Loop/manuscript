@@ -11,9 +11,16 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
-## 2026-07-25 — manuscript `d511ae0`
+## 2026-07-25 — manuscript `c4bf4d5`
 
-Site: `4f09c4e`
+Site: `(pending)`
+
+- New appendix: "A session that failed the gate", readable at
+  /chapters/session-that-failed-the-gate
+- Citation verification pass: DORA supersession, three error fixes,
+  one mischaracterization
+- Reviewer round: falsifiability, premise-status consistency, and the
+  wanting claim narrowed to what it covers; premise tense sweep
 
 - Introduction: reframed the thesis (abundance demoted to accelerant,
   erosion of incidental friction made the mechanism); added the
