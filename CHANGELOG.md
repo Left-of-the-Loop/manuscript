@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-27 — manuscript `55ea356`
 
-Site: `(pending)`
+Site: `3f68b8d`
 
 - Astrolabe: compression pass and the Majors passage recast; the Section
   Law run over it (eight breaks to four); PullOps cut and the validation
