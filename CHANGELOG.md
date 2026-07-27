@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-27 — manuscript `3ea9ba6`
 
-Site: `(pending)`
+Site: `007da92`
 
 - New appendix: "Async Spec Planning", readable at
   /chapters/async-spec-planning
