@@ -11,10 +11,13 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
-## 2026-07-27 — manuscript `3ea9ba6`
+## 2026-07-27 — manuscript `55ea356`
 
-Site: `007da92`
+Site: `(pending)`
 
+- Astrolabe: compression pass and the Majors passage recast; the Section
+  Law run over it (eight breaks to four); PullOps cut and the validation
+  section rebuilt on Majors; open/closed framing, promoted label cut
 - New appendix: "Async Spec Planning", readable at
   /chapters/async-spec-planning
 - Introduction: cut hedges, collapsed label sentences, trimmed section
@@ -26,6 +29,11 @@ Site: `007da92`
   Alexandria, stripped "actually" from the done-looks-like refrain
 - Intensifier cuts: eleven words across ten files
 - Added the Section Law to the story bible (governs `---` breaks)
+
+Note: the PDF and EPUB in this update were built locally in a container
+matching the source repo's CI toolchain, not downloaded from its release.
+The upstream Actions runs for the last few commits could not complete, so
+the release assets lag the manuscript commit recorded above.
 
 ## 2026-07-25 — manuscript `829bb14`
 
