@@ -29,7 +29,7 @@ The second is scope judgment. Am I reaching too high or not high enough? Is an a
 
 The agent will hold any direction. It can't tell you yours is wrong.
 
-The third is the unknown unknown. The tool no one in the room is aware of. The approach that would make everything simpler but simply hasn't been encountered. If a framework already does what I built over the demo, the model and I are both searching for a name I don't know.
+The third is the unknown unknown. The tool no one in the room is aware of. The approach that would make everything simpler but hasn't been encountered. If a framework already does what I built over the demo, the model and I are both searching for a name I don't know.
 
 AI can surface unknown unknowns within the space it has been pointed at. Ask it "what am I missing here" and it will often find something useful. The harder gap is context-specific: the thing someone with direct experience of the situation would see that neither you nor the model would think to name. That requires someone looking in from outside the framing.
 

@@ -11,6 +11,30 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-27 — manuscript `55ea356`
+
+Site: `3f68b8d`
+
+- Astrolabe: compression pass and the Majors passage recast; the Section
+  Law run over it (eight breaks to four); PullOps cut and the validation
+  section rebuilt on Majors; open/closed framing, promoted label cut
+- New appendix: "Async Spec Planning", readable at
+  /chapters/async-spec-planning
+- Introduction: cut hedges, collapsed label sentences, trimmed section
+  breaks. This rewrote text inside the landing page's excerpt, which is
+  updated to match.
+- Forest and Desert: reframed around scarcity vs. abundance
+- Sisyphus: cuts pass, plus the first section-law merge
+- Agora: re-scoped the tooling section, restored three cut clauses; with
+  Alexandria, stripped "actually" from the done-looks-like refrain
+- Intensifier cuts: eleven words across ten files
+- Added the Section Law to the story bible (governs `---` breaks)
+
+Note: the PDF and EPUB in this update were built locally in a container
+matching the source repo's CI toolchain, not downloaded from its release.
+The upstream Actions runs for the last few commits could not complete, so
+the release assets lag the manuscript commit recorded above.
+
 ## 2026-07-25 — manuscript `829bb14`
 
 Site: `9435509`

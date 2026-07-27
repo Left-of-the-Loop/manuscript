@@ -61,11 +61,11 @@ In the open source world that's a fast experiment before a sophisticated solutio
 
 The traditional PO carries two things simultaneously. Product thinking: challenging intent, representing user needs, asking why before the team builds what. And stakeholder management: navigating organizational pressure, translating business context into something a team can act on, carrying the political weight to push back when the request is wrong.
 
-Those are genuinely different skills bundled into one role partly by necessity. Building the spec together changes the necessity.
+Those are different skills bundled into one role partly by necessity. Building the spec together changes the necessity.
 
 When the team builds the spec together, when product thinking happens collectively, that first part starts to distribute. Senior engineers develop the habit of asking why before how. Tech leads challenge intent as part of the planning process, not as an afterthought. Product thinking becomes a broader team competency over time, rather than something concentrated in a single role.
 
-That doesn't happen immediately. Some teams need a dedicated PO precisely because that muscle isn't there yet. It becomes a development goal, not a permanent structure.
+That doesn't happen immediately. Some teams need a dedicated PO because that muscle isn't there yet. It becomes a development goal, not a permanent structure.
 
 The second part doesn't distribute. Stakeholder navigation requires years of context that most engineers don't have and don't want to develop: the organizational interface, the political skill of managing what comes into the team from outside, the credibility to push back on an executive request. It's what survives as a dedicated role.
 

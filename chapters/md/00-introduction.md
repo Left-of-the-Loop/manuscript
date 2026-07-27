@@ -1,42 +1,32 @@
 # Introduction
 
-This book is not quite what it looks like.
+This book is not what it looks like.
 
 It looks like a book about AI: about agents, specs, workflows, and the changing shape of software development. Those things are in here. But they're not what the book is about.
 
-What the book is about started with a conference talk, a university friend, and 18 PlayStation Move controllers.
-
----
+What the book is about started with a university friend and 18 PlayStation Move controllers.
 
 We were building a demo for KubeCon. The talk was called "18 Bluetooth Controllers Walk Into a Bar," about observability and runtime configuration for JoustMania, an open-source party game where players jostle motion controllers until someone falls over. Complex execution: multiple Bluetooth adapters, battery-powered devices, sensors firing at 100Hz. When a player complains their controller "felt different," how does anyone debug it at 2am at a convention?
 
-A good and genuinely interesting problem and two people who knew the domain and cared about the project.
+An interesting problem and two people who knew the domain and cared about the project.
 
 As we had different schedules, we started hacking on our own. We both made progress and moved fast.
 
-And we never quite planned it together.
+And we never planned it together.
 
-The knowledge gap opened quietly. Decisions got made that the other person didn't know about. Assumptions turned out not to be shared. Work that should have built on itself didn't quite fit together. Not because either of us was wrong, but because we hadn't stopped to build the shared picture before we started building the thing.
+The knowledge gap opened quietly. Decisions got made that the other person didn't know about. Assumptions turned out not to be shared. Work that should have built on itself didn't fit together. Not because either of us was wrong, but because we hadn't stopped to build the shared picture before we started building the thing.
 
-The fix wasn't better tools, a different framework, or a smarter approach to Bluetooth telemetry. What we'd skipped was simpler and harder than any of that.
+The fix wasn't better tools, a different framework, or a smarter approach to Bluetooth telemetry. What we'd skipped was the conversation.
 
----
-
-The book is about the conversation we didn't have.
-
-What happened between me and my university friend is happening to software teams everywhere right now, at a scale and speed that makes the gap much harder to notice and much more expensive to close.
+This is happening to software teams everywhere right now, at a scale and speed that makes the gap harder to notice and more expensive to close.
 
 AI gave every engineer a tool that makes starting to hack immediately feel productive. The agent is ready. The prompt is right there. Why stop to talk? Why slow down for the conversation? The output is coming, it looks right, the ticket will close.
 
 And somewhere in the gap between all that individual motion, the understanding stops being shared.
 
----
+Engineers who go heads down with AI tools stop talking to each other. The output keeps coming, the confidence stays high, and the errors accumulate quietly, until someone external catches them, or until nobody does.
 
-There's a structural reason AI has this problem.
-
-A model generates with the same confidence whether the output is right or wrong. The checks that catch it, the tests, the linters, the review, sit around the model, not inside it. Strip them away and nothing changes in the generation. No peer review. No colleague who reads it and says "that's not how it works."
-
-The same thing happens to engineers who go heads down with AI tools and stop talking to each other. The output keeps coming, the confidence stays high, and the errors accumulate quietly, until someone external catches them, or until nobody does.
+AI has this problem for a structural reason. A model generates with the same confidence whether the output is right or wrong. The checks that catch it, the tests, the linters, the review, sit around the model, not inside it. Strip them away and nothing changes in the generation. No peer review. No colleague who reads it and says "that's not how it works."
 
 AI hallucination and team misalignment aren't the same mechanism, but they rhyme: both produce confident output that nobody is checking against shared intent.
 
@@ -60,7 +50,7 @@ It begins with Sisyphus, and with me as the problem, pushing harder against a pr
 
 It ends with the Phoenix, the choice to rise differently, a rediscovery of what was always true in a new form.
 
-In between, it follows one thread, shared understanding, through its whole life. Where it belongs, what it actually is, and who builds it. What it's worth once implementation gets cheap. How a team creates it together, challenges it until it holds, and keeps it from dying when the people who held it move on. How you tell it's really there, what structure and culture keep it alive, and what it takes to scale it across an organization without thinning it to nothing.
+In between, it follows one thread, shared understanding, through its whole life. Where it belongs, what it is, and who builds it. What it's worth once implementation gets cheap. How a team creates it together, challenges it until it holds, and keeps it from dying when the people who held it move on. How you tell it's really there, what structure and culture keep it alive, and what it takes to scale it across an organization without thinning it to nothing.
 
 The thesis: AI erodes the incidental friction that used to produce shared understanding as a byproduct of the work. That makes shared understanding the scarce resource, and constructive friction the mechanism that protects and tests it. Implementation getting radically cheaper is why this is happening now, and at scale. The organizations that preserve the constructive kind will outperform the ones that optimize it away.
 
