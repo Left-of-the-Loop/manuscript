@@ -41,7 +41,7 @@ One more reading, and it's the one I like least. The evidence I have for impleme
 
 ---
 
-The metrics we use to measure engineering output were already wrong before AI. AI just made them easier to game and faster to break.
+The metrics we use to measure engineering output were wrong before AI. AI just made them easier to game and faster to break.
 
 Lines of code. Story points. Number of review requests. Tokens burned. Each of these measures something real in isolation. Each becomes meaningless the moment it becomes a target.
 

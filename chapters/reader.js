@@ -24,6 +24,7 @@
     { slug: "what-the-room-costs", file: "70-what-the-room-costs", title: "Appendix A: What the room costs" },
     { slug: "spec-session", file: "80-the-spec-session", title: "Appendix B: The Spec Session, a working template" },
     { slug: "session-that-failed-the-gate", file: "81-a-session-that-failed-the-gate", title: "Appendix C: A session that failed the gate" },
+    { slug: "async-spec-planning", file: "82-async-spec-planning", title: "Appendix D: Async Spec Planning" },
     { slug: "acknowledgments", file: "90-acknowledgments", title: "Acknowledgments" },
     { slug: "glossary", file: "91-glossary", title: "Glossary" },
     { slug: "about-the-author", file: "92-about-the-author", title: "About the Author" }

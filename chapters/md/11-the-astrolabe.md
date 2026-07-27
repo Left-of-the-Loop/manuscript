@@ -112,7 +112,7 @@ Charity Majors reached the same conclusion from the production end.[^c11-majors]
 
 Convergence isn't validation here either. She reached it from production. This book reached it from the room. Neither checked the other's work, and naming the overlap is as far as that goes.
 
-She draws, in turn, on Chad Fowler's Phoenix Architecture, the same Fowler already cited earlier in this book for the Deletion Test.[^c11-fowler]
+She draws, in turn, on Chad Fowler's Phoenix Architecture, the same Fowler cited earlier in this book for the Deletion Test.[^c11-fowler]
 
 ---
 

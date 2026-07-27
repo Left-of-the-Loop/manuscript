@@ -1,13 +1,13 @@
 # The Forest and the Desert
 
-*Beth Andres-Beck and Kent Beck describe two working environments, the Forest and the Desert: the desert, open, fast, unobstructed, where you can move without friction, and the forest, dense, slower, where the ecosystem is richer and learning accumulates in the undergrowth.*[^c10-forest]
+*Beth Andres-Beck and Kent Beck describe two working environments, the Forest and the Desert. The desert runs on the assumption that there is never enough, not enough time, not enough trust, not enough slack, so everyone moves fast and alone. The forest runs on the assumption of enough, and so its paths are shared, and learning accumulates in the undergrowth.*[^c10-forest]
 
 
 *If the right structure holds understanding, what keeps it alive over time?*
 
 Kent Beck built Extreme Programming[^c10-xp] on the conviction that software development is a social activity, that the team is not overhead but the mechanism through which good software gets made. XP was largely set aside in favor of frameworks that separated thinking from building, planning from implementation, people from each other. This book is, in part, an argument that XP was right, and that AI is forcing us to rediscover why.
 
-AI is the most powerful desert tool ever built. It removes almost every obstacle to individual speed, and a developer can move faster alone with an agent than any 10x engineer[^c10-10x] could move alone before. The desert has never been more accessible, or more tempting.
+AI is the most powerful desert tool ever built. A developer can move faster alone with an agent than any 10x engineer[^c10-10x] could move alone before, and the tool confirms the desert's founding assumption, that there is no time for the team and no longer any need for one. The desert has never been more accessible, or more tempting.
 
 Which makes the forest more important than it's ever been, and more fragile.
 
@@ -19,7 +19,7 @@ The Agora chapter called psychological safety the prerequisite. The sharper vers
 
 The room needs the freedom to be uncertain out loud.
 
-That room is the precondition for everything the book has argued. A team can't build shared understanding without it. A team can't get weighted validation without it. A team can't catch the XY problem without it. A team can't grow the next generation without it. A team can't have constructive friction without it.
+That room is the precondition for everything the book has argued. Without it there is no shared understanding, no weighted validation, no constructive friction. The XY problem goes uncaught, and the next generation doesn't grow.
 
 The process creates the container; the safe room is what fills it.
 
@@ -57,7 +57,7 @@ The 10x engineer of the AI era is the person who makes the room better. Who asks
 
 ---
 
-A counterargument worth taking seriously: some of the best software ever written came from individuals or tiny teams. Linus Torvalds. Wozniak. The early internet. The desert can produce extraordinary things. What those examples don't prove is that the desert scales. They show what's possible when one person holds the full picture. The question is what happens when the system gets complex enough that no single person can hold it, when the architecture spans more context than one mind can carry, when the edge cases live in the gap between what one person knows and what their colleague knows. That's where the forest earns its place: by surviving what the desert can't.
+A counterargument worth taking seriously: some of the best software ever written came from individuals or tiny teams. Linus Torvalds. Wozniak. The early internet. But solo work is not what makes a desert. The forest mostly means walking paths with everyone else, and sometimes it means hacking your own trail, and sometimes the trail is exactly the right call. What made those examples work is that the trails led somewhere others could follow. The desert begins where one person holds the full picture and assumes nobody else needs to. The question is what happens when the system gets complex enough that no single person can hold it, when the edge cases live in the gap between what one person knows and what their colleague knows. That's where the forest earns its place: by surviving what the desert can't.
 
 I've developed a small habit at conferences and events. When standing in a group, never close the circle completely. Leave a gap. Physical space that says: this conversation isn't finished, you're welcome to join. No invitation required. Just an open space where someone could step in.
 
@@ -65,7 +65,7 @@ It's the same instinct as switching to English the moment I know there's someone
 
 It's about inviting collaboration before anyone has to ask for it.
 
-The desert closes ranks: tight clusters, known quantities, optimized for the people already in the room. The forest leaves space before it's requested. It accepts the friction of the unexpected perspective because it understands that the unexpected perspective is often the one that matters.
+The desert closes ranks: tight clusters, known quantities, optimized for the people already in the room, because sharing costs time it assumes it doesn't have. The forest leaves space before it's requested. It can afford to, because it assumes there is enough to go around, and it accepts the friction of the unexpected perspective because the unexpected perspective is often the one that matters.
 
 The Spec Session works the same way. The session that starts with "we've thought about this and here's what we're doing" has closed the circle. The one that starts with "we have some thinking but we haven't decided" leaves the gap. The junior's edge case, the stakeholder's clarification, the concern nobody voiced in the corridor: those arrive through the gap. They don't arrive in a closed circle.
 
@@ -88,5 +88,5 @@ The desert produces output. The forest produces learning. And the learning is th
 The forest grows slowly but survives what the desert cannot.
 
 [^c10-forest]: The forest-and-desert metaphor is Beth Andres-Beck and Kent Beck's. See "Forest & Desert," *Tidy First?* (tidyfirst.substack.com/p/forest-and-desert), and Martin Fowler, "Forest And Desert" (martinfowler.com/bliki/ForestAndDesert.html).
-[^c10-xp]: Kent Beck, *Extreme Programming Explained: Embrace Change* — discussed, with citation, in the introduction.
+[^c10-xp]: Kent Beck, *Extreme Programming Explained: Embrace Change*, discussed with citation in the introduction.
 [^c10-10x]: "10x engineer" traces to Sackman, Erikson, and Grant's 1968 study on individual programmer productivity variance, popularized in software culture via Steve McConnell's *Code Complete*.

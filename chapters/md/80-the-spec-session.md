@@ -48,9 +48,7 @@ One spec document, versioned, in the repo next to the code. The sections mirror 
 
 The spec is visible before the agent runs, and the Stakeholder Navigator carries it to whoever the outcome touches. This is the review, moved. Stakeholders used to inspect the increment after the build, because the build was the expensive part, and now the spec is the increment worth inspecting. An objection now costs a conversation, an objection after the run costs the run, the review of the run, and a little trust. So the window is short, the default is the agent runs, and an objection is a new session, not a veto scribbled in a comment. Nobody approves the spec, because approval is a handoff wearing a safety vest.
 
-## The async adaptation
-
-The template above assumes a room: synchronous, one screen. Distributed teams run the same gate as a review request on the spec, the form the Agora describes. The mapping: the draft carries intent, constraints, and non-goals before it opens. The comment thread is the challenge phase, and silence is still not an answer; every named reviewer responds or the spec doesn't merge. The consent round is the approval set, with objections as blocking comments. The timebox becomes a deadline: two working days, not two weeks. One failure mode travels with the form: a spec drafted by an agent and reviewed by an agent merges without anyone having understood it. The review request is the session; if no human thinks in it, it didn't happen. It is slower than a room and better than a document nobody owned. The fuller async build, as it evolves, lives at leftoftheloop.dev.
+Distributed teams: the async adaptation of this template is Appendix D.
 
 ## What the template doesn't solve
 

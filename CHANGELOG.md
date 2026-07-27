@@ -11,6 +11,22 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-27 — manuscript `3ea9ba6`
+
+Site: `(pending)`
+
+- New appendix: "Async Spec Planning", readable at
+  /chapters/async-spec-planning
+- Introduction: cut hedges, collapsed label sentences, trimmed section
+  breaks. This rewrote text inside the landing page's excerpt, which is
+  updated to match.
+- Forest and Desert: reframed around scarcity vs. abundance
+- Sisyphus: cuts pass, plus the first section-law merge
+- Agora: re-scoped the tooling section, restored three cut clauses; with
+  Alexandria, stripped "actually" from the done-looks-like refrain
+- Intensifier cuts: eleven words across ten files
+- Added the Section Law to the story bible (governs `---` breaks)
+
 ## 2026-07-25 — manuscript `829bb14`
 
 Site: `9435509`

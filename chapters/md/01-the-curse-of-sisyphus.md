@@ -7,27 +7,25 @@
 
 I was the problem.
 
-That took me a while to see. I was shipping fast, quality was good, tests were there. Every review request I opened was a genuine improvement to the codebase. And I had multiple open at any given time, because I was filling the review wait with more implementation. While someone in Canada was sleeping, I was already three tasks deep: a new review request open, another under review, a third being planned.
+That took me a while to see. I was shipping fast, quality was good, tests were there. Every review request I opened was a genuine improvement to the codebase. And I had multiple open at any given time, because I was filling the review wait with more implementation. While someone in Canada was sleeping, I was three tasks deep: a new review request open, another under review, a third being planned.
 
-The team was distributed, six hours between Europe and Canada, but that wasn't the issue. Distributed teams work. The issue was volume. AI let me produce faster than the team could absorb. Review requests piled up. I started stacking them to manage the backlog, which created more noise, not less. The system was designed to produce exactly that outcome, not a slow team, but a process that couldn't keep pace with the output.
+The team was distributed, six hours between Europe and Canada, but that wasn't the issue. Distributed teams work. The issue was volume. AI let me produce faster than the team could absorb. Review requests piled up. I started stacking them to manage the backlog, which created more noise, not less. The system was designed to produce exactly that outcome: not a slow team, but a process that couldn't keep pace with the output.
 
 I felt the burden. No one said anything directly, but you feel it in the silence. Review requests sitting. Comments sparse. The sense of generating more than the team can hold.
 
 So I did what felt productive. I opened another review request.
 
----
-
 The review bottleneck was the same problem wearing different clothes: the knowledge gap.
 
 We had something close to the right process. A product manager and the more senior engineers would talk through what needed building. Decisions got made and intent got written into Confluence. Then it became tickets, and the team picked and went.
 
-That sounds reasonable, but in practice, two things were broken simultaneously.
+That sounds reasonable, but two things were broken simultaneously.
 
-The scoping documents were written from a product manager's perspective: where we want to go, what the final state should look like, the vision six months out. Useful for a roadmap. Not useful when an engineer is trying to decide how a function should behave today. And when the docs did go technical, they'd sometimes arrive with a solution already decided by the seniors and the product manager, handed down to whoever picked the ticket. Or they'd leave the technical decisions entirely to the engineer, mid-implementation, without the context the seniors had built up in their informal conversations.
+The scoping documents were written from a product manager's perspective: where we want to go, what the final state should look like, the vision six months out. Useful for a roadmap. Not useful when an engineer is trying to decide how a function should behave today. And when the docs did go technical, they'd sometimes arrive with a solution already decided by the seniors and the product manager, handed down to whoever picked the ticket. Or they'd leave the technical decisions to the engineer, mid-implementation, without the context the seniors had built up in their informal conversations.
 
-We had also stopped doing planning sessions. I'm not sure exactly when. It wasn't a decision. It just faded. The backlog existed, the docs existed, the tickets existed. Planning felt redundant when everything was already written down somewhere.
+We had also stopped doing planning sessions. I'm not sure exactly when. It wasn't a decision. It just faded. The backlog existed, the docs existed, the tickets existed. Planning felt redundant when everything was written down somewhere.
 
-The missing thing wasn't documentation. It was the conversation that produced it. Better documents preserve understanding; they don't create it. The creating happened in the room. When the room went away, the understanding went with it. The documents stayed. But documents can't answer questions mid-implementation. Documents can't notice when a technical decision made six weeks ago no longer fits what the system actually looks like.
+The missing thing wasn't documentation. It was the conversation that produced it. Better documents preserve understanding; they don't create it. The creating happened in the room. When the room went away, the understanding went with it. The documents stayed. But documents can't be asked. Documents can't notice when a technical decision made six weeks ago no longer fits what the system looks like.
 
 So the scoping document was always incomplete in a specific way. Not wrong at the top; the vision was usually fine. Missing in the middle, where the engineers who hadn't been in the discussion between seniors and the product manager needed to make real decisions, and had nothing to go on except a ticket and a Confluence page written for a different audience.
 
@@ -49,7 +47,7 @@ The boulder made it all the way up. Then it just stayed there.
 
 ---
 
-Addy Osmani, writing about loop engineering in June 2026, quoted Boris Cherny, head of Claude Code at Anthropic: "I don't prompt Claude anymore. I have loops running that prompt Claude and figuring out what to do. My job is to write loops." Osmani's observation: "Two people can build the exact same loop and get completely opposite results. One uses it to move faster on work they understand deeply. The other uses it to avoid understanding the work at all. The loop doesn't know the difference. You do."[^c1-loop]
+Addy Osmani, writing about loop engineering in June 2026, quoted Boris Cherny, head of Claude Code at Anthropic: "I don't prompt Claude anymore. I have loops running that prompt Claude and figuring out what to do. My job is to write loops." Osmani's own observation is that two people can build the same loop and get opposite results: one using it to move faster on work they understand deeply, the other to avoid understanding the work at all. "The loop doesn't know the difference. You do."[^c1-loop]
 
 The loop amplifies whatever understanding the team brings to it. If the team didn't build shared understanding before the loop ran, the loop executes the misalignment faster. The boulder doesn't just go up faster; it goes up faster in the wrong direction.
 
@@ -59,11 +57,9 @@ The boulder goes up faster. The constraint was never the pushing.
 
 Some teams will read this and disagree. They removed the planning sessions, went AI-first, doubled their output, and things are working fine. They might be right. For now. What "for now" means varies: sometimes it's the first time a senior engineer leaves and the system becomes inexplicable to the people who remain. Sometimes it's the first time a feature request surfaces a decision nobody remembered making. Sometimes it's the moment the codebase gets complex enough that the informal knowledge can't hold it together anymore. Speed without shared understanding creates debt that compounds invisibly.
 
-That paragraph is unfalsifiable as written, and saying so is better than letting it stand. If every team that disagrees is simply pre-symptomatic, nothing counts as evidence against me, and an argument that cannot lose is not worth your time. So here is what would settle it: run deliberate sessions for a quarter and watch whether the numbers move. The Oracle names what to count. Appendix A runs the arithmetic. If nothing moves, the book was wrong about that team, and the debt I just described was a story I told myself. I would rather hand you the test at the front than at the back.
+That paragraph is unfalsifiable as written, and I would rather say so than let it stand. If every team that disagrees is simply pre-symptomatic, nothing counts as evidence against me, and an argument that cannot lose is not worth your time. So here is what would settle it: a team runs deliberate sessions for a quarter, and counts how often it agreed on the work before building it, how often the agent had to be re-run, and how many tickets came back as rework. If none of the three moves, the book was wrong about that team, and the debt I just described was a story I told myself. The arithmetic is in Appendix A. I would rather hand you the test at the front than at the back.
 
-Most teams I see have done the same thing I did. They've added AI to the implementation end of the process and called it transformation.
-
-It's just acceleration, and acceleration without a better process gets to the wrong place faster.
+Most teams I see have done the same thing I did. They've added AI to the implementation end of the process and called it transformation. It's just acceleration, and acceleration without a better process gets to the wrong place faster.
 
 The instinct is understandable. AI tools drop into an existing workflow cleanly. The engineer opens an editor, starts prompting, ships more code. The feedback loop is immediate and satisfying. The problems it creates are delayed and diffuse: a review queue that grows quietly, a shared understanding that gets thinner as the pace increases, a team that starts to feel like an audience for one person's output.
 
@@ -92,11 +88,9 @@ Not every team has that option. When the timezone gap is six hours, synchronous 
 
 Think of it like a review request. Not on code, on the spec itself. The spec opens for review. Anyone can comment. Decisions get made in the thread, not in a side conversation between the product manager and two seniors. And there's a merge condition: a moment where the team agrees this is decided, this is what we build from, the agent can run.
 
-That last part is what our Confluence documents were missing. They existed. They sat there. But there was no merge gate. No moment where the team said this is decided. No record of why the decision was made, only what it was.
+That last part is what our Confluence documents were missing. They existed. They sat there. But there was no merge gate. No moment where the team said this is decided. No record of why the decision was made, only what it was. Six months later, when the system has changed and the decision no longer fits, the team needs to know whether to revisit it or discard it. The reasoning is what tells them. A document with no comment history and no approval record gives them the what with none of the why. A spec treated like a review request gives them both.
 
-That matters more than it sounds. Six months later, when the system has changed and the decision no longer fits, the team needs to know whether to revisit it or discard it. The reasoning is what tells them. A document with no comment history and no approval record gives them the what with none of the why. A spec treated like a review request gives them both.
-
-The agent working from a spec like that is in a fundamentally different position. It has context, not just requirements. It can flag when a new ticket contradicts a previous decision. It can surface the reasoning when something looks wrong.
+The agent working from a spec like that is in a different position. It has context, not just requirements. It can flag when a new ticket contradicts a previous decision. It can surface the reasoning when something looks wrong.
 
 The spec becomes a living record of intent, not a snapshot of what one person thought the product should be.
 
