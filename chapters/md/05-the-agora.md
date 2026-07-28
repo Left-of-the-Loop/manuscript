@@ -8,7 +8,11 @@ Every team has a place where the real thinking happens. Sometimes it's a meeting
 
 The Spec Session is what happens when a team makes that space intentional, the whole team converging on one spec before the agent runs. It's not a new idea: XP called it the planning game.[^c5-xp] What's different is the stakes: where XP had an individual coder, the Spec Session has an agent. And the quality of the shared thinking before it runs determines everything that follows.
 
+A reader running Scrum will have noticed that this is refinement. It is, and the activity is old. The name is different because the cadence is. One session, one spec, run when the work arrives rather than on a sprint boundary, and many of the teams this is for have no sprint to attach it to. What changed underneath is what waits at the end of it.
+
 The individual coder was doing a second job nobody ever named. A human who doesn't understand what they're building gets uncomfortable, or stuck, and walks over to a desk and asks whether we meant this or that. That discomfort was a safety net no process designed: it caught planning failures in week two instead of production. An agent has no such habit. It runs with its best interpretation or it stops, neither walking over. It can ask a question, but it asks the person who wrote the prompt, from inside that framing. The old process could afford an ambiguous spec because the implementer and the circuit breaker were the same person. The agent split them apart, and the Spec Session is what replaces the walk to the desk: the same catch, moved to the cheapest moment.
+
+A better agent closes some of this. One that notices the ambiguity and asks the room instead of the author would restore the walk to the desk, and that would be worth having. It would not do the other thing. A question answered well leaves the understanding with whoever answered it, and the session exists because the team has to hold it, not because the agent has to receive it.
 
 ---
 
@@ -29,6 +33,12 @@ That's the Agora, the condition that makes a room more than a collection of indi
 Software teams need the same thing, but as a disposition the team carries continuously and not as a ceremony: the habit of making thinking visible before acting on it, of listening before building, of checking where everyone is before assuming the team already knows. The climbing circle is one way to make that instinct visible. Some teams do it in how they write issues, or in the way a senior pauses before running the agent to ask whether the spec is clear. The form doesn't matter, but the instinct does. That's the moment of shared Bewusstsein before the agent runs.
 
 The Spec Session is not a planning gate or waterfall with better tooling. The team still iterates. Still puts things in front of users. Still discovers that what got built isn't what was needed. The difference is that the team iterates with everyone holding the same picture, so when the direction turns out to be wrong, everyone understands why, and the correction is faster. In complex domains, where cause and effect only become visible in retrospect, the Spec Session doesn't replace iteration; it makes iteration less expensive by ensuring the team is wrong together.
+
+Iterating is often the better instrument, and it is worth being exact about when. A probe beats a room where the loop is short, the cost of being wrong is bounded, and the wrongness is legible when it arrives. Under those conditions building the thing is the cheapest way to learn what it should have been, and running a session first is ceremony.
+
+The room earns its place where the third condition fails. JoustMania's player history got built in full, storage and pipelines and recording and replay, and building it taught us nothing, because the feature was never wrong in its output. It had no referent. A controller ID is not a person, and no number of runs surfaces that. One question does.
+
+Iteration surfaces wrong answers. It does not surface wrong questions. A build that answers the wrong question doesn't fail a user test, it passes, and solves nothing. Which is also when being wrong together is worth something: reality corrects a wrong answer for everyone at once, and it never corrects a wrong question at all.
 
 What that condition makes possible is more than shared understanding. It makes trust possible.
 

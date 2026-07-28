@@ -1,6 +1,6 @@
 # Appendix C: A session that failed the gate
 
-Appendix B describes the ritual. This is one running, on a ticket from this book: JoustMania's player history, the forty engineer-hours in Appendix A, built in full and never merged.
+Appendix B describes the ritual. This is one running, on a ticket from this book: JoustMania's player history, the wrong turn Appendix A could not put a clean number on, built in full and never merged.
 
 Two warnings before it starts.
 
@@ -26,9 +26,9 @@ The group's only job is to find where they disagree with it.
 
 The first disagreement arrives on the word *returning*. Returning to what? To the same evening, the same party, the same living room six months later? Three people in the room, three different pictures, all of them reasonable, none of them stated in the ticket. Nobody has proposed a solution yet and the intent is already three intents.
 
-This is the friction being scheduled rather than hoped for. It costs four minutes here.
+This is the friction being scheduled rather than hoped for, and it costs a few minutes of the ten.
 
-## The walls (15 minutes)
+## The walls (15 to 20 minutes)
 
 Constraints, non-goals, blast radius.
 
@@ -42,7 +42,7 @@ And then the constraint nobody wrote in the ticket, surfacing because the walls 
 
 That constraint is now written down, out loud, in front of everyone. Hold onto it.
 
-## The gaps (24 minutes)
+## The gaps (20 to 30 minutes)
 
 The core, where the behavior gets written. The group asks the questions the agent will not.
 
@@ -74,7 +74,7 @@ What the room can write, once it stops trying to write the other thing:
 
 Both true. Both writeable. Together they say the feature as scoped has no anchor.
 
-## Read-back (8 minutes)
+## Read-back (10 minutes)
 
 The driver reads the spec aloud, top to bottom. It takes less time than usual, because there is less of it than anyone expected an hour ago.
 
@@ -98,7 +98,7 @@ Four conditions.
 
 The gate fails. The ticket goes back. The agent does not run.
 
-Elapsed: sixty-two minutes. Nothing built. Forty engineer-hours not spent.
+One session, inside the timebox. Nothing built. Several weeks of calendar time not spent.
 
 ## Open decisions
 
@@ -120,4 +120,4 @@ The gate failing is not the session going wrong. It is the session working. The 
 
 ---
 
-*One more time, because the arithmetic is the point: sixty-two minutes against several weeks of calendar time, a pull request nobody could close, and a token bill nobody counted. The agent wrote it in an afternoon. That was never the expensive part.*
+*One more time, because the arithmetic is the point: one session against several weeks of calendar time, a pull request nobody could close, and a token bill nobody counted. The agent wrote it in an afternoon. That was never the expensive part.*

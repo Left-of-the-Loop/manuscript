@@ -32,7 +32,7 @@ But the room is emptier. The understanding is thinner. The junior is learning al
 
 ---
 
-What changed is the denominator. When agents carry implementation, the hours the room costs no longer come out of the hours the code needs, and the calculation that killed XP runs the other way. Whether your team has collected on that is the question the appendix prices. The rediscovery isn't nostalgia. The economics are flipping, unevenly, and the unevenness is the whole problem.
+What changed is the denominator. XP's practices were priced against implementation time, and that is no longer what the room is priced against. Whether your team has collected on that is the question the appendix prices. The rediscovery isn't nostalgia. The economics are flipping, unevenly, and the unevenness is the whole problem.
 
 This book is an argument for a different choice.
 

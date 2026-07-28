@@ -1,6 +1,6 @@
 # The Trireme
 
-*The trireme was the fastest warship of the ancient world, not because of its size, but because of its structure. Three banks of oarsmen, each pulling in coordination. Remove one bank and it slows. Remove two and it barely moves. The power was never in the number. It was in the arrangement.*
+*The trireme's rowers sat in three banks at three different heights. The lowest pulled through leather sleeves close to the waterline and saw almost nothing of where the ship was going. It was the fastest warship in the ancient world because all three ranks pulled to one rhythm.*
 
 *If predictability is the proof, what kind of team produces it?*
 
@@ -16,7 +16,7 @@ So the logic that produced 7-to-10 person teams no longer applies. The right tea
 
 ---
 
-The Spec Session needs three kinds of attention in the room.
+The Spec Session needs three kinds of attention on the work.
 
 Someone who holds the system direction, the direction work from the End of a Craft chapter, now named as a role: the person who tracks what the system is becoming and whether the decisions being made are consistent with that, regardless of title or seniority. In a small team this is often the same person who runs the Spec Session. But there needs to be someone in every team.
 

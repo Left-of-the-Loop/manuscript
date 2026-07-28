@@ -2,7 +2,6 @@
 
 *Beth Andres-Beck and Kent Beck describe two working environments, the Forest and the Desert. The desert runs on the assumption that there is never enough, not enough time, not enough trust, not enough slack, so everyone moves fast and alone. The forest runs on the assumption of enough, and so its paths are shared, and learning accumulates in the undergrowth.*[^c10-forest]
 
-
 *If the right structure holds understanding, what keeps it alive over time?*
 
 Kent Beck built Extreme Programming[^c10-xp] on the conviction that software development is a social activity, that the team is not overhead but the mechanism through which good software gets made. XP was largely set aside in favor of frameworks that separated thinking from building, planning from implementation, people from each other. This book is, in part, an argument that XP was right, and that AI is forcing us to rediscover why.
