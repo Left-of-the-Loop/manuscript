@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-07-28 — manuscript `4702417`
 
-Site: `(pending)`
+Site: `2f406cd`
 
 A reviewer-driven honesty pass: several chapters now concede the limits
 of their own claims rather than leaving the reader to find them.
