@@ -2,7 +2,6 @@
 
 *Kent Beck calls his AI pair a genie: it grants wishes without judgment, exactly what you asked for, whether or not it is what you needed.[^c6-genie] The danger was never the genie. It was the wish.*
 
-
 *If a team builds understanding together, what keeps it honest?*
 
 I'm building a demo for my next talk on JoustMania again: OpenTelemetry and OpenFeature wired together into what I'm calling an agentic nervous system, a game that runs its own experiments over time and tracks what happened.

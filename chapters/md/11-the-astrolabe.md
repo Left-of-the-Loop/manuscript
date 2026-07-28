@@ -70,7 +70,7 @@ It's a feedback loop. For the first time, the organization can test whether the 
 
 Does shared understanding before the agent runs produce fewer reruns? Does spec quality correlate with first-run success? Does the team that invests in upfront alignment ship more predictably than the team that skips it?
 
-The platform creates the visibility to answer those questions. The argument the book has been making from the first chapter, shift left and invest in understanding before a line is written, becomes falsifiable. There's no need to promise a specific result. The data just needs to exist.
+The platform creates the visibility to answer those questions. The argument the book has been making from the first chapter, shift left and invest in understanding before a line is written, gets tested continuously instead of once a quarter by hand. There's no need to promise a specific result. The data just needs to exist.
 
 A team that's an outlier in rerun rates gets a signal they didn't have before. It's a question, not a blame mechanism, and it leads somewhere actionable. A dedicated session on prompting quality. A closer look at whether the Spec Session is producing shared understanding or just producing a document. A review of spec size: are tickets too large for the agent to act on reliably, or too small to carry enough context?
 

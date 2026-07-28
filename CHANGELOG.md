@@ -11,6 +11,36 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-07-28 — manuscript `4702417`
+
+Site: `2f406cd`
+
+A reviewer-driven honesty pass: several chapters now concede the limits
+of their own claims rather than leaving the reader to find them.
+
+- Introduction: says at the front that the prescription is a bet, not a
+  proven practice; aligned with the Oracle's narrowed premise
+- Oracle: split the premise into the half the book can support and the
+  half it can't; restored the antecedent for "all three"
+- Agora: closed the door on the better-agent objection, said when
+  iterating beats the room and when it cannot, conceded the refinement
+  overlap before the reader raises it, dropped the XY label
+- Appendix A: priced the room as substitution rather than addition
+- Appendix C: stopped citing the engineer-hours figure Appendix A
+  retracts, and stopped timing a session that did not happen
+- Appendix B: stopped redefining predictability as a count
+- Sisyphus: made the falsification test capable of failing; the test's
+  lists aligned and stated once
+- Trireme: three kinds of attention on the work rather than three people
+  in the room; epigraph history fixed and the number pun dropped
+- Astrolabe: the platform makes the test continuous, it does not make it
+  possible
+- Citation and spacing fixes: Boeckeler's harness-engineering piece cited
+  by full title, epigraph-to-question spacing normalised
+
+Built locally again, same container as the previous entry; upstream CI is
+still out of Actions minutes, so the release assets remain behind.
+
 ## 2026-07-27 — manuscript `55ea356`
 
 Site: `3f68b8d`

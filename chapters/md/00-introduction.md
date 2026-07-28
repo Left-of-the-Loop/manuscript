@@ -52,7 +52,7 @@ It ends with the Phoenix, the choice to rise differently, a rediscovery of what 
 
 In between, it follows one thread, shared understanding, through its whole life. Where it belongs, what it is, and who builds it. What it's worth once implementation gets cheap. How a team creates it together, challenges it until it holds, and keeps it from dying when the people who held it move on. How you tell it's really there, what structure and culture keep it alive, and what it takes to scale it across an organization without thinning it to nothing.
 
-The thesis: AI erodes the incidental friction that used to produce shared understanding as a byproduct of the work. That makes shared understanding the scarce resource, and constructive friction the mechanism that protects and tests it. Implementation getting radically cheaper is why this is happening now, and at scale. The organizations that preserve the constructive kind will outperform the ones that optimize it away.
+The thesis: AI erodes the incidental friction that used to produce shared understanding as a byproduct of the work. That makes shared understanding the scarce resource, and constructive friction the mechanism that protects and tests it. Output got cheap faster than the ability to absorb it, and that is why this is happening now, at scale. The organizations that preserve the constructive kind will outperform the ones that optimize it away.
 
 This has happened before, and the shape repeats. Assembly gave way to compilers and the hard part moved from getting the instructions right to designing the program. Frameworks absorbed the plumbing and the hard part moved to modeling the domain. Cloud absorbed the servers, open source absorbed whole categories of code, and each time the scarce thing moved further from the machine and closer to intent. Agents are the largest instance of that move, not a departure from it. Which is why the argument here should outlast the tooling that prompted it: what gets cheap changes, and the direction the constraint travels doesn't.[^i-brooks]
 
@@ -65,6 +65,8 @@ The conversation that feels slower than prompting alone is doing something the p
 The argument in this book didn't emerge in isolation. While writing it, I kept finding people who'd arrived at the same conclusions on their own. The pressure toward this model is real enough that people keep hitting it without coordinating.
 
 I started writing this book alone, with no one to tell me whether the idea was right. An argument for teams, begun without one, which is why the absence shapes its early chapters. The readers came later, once there was a draft to show.
+
+There is a second absence, and it runs the length of the book. The failures in it happened, and I was there for all of them. The practice I propose in answer has no comparable record, because nobody has been running these long enough to have one, and the session in Appendix C is one I reconstructed rather than one I sat in. The diagnosis is evidence. The prescription is a bet, and I would rather you took it knowing that.
 
 If you feel like something is wrong but can't point to it, if the speed feels good and the output looks right but something is missing, this book was written for you.
 
