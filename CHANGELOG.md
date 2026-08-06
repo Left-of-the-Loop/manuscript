@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-08-06 — manuscript `ee6bd43`
 
-Site: `PENDING`
+Site: `6860555`
 
 A figures update. The four diagrams are now hand-drawn rather than
 vector, and they read as one set: ink over a faint grid, one warm-orange
