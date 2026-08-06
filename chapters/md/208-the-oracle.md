@@ -68,13 +68,11 @@ Worse, individual metrics actively work against shared understanding. If story p
 
 The usual response when this becomes visible: add another skill to the agent. Improve the prompt. Use a better model. Find a way to make the AI produce better output with less review.
 
-The output isn't the problem. The process that produces it is. Adding capability to the agent doesn't fix a broken spec; it produces better-written code against the wrong intent, faster. If that counts as a fix, the incentive has been made more powerful, not less.
+The output isn't the problem. The process that produces it is. Adding capability to the agent doesn't fix a broken spec; it produces better-written code against the wrong intent, faster. If that counts as a fix, the incentive has been made more powerful.
 
 ---
 
 The metric that actually matters is predictability.
-
-Predictability, not velocity, not throughput, not any measure of how much output the team is producing.
 
 Can the team tell a stakeholder when something will be done, and then actually do it by then?
 
@@ -82,15 +80,13 @@ That's the signal that the process is working. That the specs are good enough to
 
 Predictability doesn't require the work to be foreseeable. In domains where answers only show up by building, the team changes what it promises, not whether it keeps promises: by Thursday we'll know whether approach A holds, instead of the feature ships Thursday. Shaping the commitment to what the team can actually know is itself understanding, made visible to the people outside the room.
 
-A team with high velocity and low predictability is guessing fast. A team with lower velocity and high predictability has shared understanding. The second team is more valuable, more trustworthy, and more capable of scaling, because when capacity is added to a predictable process, the predictability holds.
-
-When AI is added to a broken process, the breakage accelerates.
+A team with high velocity and low predictability is guessing fast. A team with lower velocity and high predictability has shared understanding. The second team is more valuable, more trustworthy, and more capable of scaling, because when capacity is added to a predictable process, the predictability holds. When AI is added to a broken process, the breakage accelerates.
 
 Predictability is also the metric that can't be easily gamed. Either it was called right or it wasn't. No amount of demo channel activity changes whether the thing shipped when the team said it would. No number of tokens burned makes a forecast accurate.
 
-And predictability is a team metric, not an individual one. One person can't be predictable alone. Predictability requires shared understanding of the work, shared ownership of the sizing, shared commitment to what goes through the gate. It requires the Spec Session, or something like it: a moment where the team agrees on what is being built and how big it is, while the work is still on the page.
+And predictability is a team metric. One person can't be predictable alone. Predictability requires shared understanding of the work, shared ownership of the sizing, shared commitment to what goes through the gate. It requires the Spec Session, or something like it: a moment where the team agrees on what is being built and how big it is, while the work is still on the page.
 
-No points, no poker. Estimation was how teams committed when implementation capacity was the constraint, and the constraint moved. What sizing looks like instead is in the working template at the back. What the room costs, honestly counted, is the appendix beside it.
+No points, no poker. Estimation was how teams committed when implementation capacity was the constraint, and the constraint moved. What sizing looks like instead is in Appendix B. What the room costs, honestly counted, is Appendix A.
 
 None of this makes predictability immune to gaming. A team can pad the estimate, promise six weeks for work that takes three, and hit the date every time. But that only holds as long as nobody outside the team asks why three-week features take six, and stakeholders eventually do. Sandbagging predictability takes the whole team agreeing to the same lie and holding it quarter after quarter. Inflating throughput takes one person and an agent for an afternoon.
 
@@ -114,13 +110,9 @@ From a dashboard, the first team looks more productive. From a planning meeting,
 
 Reliable forecasts tell a manager something deeper than delivery dates. They say the team shares a model of the system, the problem, and the solution. The alignment was real, and the forecast is the evidence.
 
-The thing to measure isn't how much the team is producing.
+What to measure is whether the team can say what they'll produce, and when, and whether they're right.
 
-It's whether the team can say what they'll produce, and when, and whether they're right.
-
-Output is abundant now, but shared understanding isn't. The teams that turn understanding into reliable commitments are the ones creating value.
-
-Everything else is just numbers getting easier to game.
+The teams that turn understanding into reliable commitments are the ones creating value. Everything else is just numbers getting easier to game.
 
 Predictability shows that the team understands the work. What it doesn't show is how that understanding gets built.
 

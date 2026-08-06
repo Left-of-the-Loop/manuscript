@@ -6,7 +6,7 @@ The terms this book leans on, defined once. Some have ancestors, credited in the
 
 **The Alexandria Problem** — Not an event but a process: the library doesn't burn in one dramatic fire, it burns one skipped conversation at a time. The knowledge that used to accumulate through proximity and repetition stops the moment AI removes the friction of asking. Named for what happens when nobody notices the smoke until it's already gone.
 
-**Constructive friction** — Disagreement from someone independent of your framing, arriving before the agent runs. The mechanism that tests shared understanding, and the thing an ever-agreeing tool cannot supply. Not an obstacle to remove; the reason the team's judgment is worth more than the model's agreement.
+**Constructive friction** — Disagreement from someone independent of your framing, arriving before the agent runs. The mechanism that tests shared understanding, and the thing an ever-agreeing tool cannot supply. Not an obstacle to remove; the reason the team's judgment is worth more than the model's agreement. Its counterpart is *weighted validation*, the same independence spent on agreement instead of dissent.
 
 **Direction** — The running answer to "where does this need to go," held closely enough that the next decision can be checked against it: whether today's choice still makes sense six months from now, whether the system is becoming one thing or three. Judgment, once it's shared.
 
@@ -30,14 +30,14 @@ The terms this book leans on, defined once. Some have ancestors, credited in the
 
 **The spec** — Shared understanding of what to build and why, held in common. Not a document; the document is the record of the convergence. Where the formal sense is meant — a contract, like the OpenFeature specification — this book uses the full word.
 
-**Spec review** — A review request on the spec instead of the code: the defined moment where the need gets validated before anything gets built. A checkpoint, not a planning ceremony, where the stakeholder can say "that's not what I meant" while it's still cheap to hear. The mechanism that closes the gap between what's asked and what's needed.
+**Spec review** — A review request on the spec instead of the code: the defined moment where the need gets validated before anything gets built. A checkpoint, not a planning ceremony, where the stakeholder can say "that's not what I meant" while it's still cheap to hear. The mechanism that closes the gap between what's asked and what's needed. Compare *Spec Session*, which is where the team builds the picture; the review is where whoever the outcome touches confirms it was the right one.
 
-**Spec Session** — The deliberate moment where a team converges on a spec before the agent runs: intent challenged, constraints named, edge cases answered, consent recorded. It inherits refinement's content and mob programming's mechanics, and it replaces the walk to the desk. When the room can't be shared, the same convergence runs async, as a review request on the spec. A working template waits at the back.
+**Spec Session** — The deliberate moment where a team converges on a spec before the agent runs: intent challenged, constraints named, edge cases answered, consent recorded. It inherits refinement's content and mob programming's mechanics, and it replaces the walk to the desk. When the room can't be shared, the same convergence runs async, as a review request on the spec. Compare *spec review*, which validates the need rather than building the understanding. A working template waits in Appendix B.
 
 **Stakeholder Navigator** — The role that owns the organizational interface after product thinking distributes into the team: carries the spec to whoever the outcome touches, manages the review cycle, and protects the room from the noise while the team thinks. The part of the old Product Owner that doesn't distribute.
 
 **The three functions** — The three kinds of attention a Spec Session needs in the room: someone holding the system direction, someone watching the ground for the edge cases that drift when nobody is looking, and someone managing the outside so the room stays protected long enough to think. The agent is the fourth, running only after the other three have done their work. The seats overlap and one person can hold two, but the minimum viable unit is three.
 
-**Weighted validation** — Agreement from someone independent of your framing, with their own hard-won experience and their own reasons to disagree, who could have said no. It changes something an AI's agreement can't, because it costs the person something to give. Something only another person can provide, before the agent runs.
+**Weighted validation** — Agreement from someone independent of your framing, with their own hard-won experience and their own reasons to disagree, who could have said no. It changes something an AI's agreement can't, because it costs the person something to give. Something only another person can provide, before the agent runs. Its dissenting form is *constructive friction*.
 
 **The XY problem** — Someone has problem X, thinks the solution is Y, and asks for help with Y without saying what X was. The answer to Y lands and solves nothing, because the person helping never found out about X. Coined by Mark Jason Dominus; minimum viable context is what prevents it.

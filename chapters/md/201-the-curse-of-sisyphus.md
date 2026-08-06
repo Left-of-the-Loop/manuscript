@@ -8,17 +8,13 @@ I was the problem.
 
 That took me a while to see. I was shipping fast, quality was good, tests were there. Every review request I opened was a genuine improvement to the codebase. And I had multiple open at any given time, because I was filling the review wait with more implementation. While someone in Canada was sleeping, I was three tasks deep: a new review request open, another under review, a third being planned.
 
-The team was distributed, six hours between Europe and Canada, but that wasn't the issue. Distributed teams work. The issue was volume. AI let me produce faster than the team could absorb. Review requests piled up. I started stacking them to manage the backlog, which created more noise, not less. The system was designed to produce exactly that outcome: not a slow team, but a process that couldn't keep pace with the output.
+The team was distributed, six hours between Europe and Canada, but that wasn't the issue. Distributed teams work. The issue was volume. AI let me produce faster than the team could absorb. Review requests piled up. I started stacking them to manage the backlog, which created more noise. The system was designed to produce exactly that outcome: a process that couldn't keep pace with the output.
 
 I felt the burden. No one said anything directly, but you feel it in the silence. Review requests sitting. Comments sparse. The sense of generating more than the team can hold.
 
 So I did what felt productive. I opened another review request.
 
-The review bottleneck was the same problem wearing different clothes: the knowledge gap.
-
-We had something close to the right process. A product manager and the more senior engineers would talk through what needed building. Decisions got made and intent got written into Confluence. Then it became tickets, and the team picked and went.
-
-That sounds reasonable, but two things were broken simultaneously.
+We had something close to the right process. A product manager and the more senior engineers would talk through what needed building. Decisions got made and intent got written into Confluence. Then it became tickets, and the team picked and went. That sounds reasonable, but two things were broken simultaneously.
 
 The scoping documents were written from a product manager's perspective: where we want to go, what the final state should look like, the vision six months out. Useful for a roadmap. Not useful when an engineer is trying to decide how a function should behave today. And when the docs did go technical, they'd sometimes arrive with a solution already decided by the seniors and the product manager, handed down to whoever picked the ticket. Or they'd leave the technical decisions to the engineer, mid-implementation, without the context the seniors had built up in their informal conversations.
 
@@ -66,11 +62,13 @@ Changing the process is a different kind of work. It requires the team to agree 
 
 ---
 
-The agent loop is real. AI can take a well-specified ticket, implement it, run a review pass, flag what doesn't fit, and cycle back, without a human in the middle. That's not science fiction. It's available now, and it works when the input is good enough.
+The agent loop is real. AI can take a well-specified ticket, implement it, run a review pass, flag what doesn't fit, and cycle back, without a human in the middle. It's available now, and it works when the input is good enough.
 
 That loop is the agent's: implementation, review, iteration, at machine speed. To its right sits production, where the output meets reality. To its left is where the thinking happens: what to build, why, and what done looks like. This book is an argument for the left of the loop. For the humans who need to be there while the work is still on the page, building the shared understanding that determines whether the loop produces the right thing.
 
 ![The room merges into a spec; the spec merges into the loop, where the agent generates, reviews, and iterates at machine speed; the loop merges into production.](figures/the-loop.png)
+
+The agent runs the fastest loop anyone has ever had, and there is only one thing in it that can be corrected. What it cannot correct is the spec. Questioning the frame instead of the output is a different loop, an older and slower one, and it still needs the room.[^c1-argyris]
 
 The input is the problem.
 
@@ -104,4 +102,5 @@ The process was the problem. But the process isn't the only thing AI changes. It
 
 [^c1-loop]: Addy Osmani, "Loop Engineering" (addyosmani.com/blog/loop-engineering/), quoting Boris Cherny of Anthropic.
 [^c1-goldratt]: Eliyahu M. Goldratt, *The Goal* (North River Press, 1984); the Theory of Constraints.
+[^c1-argyris]: Chris Argyris and Donald Schön drew the distinction in *Theory in Practice: Increasing Professional Effectiveness* (Jossey-Bass, 1974); Argyris made it famous three years later in "Double Loop Learning in Organizations" (*Harvard Business Review*, September 1977). Single-loop learning corrects errors against goals it takes as given. Double-loop learning questions the goals. The agent loop is a single loop by construction, and the fastest one ever built: the goal is the prompt, and nothing inside the loop can reach it. The second loop is what the rest of this book is about.
 [^c1-codex]: OpenAI, "Harness Engineering: Leveraging Codex in an Agent-First World" (openai.com/index/harness-engineering/).

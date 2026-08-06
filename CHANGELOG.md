@@ -11,6 +11,44 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-08-06 — manuscript `c98ab45`
+
+Site: `6042ffe`
+
+A line-level pass over the whole book, and two new drawings. Twenty-eight
+commits, and almost every chapter is touched, but the argument is where
+it was — this is the book saying the same things in fewer and plainer
+words.
+
+- Voice: twenty-four sentences cut that the book already says elsewhere,
+  eleven standalone lines folded back into the paragraph above them, and
+  thirty-two scaffolding negations rewritten as what they actually claim
+- The em-dash purge is finished, and the voice guide no longer argues
+  with itself about it
+- Spelling settled on en-US throughout, and HTML comments no longer
+  reach the build
+- The Ever-Agreeing Genie: a new figure, the harness against the room —
+  a planner/generator/evaluator loop that converges on one framing,
+  beside three people whose separate histories meet at the spec
+- The desk figure moved to the Agora, the chapter that actually coins
+  the walk to the desk
+- The scattered-loops placeholder is replaced with a legible drawing;
+  the typeset headings it was flagged for are gone
+- Appendix B gains a fast path and says what it replaces; Appendix A
+  names the errors that run for its argument, not only the one against it
+- Glossary: the two independence entries separated, the two spec entries
+  cross-referenced
+- The Trireme separates the function count from the headcount
+- Footnote markers, block order, and spacing normalised throughout
+- The Note cuts the evaluative half of its writing admission
+- The landing page's excerpt tracks one change: "2am" is now "2 a.m."
+
+Taken from a `workflow_dispatch` build at `c98ab45` rather than the
+`latest` release. Six merges landed in quick succession and GitHub
+cancelled each queued run as the next superseded it, so the release is
+still built from `001c129` and the publish step only runs on push. The
+artifacts are the same build the release would have carried. 101 pages.
+
 ## 2026-08-06 — manuscript `ee6bd43`
 
 Site: `6860555`

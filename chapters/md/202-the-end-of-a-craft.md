@@ -11,19 +11,17 @@ The honest answer is the work that can't be prompted: the judgment before the pr
 
 That judgment has a name once it's shared. Direction. And it's the part of the craft the agent doesn't touch.
 
-![Before: the room hands off a ticket, and the implementer walks back to ask what it means. After: the room converges on a spec, and the agent runs from that directly.](figures/the-desk.png)
-
 ---
 
 Direction is easy to mistake for vision, which sounds like a slogan on a wall. It's more concrete than that. It's the running answer to "where does this need to go," held closely enough that the next decision can be checked against it. Whether today's choice still makes sense six months from now. Whether the system is becoming one thing or three.
 
-The agent has none of it, and not because it isn't capable enough yet. It optimizes the request in front of it, which is what it's for. Asked whether this is a good implementation of what it was told, it will often answer better than a person could. It has nothing of its own to say, though, about whether the system should be heading there at all, because that question is about the whole history of the system and where it's meant to end up, not the task on the screen. That picture lives in people who have watched the system become what it is.
+The agent has none of it, and not because it isn't capable enough yet. It optimizes the request in front of it, which is what it's for. Asked whether this is a good implementation of what it was told, it will often answer better than a person could. It has nothing of its own to say, though, about whether the system should be heading there at all, because that question is about the whole history of the system and where it's meant to end up. That picture lives in people who have watched the system become what it is.
 
 It's fair to push back that the agent isn't blind to that history anymore. Memory persists across sessions, and context files like AGENTS.md[^c2-agents] let a team write the picture down and hand it over. That's real, but it moves the work rather than removing it. Someone still has to write that picture, keep it true, and hold it in common. A memory kept in one person's local setup is the old privatization in new clothes: the drift between two copies is now written down, and still invisible to anyone but them. An agent can hold direction. It can't decide it: choosing what's worth building is a judgment about the world outside the context window. It can't notice when the direction goes stale, because staleness is measured against conversations the agent wasn't in. And it can't know whether the copy it holds is the one the team is actually steering by, because that fact lives in the team, not in any file. Three gaps, one shape: direction is a relationship to a team, not a string in a repository.
 
 And more of the picture isn't automatically better. A context swollen with every past decision can drag the agent down the way a session left running too long does, because the bloat buries the signal, and only a person can tell which part is still load-bearing and which has turned to noise. A fresh, well-aimed start often beats a long one carrying everything it ever accumulated.
 
-The judgment shows up before anything gets built. Which approach, and not the other. What scope is worth it. What "good enough" means for this team, this week. The agent builds what it's told. It doesn't decide whether the thing is worth building at all. Deciding that is direction work, and it's irreducibly human.
+The judgment shows up before anything gets built. Which approach. What scope is worth it. What "good enough" means for this team, this week. Deciding that is direction work, and it's irreducibly human.
 
 ---
 

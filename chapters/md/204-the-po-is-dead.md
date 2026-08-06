@@ -31,7 +31,7 @@ It doesn't prevent the problem. It makes it cheaper. And in open source, that's 
 
 ---
 
-In product teams the same chain exists, though the Curse of Sisyphus chapter's product manager and this chapter's Product Owner (PO) are different roles that land in the same seat, not one person renamed. A stakeholder has a need. A PO interprets it. The team builds the interpretation. Somewhere in that chain the actual need gets distorted, not through malice, just through the normal compression that happens at every handoff. By the time it surfaces, something is already built.
+In product teams the same chain exists, though the Curse of Sisyphus chapter's product manager and this chapter's Product Owner (PO) are different roles that land in the same seat, not one person renamed. A stakeholder has a need. A PO interprets it. The team builds the interpretation. Somewhere in that chain the actual need gets distorted through the normal compression that happens at every handoff. By the time it surfaces, something is already built.
 
 The cost is rework. Delayed delivery. A PO who has to go back to a stakeholder and explain why what was built isn't what they meant. That conversation is never easy. And it keeps happening.
 
@@ -53,7 +53,7 @@ Collapsing the implementation phase surfaces misunderstandings faster. The agent
 
 A spec written before implementation starts and reviewed by the stakeholder catches the misunderstanding at the cheapest possible moment. The stakeholder reads it and says "that's not what I meant." Nothing has been built yet. The clarification costs a comment in a document, not two weeks of rework.
 
-I do a lighter version of this without a spec at all. When a PO brings a ticket, I ask what the motivation behind it is: the need the ticket is standing in for. Often that need is smaller than the ticket. It could have been solved with something simpler, but the ticket has already been engineered into a full solution before anyone checked whether the need required one. The same wrong level as the open source contribution: a thorough answer to a question nobody validated. The question catches it one ticket at a time, before the build.
+I do a lighter version of this without a spec at all. When a PO brings a ticket, I ask what the motivation behind it is: the need the ticket is standing in for. Often that need is smaller than the ticket. It could have been solved with something simpler, but the ticket had already been engineered into a full solution before anyone checked whether the need required one. The same wrong level as the open source contribution: a thorough answer to a question nobody validated. The question catches it one ticket at a time, before the build.
 
 In the open source world that's a fast experiment before a sophisticated solution. In a product team it's a spec review before implementation starts, a review request on the spec instead of the code. The form is different. The principle is the same: validate the need before the thing gets built.
 
@@ -73,9 +73,7 @@ I did a version of this as a team captain. Requests came down from above, strang
 
 Something more like a Stakeholder Navigator, not a Product Owner in the agile sense. The person who gets the spec in front of the right people at the right moment, manages the review cycle, and protects the team from the noise while they do the thinking.
 
-I know how that sounds. A rebranded PO. Partly yes. The difference is ownership. The old model has the PO owning product thinking and managing stakeholders. This one has the team owning product thinking and the navigator owning the organizational interface. That's a real split even if the job title looks similar from the outside.
-
-And it's a more sustainable job, more defined, with an off switch.
+I know how that sounds. A rebranded PO. Partly yes. The difference is ownership. The old model has the PO owning product thinking and managing stakeholders. This one has the team owning product thinking and the navigator owning the organizational interface. That's a real split even if the job title looks similar from the outside. And it's a more sustainable job, more defined, with an off switch.
 
 ---
 
@@ -83,7 +81,7 @@ The open source maintainer and the PO are dealing with the same structural probl
 
 The spec review is the mechanism that closes the gap between what's asked and what's needed. A defined moment where the need gets validated before anyone builds anything: a checkpoint, not a planning ceremony. Where the stakeholder can say "that's not what I meant" when it's still cheap to hear it.
 
-Birgitta Böckeler[^c4-bockeler], analyzing the harness engineering practices that surround agent systems, names the limitation precisely: the harness can govern how code gets written without ever checking that it does what users actually need. Technical correctness and functional intent are different problems. The harness solves the first. The spec review solves the second.
+Birgitta Böckeler,[^c4-bockeler] analyzing the harness engineering practices that surround agent systems, names the limitation precisely: the harness can govern how code gets written without ever checking that it does what users actually need. Technical correctness and functional intent are different problems. The harness solves the first. The spec review solves the second.
 
 The role evolution is a consequence of that. When the spec carries the shared understanding, when the team built it together and the stakeholder saw it before the build, the translation layer the PO was providing becomes less necessary. What remains is the person who managed the organizational interface well enough to get the spec in front of the right people in the first place.
 
@@ -91,6 +89,5 @@ That person still matters, maybe more than before, and they just don't have to c
 
 Roles shift and responsibilities redistribute: the product thinking spreads into the team, and the organizational interface narrows to the one role that protects the room while the team does the thinking. All of it assumes the room exists. A place where the thinking actually happens, and a team that knows how to use it. That's the thing nobody has built yet.
 
-[^c4-bockeler]: Birgitta Böckeler, "Harness Engineering for Coding Agent Users," in the "Exploring Gen AI" series (martinfowler.com/articles/exploring-gen-ai/harness-engineering.html). "Harness engineering" is a shared term — OpenAI uses it too (the Curse of Sisyphus chapter); the two arrived at it independently.
-
 [^c4-mvc]: The name leans on minimum viable product; the discipline leans on the minimal reproducible example that open source and Stack Overflow have demanded for decades. Same instinct, aimed at understanding instead of bug reports.
+[^c4-bockeler]: Birgitta Böckeler, "Harness Engineering for Coding Agent Users," in the "Exploring Gen AI" series (martinfowler.com/articles/exploring-gen-ai/harness-engineering.html). "Harness engineering" is a shared term — OpenAI uses it too (the Curse of Sisyphus chapter); the two arrived at it independently.
