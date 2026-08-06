@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-08-06 — manuscript `c98ab45`
 
-Site: `PENDING`
+Site: `6042ffe`
 
 A line-level pass over the whole book, and two new drawings. Twenty-eight
 commits, and almost every chapter is touched, but the argument is where
