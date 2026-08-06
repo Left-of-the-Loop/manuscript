@@ -48,9 +48,24 @@ How they work — there is no build step and no page per chapter:
   plus its footnote plugin (vendored in `chapters/vendor/`, no CDN at
   runtime). Unmatched URLs show a plain "page not found".
 - The manifest maps a short share slug (`agora`) to the upstream file
-  basename (`05-the-agora`), which names both the markdown source and
-  the per-chapter PDF (`chapters/pdf/<file>.pdf`). The file basename
-  works as a URL alias, and `/404.html?chapter=<slug>` works too.
+  basename (`205-the-agora`), which names the markdown source. The file
+  basename works as a URL alias, and `/404.html?chapter=<slug>` works
+  too.
+- Upstream numbers its files by book section — `0xx` front-matter
+  apparatus, `1xx` foreword, `2xx` body, `3xx` appendices, `4xx` back
+  matter — and its builds glob `[1-9][0-9][0-9]-*.md`. The `0xx` band is
+  the copyright page and its live ISBNs: it is deliberately in no build
+  artifact, and it does not belong here either. Nothing in the manifest
+  maps to it.
+- The files were renumbered upstream in August 2026 (`00-introduction`
+  → `200-introduction`, and so on). Because the basename doubles as a
+  URL alias, every pre-renumbering name is kept in `aliases`, so links
+  shared before the move still resolve.
+- There is no per-chapter download. The upstream build used to emit a
+  PDF per chapter and no longer does — the only per-chapter artifact it
+  still produces is an EPUB, and that one is a workflow artifact, not a
+  release asset. Rather than ship copies that drift from the prose,
+  chapter pages link the whole-book PDF and EPUB, which stay current.
 - Figures referenced by the markdown live in `chapters/figures/`.
 - Known tradeoff of the 404 route: responses carry HTTP status 404, so
   link unfurls in messengers won't show a preview or chapter title. The
@@ -81,9 +96,13 @@ reviewed step.
 When a new draft is committed here:
 
 1. Replace `left-of-the-loop-draft.pdf` and/or `left-of-the-loop-draft.epub`
-   (same filenames, so the public download URLs don't change).
+   (same filenames, so the public download URLs don't change). The
+   upstream build publishes exactly two whole-book assets on its `latest`
+   release: `left-of-the-loop-a5-draft.pdf` becomes the PDF here, and
+   `left-of-the-loop-draft.epub` becomes the EPUB. The A4 and A5 combined
+   PDFs it used to also build are gone.
 2. Re-check the introduction excerpt in `index.html` against the current
-   `00-introduction.md` in the private repo, and update it in the same
+   `200-introduction.md` in the private repo, and update it in the same
    commit if the opening has changed. The excerpt is verbatim text, not a
    summary — it should read exactly as edited, cut where marked "The full
    draft continues in the PDF."
@@ -96,10 +115,11 @@ When a new draft is committed here:
    duplicated there — the footer links to `/changelog`, which renders
    `CHANGELOG.md` directly.
 5. Refresh the chapter pages from the same manuscript commit the build
-   was pulled from: re-download `chapters/md/*.md`, `chapters/pdf/*.pdf`
-   (per-chapter A4 PDFs from the release), and `chapters/figures/*` if
-   figures changed. If a chapter was added, renamed, or removed upstream,
-   update the manifest in `chapters/reader.js` to match.
+   was pulled from: re-download `chapters/md/*.md`, and
+   `chapters/figures/*` if figures changed. If a chapter was added,
+   renamed, or removed upstream, update the manifest in
+   `chapters/reader.js` to match — and on a rename, move the old
+   basename into that entry's `aliases`.
 
 ## Analytics
 
