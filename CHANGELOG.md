@@ -11,7 +11,7 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
-## 2026-08-06 — manuscript `5c4766f`
+## 2026-08-06 — manuscript `ee6bd43`
 
 Site: `PENDING`
 
@@ -48,6 +48,12 @@ Chapter pages serve the figures re-encoded for the web — same images,
 an eighth of the bytes — and both pages now declare themselves
 light-only, so a browser that force-darkens the page can't composite
 near-black ink into an invisible figure.
+
+First build taken from upstream CI rather than built locally: the
+Actions quota is clear again, and the release now carries the whole-book
+PDF and EPUB. `ee6bd43` is four commits past the last prose change, all
+of them build infrastructure, so the book here is the `5c4766f` text.
+99 pages.
 
 ## 2026-07-28 — manuscript `4702417`
 
