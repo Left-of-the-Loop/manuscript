@@ -19,9 +19,7 @@ A fool with a tool is still a fool.
 
 ---
 
-I got better over time. Prompts that would have taken me two days of burned tokens eventually took two hours. The tool started clicking once I understood what it needed to be told, what level of detail it required, where it would go wrong without guidance.
-
-But here's what I noticed about that learning: it was entirely private.
+I got better over time. Prompts that would have taken me two days of burned tokens eventually took two hours. The tool started clicking once I understood what it needed to be told, what level of detail it required, where it would go wrong without guidance. But here's what I noticed about that learning: it was entirely private.
 
 I failed, observed, adjusted, retried. Nobody watched that process. Nobody else on the team went through it with me. I was building the understanding of how to specify, how to constrain, how to prompt for the kind of system we actually needed, and it lived in my head. It didn't transfer. It didn't accumulate anywhere the team could access it.
 
@@ -53,7 +51,7 @@ What "a fool with a tool is still a fool" actually means isn't that AI makes eng
 
 The team is the check on what the tool can't see.
 
-It works as a different set of eyes at a different level of the system, not as a safety net. The junior engineer wasn't valuable because he caught my mistakes. He was valuable because he was still reading the code the way you read code before you've developed the habit of trusting the agent's output. He was closer to the behavior than I was.
+It works as a different set of eyes at a different level of the system. The junior was valuable because he was still reading the code the way you read code before you've developed the habit of trusting the agent's output. He was closer to the behavior than I was.
 
 But that check only works if the team is actually looking. And the same forces that push engineers toward private AI tools push them away from collective attention. Everyone heads down with their own context, their own loop, their own hard-won understanding of how to prompt well. The team starts to feel like a set of individuals who share a codebase rather than a group of people who share a system.
 
@@ -78,6 +76,8 @@ What I do with the recognition matters as much as the recognition. Reviewing age
 I didn't fix it. I created a ticket.
 
 Not because the fix was hard. Because fixing it in place would have conflated two things, the work I was doing and the problem I'd noticed, and muddied both. Noticing without immediately fixing, naming a problem without solving it in the wrong moment, is its own discipline. AI makes it harder to practice, because the agent wants to keep going and the flow state feels productive. The pause to write the ticket instead of fixing in place is a small act of system thinking over immediate output.
+
+That discipline catches the wrong shape once the work exists. The wrong ask arrives before it, from outside the room.
 
 [^c3-booch]: Widely attributed to Grady Booch; the exact origin is unverified.
 [^c3-xp]: Kent Beck, *Extreme Programming Explained: Embrace Change* — discussed, with citation, in the introduction.

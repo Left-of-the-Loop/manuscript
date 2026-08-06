@@ -1,10 +1,8 @@
 # The Trireme
 
-*The trireme's rowers sat in three banks at three different heights. The lowest pulled through leather sleeves close to the waterline and saw almost nothing of where the ship was going. It was the fastest warship in the ancient world because all three ranks pulled to one rhythm.*
+*The trireme's rowers sat in three banks at three different heights. The lowest worked their oars through leather sleeves close to the waterline and saw almost nothing of where the ship was going. It was the fastest warship in the ancient world because all three ranks pulled to one rhythm.*
 
 *If predictability is the proof, what kind of team produces it?*
-
-So what does the team actually look like?
 
 ---
 
@@ -30,25 +28,25 @@ The agent is the fourth, running only after the other three have done their work
 
 I've watched these functions show up without anyone assigning them.
 
-In OpenFeature, a contributor once noticed something the maintainers had stopped seeing. Certain providers broke in a subtle way when reused, not because the code was wrong, but because it relied on something the code never said. If you knew the assumption, everything worked. The code didn't carry the assumption. The people did.
+In OpenFeature, a contributor once noticed something the maintainers had stopped seeing. Certain providers broke in a subtle way when reused, because they relied on something the code never said. If you knew the assumption, everything worked. The code didn't carry the assumption. The people did.
 
 The cheap fix was obvious. Write it down. A documentation change, a warning in the README.
 
 We were close to taking it. Then one of the maintainers pushed back. An implicit contract that lives in documentation is a contract that fails the moment someone builds without reading it, and someone always builds without reading it. He argued for an explicit interface instead. More work now, less archaeology forever.
 
-None of this happens unless someone accepts the issue first, looking at a report from outside the project and deciding it deserves the project's attention. That sounds like housekeeping. It isn't. It's the seat where the project meets everyone who uses it and will never show up in person.
+None of this happens unless someone accepts the issue first, looking at a report from outside the project and deciding it deserves the project's attention. That sounds like housekeeping. It's the seat where the project meets everyone who uses it and will never show up in person.
 
-Three kinds of attention, and nobody assigned any of them. Someone with eyes on the ground, catching what familiarity had made invisible. Someone answering to the people outside the room. Someone holding direction, thinking past this pull request into the years after it. Not roles in a process document. The structure of the project just makes them show up.
+Three kinds of attention, and nobody assigned any of them. Someone with eyes on the ground, catching what familiarity had made invisible. Someone answering to the people outside the room. Someone holding direction, thinking past this pull request into the years after it. The structure of the project just makes them show up.
 
 And underneath them, redundancy. The fix didn't go through on one person's say-so. Other maintainers weighed in, pushed on the interface argument, approved it. No single mental model decided the outcome, and no single departure could have taken the understanding with it.
 
-So how many people does that take? As many as the process requires, as few as it can sustain. The functions don't answer that: the seats overlap, and one person can hold two. Two people can build a shared understanding. What a pair can't build is a view of itself. Three creates the triangle, the space where a third perspective surfaces what two people, heads down together, stop seeing.
+So how many people does that take? Not one per function: the seats overlap, and one person can hold two. As many functions as the problem requires, as few people as the work can sustain. Two people can build a shared understanding. What a pair can't build is a view of itself. Three creates the triangle, the space where a third perspective surfaces what two people, heads down together, stop seeing.
 
-None of this is against pairing, or against the pair the Agora's door opens with: one task, two people, is how you learn the shape, and a pair executing an agreed direction was never the risk. The floor is about the standing practice, and it is older than software. Sociology has known since 1908 that two and three are different structures, not different sizes[^c9-simmel]. The epistemic version is this book's: a pair has no one who can see the framing from outside it. The third seat isn't extra capacity. It's the first seat that makes the group more than its members.
+None of this is against pairing, or against the pair the Agora's door opens with: one task, two people, is how you learn the shape, and a pair executing an agreed direction was never the risk. The floor is about the standing practice, and it is older than software. Sociology has known since 1908 that two and three are different structures, not different sizes.[^c9-simmel] The epistemic version is this book's: a pair has no one who can see the framing from outside it. The third seat isn't extra capacity. It's the first seat that makes the group more than its members.
 
-One person holding critical system knowledge is a single point of failure. Two creates a dependency. Three creates a floor that survives someone going heads down, someone leaving, someone getting pulled onto something else.
+Resilience reaches the same number by a different argument. One person holding critical system knowledge is a single point of failure. Two creates a dependency. Three creates a floor that survives someone going heads down, someone leaving, someone getting pulled onto something else.
 
-The minimum viable unit is three.
+The minimum viable unit is three people.
 
 ---
 

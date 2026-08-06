@@ -19,7 +19,7 @@ The same dynamic is playing out now with AI infrastructure. And the solution is 
 
 The cost starts when an engineer runs the agent against a thin spec and gets the wrong output. They rerun it. Better prompt this time, or different framing, or more context. The agent runs again. Maybe it works. Maybe it runs again.
 
-That cost, in tokens, in time, in engineering attention, goes nowhere. No ticket captures it. No metric tracks it. The AI budget is treated like electricity: a fixed cost of doing business, not something traced back to individual decisions or process failures.
+That cost, in tokens, in time, in engineering attention, goes nowhere. No ticket captures it. No metric tracks it. The AI budget is treated like electricity: a fixed cost of doing business.
 
 Which means nobody knows which prompts are expensive. Nobody knows which rewrites were caused by bad specs. Nobody knows whether the token spend last month produced shipped value or produced rework. The cost is real and growing; the visibility is zero.
 
@@ -31,7 +31,7 @@ A centralized agent infrastructure changes that.
 
 The platform won't be the only way to run an agent. Engineers will still experiment locally, the same way they still have local terminals despite CI/CD existing. The platform becomes the production path and the source of truth, not the sole execution environment.
 
-The paved road is attractive, not mandatory. But when agent work runs through the platform, something changes. Every run is traceable to a team, a ticket, a spec. Rerun rates become visible. The correlation between spec quality and expensive implementations becomes measurable. The organization can see, for the first time, what a bad prompt actually costs, then trace it back to the process failure that caused it.
+But when agent work runs through the platform, something changes. Every run is traceable to a team, a ticket, a spec. Rerun rates become visible. The correlation between spec quality and expensive implementations becomes measurable. The organization can see, for the first time, what a bad prompt actually costs, then trace it back to the process failure that caused it.
 
 That's organizational telemetry for AI development. The same way a team instruments its system to understand its behavior, it instruments its agent platform to understand its process.
 
@@ -57,13 +57,11 @@ Right now every engineer is simultaneously trying to be productive with AI tools
 
 A platform removes that overhead from the individual and places it with the team best equipped to handle it. Engineers focus on the spec, the problem, the system thinking: the work that requires their expertise and judgment. The platform handles the agent configuration, the skill maintenance, the model selection, the infrastructure for running agent work reliably at scale.
 
-The company grows as a unit.
-
 ---
 
 A bad spec produces a rerun, and the rerun traces back to the spec, the spec to the team and the ticket. The cost shows up in the data.
 
-It's a feedback loop. For the first time, the organization can test whether the Spec Session matters. Not assume it. Not argue for it philosophically. Test it.
+It's a feedback loop. For the first time, the organization can test whether the Spec Session matters.
 
 Does shared understanding before the agent runs produce fewer reruns? Does spec quality correlate with first-run success? Does the team that invests in upfront alignment ship more predictably than the team that skips it?
 
@@ -75,7 +73,7 @@ The platform team can facilitate that. They know which teams improved their reru
 
 That's organizational learning at scale. The platform sees what works, the outlier gets a signal, the improvement spreads. The Alexandria Problem in reverse: knowledge flowing from the center outward, continuously, as the organization learns what good looks like.
 
-The line is thin, and the Oracle's law applies: the moment the rerun count becomes a comparison, a leaderboard, a target a manager asks a team to improve, specs get narrow, ambitions shrink, and the number gets better while the learning stops. The signal works because the team reads it. The platform only carries the mirror.
+The line is thin, and Goodhart's Law, from the Oracle chapter, applies: the moment the rerun count becomes a comparison, a leaderboard, a target a manager asks a team to improve, specs get narrow, ambitions shrink, and the number gets better while the learning stops. The signal works because the team reads it. The platform only carries the mirror.
 
 ---
 

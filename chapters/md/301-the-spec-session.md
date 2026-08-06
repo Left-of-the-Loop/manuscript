@@ -1,4 +1,4 @@
-# Appendix B: The Spec Session, a working template
+# Appendix B: The Spec Session, a working template {-}
 
 *A starting shape, frozen at printing. Take it, run it, and rebuild it for your team.*
 
@@ -8,17 +8,25 @@ I don't have years of experience running these. Nobody does, because the ritual 
 
 60 to 90 minutes, hard stop. Overrun means the ticket wasn't ready or is too big, and both are findings, not failures.
 
-This is not a weekly ceremony. A team might run two or three of these in a day, with real breaks in between, because the session is the work now, not the meeting before the work. Mob programming already taught this lesson: sustained group thinking exhausts faster than solo implementation, and a tired room produces a worse spec. Some days most of the day is spec sessions, and that's not planning overhead eating the team's time, that's the team doing engineering.
+This is not a weekly ceremony. A team might run two or three of these in a day, with real breaks in between, because the session is the work now, not the meeting before the work. Mob programming already taught this lesson: sustained group thinking exhausts faster than solo implementation, and a tired room produces a worse spec. Some days most of the day is spec sessions, and that's the team doing engineering.
 
 Three to seven people. Below three, someone is prompting with witnesses. That rule is about the standing session, not the first try: the pair experiment the Agora's door opens with is deliberately below this floor, and it's how you find out whether your team wants the real thing. Above seven, the session splits by domain, and the team accepts the coverage tension that comes with splitting.
 
 One session, one spec. No batch grooming of a backlog.
 
+## The fast path
+
+Need the fast path? Skip the template. Grab one coworker, agree on intent and non-goals on a single scratchpad, and run the agent. Use the full template when the work crosses boundaries or involves more of the team.
+
+## What this replaces
+
+The session is not added to the ceremony stack; it retires most of it. Refinement and planning are settled above: one inherited outright, one left with nothing to do. That leaves the daily. Audit it: much of what a standup catches is fragments of understanding traded in status form, and the session now does that work properly, per piece of work. Keep the daily if it still earns its fifteen minutes; on many teams it thins to a blocker-ping. Then count ceremony hours before and after. The seven percent in Appendix A is not always net-new spend; for a team running full Scrum it is often a net cut. If the calendar grows when you adopt this, you didn't adopt it; you added a meeting.
+
 ## Roles, rotating per session
 
 *The session lead* owns the room that day, not the product forever. They close discussions, call the timebox, and decide when a disagreement gets logged instead of resolved.
 
-*The driver* types the spec on the shared screen and types only what the group says. The driver's confusion is a feature, because a sentence the driver can't write down is a sentence the agent can't run with. This is strong-style pairing's law applied to planning, for an idea to reach the document it must pass through someone else's hands, and the credit belongs to the mob lineage of Woody Zuill and Llewellyn Falco.
+*The driver* types the spec on the shared screen and types only what the group says. The driver's confusion is a feature, because a sentence the driver can't write down is a sentence the agent can't run with. This is strong-style pairing's law applied to planning: for an idea to reach the document it must pass through someone else's hands. The credit belongs to the mob lineage of Woody Zuill and Llewellyn Falco.
 
 If you use AI during specing, you use it together. One model, on the shared screen, driven by the driver. It can challenge the spec, surface prior art, play the agent reading the draft. What it can't be is a private second opinion, because the moment people validate against their own tab instead of the room, the session is just parallel prompting with attendance. This AI is not the agent that runs after the gate, it's a tool the group wields while the spec is still soft.
 
@@ -57,3 +65,5 @@ The run will surface things the room didn't. That's another session, not an edit
 There is no estimation ritual anywhere, no points, no poker. The sizing question moved, it's no longer how long this will take, it's whether this is small enough to spec in one session. That sizing is the estimate, made together at the gate. Commitment moved with it. The team no longer commits to estimated capacity, it commits to specs through the gate. The when comes from flow, how many gated specs the team finishes, counted instead of guessed. The count is how the forecast gets made. What gets measured is whether it held. And the count only means something because the session cap keeps the units roughly comparable, the gate normalizes what it passes. The #NoEstimates crowd got here first, Woody Zuill again, with Vasco Duarte writing the book: make the items small and similar, and the counting does the forecasting.
 
 A room can nod along the way a model does. The consent round forces everyone to answer, but consent can be performed just like silence can. The rotating lead helps, and it doesn't fix it.
+
+*This appendix is released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), apart from the rest of the book. Copy it, adapt it, use it at work; credit the book and go.*

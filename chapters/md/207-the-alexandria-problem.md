@@ -18,7 +18,7 @@ But there's a second discipline open source teaches that's equally important. No
 
 As little as possible, as much as needed. Too little context and the stranger can't engage. Too much and the contributor has made their problem the stranger's problem. They have to sort through noise to find what actually matters. The discipline is knowing what to leave out: what's assumed, what's load-bearing, what would change the answer if it were different.
 
-It's the same discipline as writing a good prompt. Not the longest prompt, the tightest one. Too much context and the agent loses focus, chases the noise, produces something that addresses everything it was told and misses what was meant. Too little and it fills the gaps with confident guesses. The discipline runs past the single prompt: knowing when to clear a session that has run too long and start fresh, scoped to the real problem, is part of the same skill.
+It's the same discipline as writing a good prompt. Too much context and the agent loses focus, chases the noise, produces something that addresses everything it was told and misses what was meant. Too little and it fills the gaps with confident guesses. The discipline runs past the single prompt: knowing when to clear a session that has run too long and start fresh, scoped to the real problem, is part of the same skill.
 
 There's a failure mode minimum viable context is designed to prevent. The XY problem.[^c7-xy] Someone has problem X, thinks the solution is Y, asks for help with Y, and the person helping them never finds out about X. The answer to Y lands, it doesn't solve anything, and everyone wasted time.
 
@@ -32,9 +32,7 @@ That's what the senior in the code review was doing with "what are you actually 
 
 ---
 
-When I watch junior engineers struggle with AI tools today, it's almost never a technical problem.
-
-It's a problem formulation problem.
+When I watch junior engineers struggle with AI tools today, it's almost never a technical problem. It's a problem-formulation problem.
 
 They're bad at structuring the question, not because they're bad engineers but because they haven't yet developed the habit. They go straight to the agent with a vague sense of what they want. The agent produces something. They take the output and keep going.
 
@@ -72,7 +70,7 @@ The junior develops their own AI workflow in isolation, without the senior's eye
 
 The Spec Session is the new learning environment, arrived at by consequence rather than design.
 
-When the team is in the room together, building the spec before the agent runs, the junior watches how seniors frame problems. They see the questions that get asked before anyone proposes a solution. They see an experienced engineer push back on a direction not because the implementation is wrong but because the problem statement isn't tight enough. They see what "ready for the agent" looks like, and more importantly, what it doesn't look like yet. They learn it from watching humans think through what needs to be generated and why, not from reading generated code.
+When the team is in the room together, building the spec before the agent runs, the junior watches how seniors frame problems. They see the questions that get asked before anyone proposes a solution. They see an experienced engineer push back on a direction not because the implementation is wrong but because the problem statement isn't tight enough. They see what "ready for the agent" looks like, and more importantly, what it doesn't look like yet. They learn it from watching humans think through what needs to be generated and why.
 
 The mob exploration works the same way. A new library, a new approach, a PoC the team runs together. The junior isn't just evaluating the technology. They're watching how experienced engineers evaluate tradeoffs. What questions they ask. What concerns they raise. What "good enough for now" means versus "this will hurt us later."
 
@@ -82,13 +80,11 @@ You can't get that from a spec document or from reading the agent's output. None
 
 ---
 
-If the team stops being the place where that transfer happens, everyone heads down with their own tools, and the next generation develops faster in some ways and not at all in the one that matters most.
+If the team stops being the place where that transfer happens, everyone works alone with their own tools, and the next generation develops faster in some ways and not at all in the one that matters most.
 
-It's not a prompt engineering course but a career spent in rooms where people think out loud, ask hard questions, and show the junior what careful problem formulation looks like by doing it in front of them.
+What builds that judgment is a career spent in rooms where people think out loud, ask hard questions, and show the junior what careful problem formulation looks like by doing it in front of them.
 
-Seniors develop prompting habits nobody else sees. Architects discover patterns nobody else inherits. Knowledge that used to become team knowledge remains personal knowledge, and there's no code review to surface it, no pairing session to transfer it, no hallway conversation to pass it on.
-
-The junior feels the impact first, but the loss belongs to the whole team.
+Seniors develop prompting habits nobody else sees. Architects discover patterns nobody else inherits. Knowledge that used to become team knowledge remains personal knowledge, and there's no code review to surface it, no pairing session to transfer it, no hallway conversation to pass it on. The junior feels the impact first, but the loss belongs to the whole team.
 
 When the senior's attention shifts upward, from implementation to architecture, the junior is often left downstream, catching the behavioral edge cases the senior no longer has the bandwidth to notice. That division of attention can work, but only if it's deliberate.
 
@@ -98,8 +94,6 @@ The skill that makes a great engineer is the one thing the agent can't teach, be
 
 But if the room is where that judgment transfers, how does anyone know the transfer is working? How does anyone know the understanding is actually shared and not just assumed?
 
-[^c7-xy]: Coined by Mark Jason Dominus in a 2001 comp.lang.perl.misc post; popularized since via xyproblem.info.
-
 [^c7-naur]: This is Peter Naur's claim from "Programming as Theory Building" — cited, in full, in the introduction. Naur held that a new programmer can only acquire the theory of a program through active engagement with the people who already hold it, and that the theory itself cannot be written down. He drew the conclusion at maximum strength: a program whose team has left should be discarded and rewritten, because the theory died with the room.
-
+[^c7-xy]: Coined by Mark Jason Dominus in a 2001 comp.lang.perl.misc post; popularized since via xyproblem.info.
 [^c7-skillformation]: Anthropic put numbers on this in a randomized controlled trial: junior engineers learning a new library with AI assistance scored 17% lower on comprehension minutes later — nearly two letter grades — with the largest gap in debugging, while the speed gain was not statistically significant. How they used the tool decided the outcome: those who delegated generation or leaned on AI to debug scored lowest; those who asked conceptual questions or interrogated the generated code preserved their learning, and the conceptual-inquiry group, errors and all, was among the fastest. The authors note the study used a chat assistant, not an agentic tool, and expect agentic impacts to be more pronounced. Judy Hanwen Shen and Alex Tamkin, "How AI Impacts Skill Formation" (Anthropic, January 2026; arXiv:2601.20245).

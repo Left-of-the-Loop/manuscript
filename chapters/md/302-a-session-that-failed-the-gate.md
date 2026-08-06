@@ -1,4 +1,4 @@
-# Appendix C: A session that failed the gate
+# Appendix C: A session that failed the gate {-}
 
 Appendix B describes the ritual. This is one running, on a ticket from this book: JoustMania's player history, the wrong turn Appendix A could not put a clean number on, built in full and never merged.
 
@@ -24,9 +24,7 @@ Returning players should find the game has learned something about them. Someone
 
 The group's only job is to find where they disagree with it.
 
-The first disagreement arrives on the word *returning*. Returning to what? To the same evening, the same party, the same living room six months later? Three people in the room, three different pictures, all of them reasonable, none of them stated in the ticket. Nobody has proposed a solution yet and the intent is already three intents.
-
-This is the friction being scheduled rather than hoped for, and it costs a few minutes of the ten.
+The first disagreement arrives on the word *returning*. Returning to what? To the same evening, the same party, the same living room six months later? Three people in the room, three different pictures, all of them reasonable, none of them stated in the ticket. Nobody has proposed a solution yet and the intent is already three intents. This is the friction being scheduled rather than hoped for, and it costs a few minutes of the ten.
 
 ## The walls (15 to 20 minutes)
 
@@ -82,11 +80,9 @@ The lead asks each person by name: consent or objection.
 
 Two consents. One objection, from the person who asked what *returning* meant: the intent as stated cannot be built under the constraints as stated, and everything downstream of that is us agreeing to build something we have not described.
 
-Logged, not resolved. Resolving it is not this session's job.
+Logged, not resolved.
 
 ## The gate (5 minutes)
-
-Four conditions.
 
 **Intent stated.** Yes, and now visibly three intents wearing one sentence.
 
@@ -114,10 +110,10 @@ The ticket came back a week later, reframed by the second open decision.
 
 The need underneath was not player history. It was that the game feels identical on the tenth round, and a demo where nothing changes is a demo about nothing. Both of those are about *the session*, not about *the person*. State the need that way and the identity problem disappears, because there is nothing left that needs to know who is holding anything.
 
-That version is smaller, it is buildable under every constraint on the wall, closer to what the talk was actually about, and it is the version a room reaches in an hour, the one two people, heads down and enthusiastic, did not reach in several weeks.
+That version is smaller, it is buildable under every constraint on the wall, closer to what the talk was actually about, and it is the version a room reaches in an hour. Two people, heads down and enthusiastic, did not reach it in several weeks.
 
 The gate failing is not the session going wrong. It is the session working. The ticket that goes back is cheaper than every ticket that goes through and should not have.
 
 ---
 
-*One more time, because the arithmetic is the point: one session against several weeks of calendar time, a pull request nobody could close, and a token bill nobody counted. The agent wrote it in an afternoon. That was never the expensive part.*
+*One more time, because the arithmetic is the point: one session against the weeks Appendix A prices. The agent wrote it in an afternoon. That was never the expensive part.*
