@@ -1,3 +1,12 @@
+/* Light-only, and now it has to say so: the figures are transparent PNGs of
+   near-black ink, so a browser force-darkening the page would composite them
+   to invisible. Upstream guards the EPUBs with a white plate behind every
+   image; here the page itself opts out, which also keeps the plate from
+   showing as a white rectangle on the off-white background. */
+:root {
+  color-scheme: only light;
+}
+
 body {
   max-width: 40em;
   margin: 3em auto;

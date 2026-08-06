@@ -11,7 +11,6 @@ The honest answer is the work that can't be prompted: the judgment before the pr
 
 That judgment has a name once it's shared. Direction. And it's the part of the craft the agent doesn't touch.
 
-<!-- TODO: placeholder figure, pending final design pass -->
 ![Before: the room hands off a ticket, and the implementer walks back to ask what it means. After: the room converges on a spec, and the agent runs from that directly.](figures/the-desk.png)
 
 ---

@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The page has always been light-only, with hardcoded colours and no dark
+     variant. Saying so matters now that the figures are transparent PNGs:
+     the art is near-black ink, so a browser force-darkening the page would
+     composite it to invisible. Opting out keeps that from happening. -->
+<meta name="color-scheme" content="only light">
 <title>Left of the Loop — When AI writes the code, shared understanding becomes the scarce resource.</title>
 <meta name="description" content="When AI writes the code, shared understanding becomes the scarce resource. A book by Simon Schrottner. Working draft.">
 <link rel="canonical" href="https://leftoftheloop.dev">
@@ -12,12 +17,23 @@
 <meta property="og:description" content="When AI writes the code, shared understanding becomes the scarce resource. A working draft by Simon Schrottner.">
 <meta property="og:url" content="https://leftoftheloop.dev">
 <meta property="og:site_name" content="Left of the Loop">
+<!-- Its own file rather than the chapter figure: the social card is 1.91:1
+     and the figure is 1.49:1, so sharing the one image would have let the
+     platforms crop the LEFT/LOOP/RIGHT headings off the top. -->
+<meta property="og:image" content="https://leftoftheloop.dev/og-the-loop.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The room merges into a spec; the spec merges into the loop, where the agent generates, reviews, and iterates at machine speed; the loop merges into production.">
 
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Left of the Loop">
 <meta name="twitter:description" content="When AI writes the code, shared understanding becomes the scarce resource. A working draft by Simon Schrottner.">
+<meta name="twitter:image" content="https://leftoftheloop.dev/og-the-loop.png">
 
 <style>
+  :root {
+    color-scheme: only light;
+  }
   body {
     max-width: 40em;
     margin: 3em auto;
@@ -80,6 +96,24 @@
     border-top: 1px solid #ddd;
     margin: 2.5em 0;
   }
+  .figure {
+    margin: 2em 0;
+  }
+  .figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* Inset to three-quarters of the measure, which sits the drawing on the
+     page rather than letting it dominate the opening. It stays full width
+     on a phone, where the column is narrow enough already, and the image
+     links to itself for anyone who wants to read the small annotations. */
+  @media (min-width: 40em) {
+    .figure {
+      width: 75%;
+      margin: 2em auto;
+    }
+  }
   .excerpt-note {
     font-family: -apple-system, Helvetica, Arial, sans-serif;
     font-size: 0.85em;
@@ -127,6 +161,13 @@ understanding the scarce resource, and constructive friction the
 mechanism that protects it. This book is the argument for why teams that
 keep that friction will outperform teams that optimize it away.
 </p>
+
+<figure class="figure">
+  <a href="chapters/figures/the-loop.png">
+    <img src="chapters/figures/the-loop.png" width="1264" height="635"
+         alt="Three zones, left to right. LEFT: the room, drawn as four joined dots, becomes the spec — the merged record of what and why. A merge gate, where the team decides, passes it into LOOP: the agent generates, reviews, and iterates at machine speed. A second merge gate, where a human accepts, passes the result into RIGHT: production.">
+  </a>
+</figure>
 
 <div class="links">
   <p>Download the draft:
@@ -178,7 +219,7 @@ picture before we started building the thing.</p>
   <p>&copy; Simon Schrottner. Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</p>
   <details class="version-history">
     <summary>Version history</summary>
-    <p>Current draft &mdash; manuscript <code>4702417</code>, site <code>2f406cd</code>, 2026-07-28.</p>
+    <p>Current draft &mdash; manuscript <code>ee6bd43</code>, site <code>6860555</code>, 2026-08-06.</p>
     <p>What changed in this and every earlier update: <a href="/changelog">changelog</a>.</p>
   </details>
 </footer>
