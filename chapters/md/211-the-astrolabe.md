@@ -6,7 +6,7 @@
 
 Most developers are running their own agent.
 
-<!-- TODO: placeholder figure, pending final design pass -->
+<!-- TODO: restyled but not final. Outstanding: the two headings and "x20" are typeset, not hand-lettered; the headings sit outside the panel frames instead of inside them; the grid stops at the panel edges instead of running behind the whole sheet; and a stray four-pointed sparkle sits in the bottom right of the right panel. -->
 ![Twenty developers, twenty separate agent loops, versus one team running a single shared loop.](figures/scattered-loops.png)
 
 Not every team, every individual. Local machine. Local workflow. Local configuration. Local prompting habits built up through private experimentation that nobody else sees. The AGENTS.md[^c11-agents] file, if it exists at all, was written by whoever set up the project and hasn't been touched since. The skills and MCPs each engineer uses reflect their own discovery process alone.
@@ -34,9 +34,6 @@ The platform won't be the only way to run an agent. Engineers will still experim
 The paved road is attractive, not mandatory. But when agent work runs through the platform, something changes. Every run is traceable to a team, a ticket, a spec. Rerun rates become visible. The correlation between spec quality and expensive implementations becomes measurable. The organization can see, for the first time, what a bad prompt actually costs, then trace it back to the process failure that caused it.
 
 That's organizational telemetry for AI development. The same way a team instruments its system to understand its behavior, it instruments its agent platform to understand its process.
-
-<!-- TODO: placeholder figure, pending final design pass; exploratory placement, confirm on review -->
-![The room's spec feeds the loop; the loop's output feeds back into another spec, contained inside the same room the whole time.](figures/the-loop-contained.png)
 
 Historically, platform engineering worked not because individual teams couldn't build those things themselves. It worked because the platform team sees across every team at once: more signal, more patterns, more ability to spot what's working and what isn't, and the mandate and resources to act on it. One engineer figures out a better way to frame a class of problem. Under the current model that insight stays private, and when the engineer leaves it goes with them. Under the platform model it gets contributed, reviewed, and inherited by every team.
 

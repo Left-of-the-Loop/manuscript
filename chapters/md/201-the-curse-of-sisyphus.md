@@ -70,7 +70,6 @@ The agent loop is real. AI can take a well-specified ticket, implement it, run a
 
 That loop is the agent's: implementation, review, iteration, at machine speed. To its right sits production, where the output meets reality. To its left is where the thinking happens: what to build, why, and what done looks like. This book is an argument for the left of the loop. For the humans who need to be there while the work is still on the page, building the shared understanding that determines whether the loop produces the right thing.
 
-<!-- TODO: placeholder figure, pending final design pass -->
 ![The room merges into a spec; the spec merges into the loop, where the agent generates, reviews, and iterates at machine speed; the loop merges into production.](figures/the-loop.png)
 
 The input is the problem.

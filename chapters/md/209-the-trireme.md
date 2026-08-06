@@ -26,8 +26,7 @@ Someone who manages the outside. Stakeholder pressure, organizational noise, the
 
 The agent is the fourth, running only after the other three have done their work.
 
-<!-- TODO: placeholder figure, pending final design pass -->
-![Direction, ground, and outside overlap into the work; the agent runs only in that overlap.](figures/the-trireme-fields.png)
+![Direction, ground, and outside overlap into the spec; the agent runs only from that overlap.](figures/the-trireme-fields.png)
 
 I've watched these functions show up without anyone assigning them.
 

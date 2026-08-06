@@ -22,6 +22,13 @@ Live at [leftoftheloop.dev](https://leftoftheloop.dev).
   reader as the chapter pages, and linked from the "Version history"
   details on the landing page.
 - `chapters/` — unlisted per-chapter reading pages (see below).
+- `og-the-loop.png` — the social preview card, built from the Loop
+  figure. It is its own file rather than a reference to
+  `chapters/figures/the-loop.png` because the card is 1.91:1 and the
+  figure is 1.49:1; pointing the meta tags at the figure would let the
+  platforms crop the LEFT/LOOP/RIGHT headings off the top. Rebuild it by
+  trimming the figure to its ink and centring that on a 1200×630 white
+  canvas with a 48px margin.
 - `CNAME` — GitHub Pages custom domain config.
 - `LICENSE` — CC BY-NC-ND 4.0.
 
@@ -120,6 +127,21 @@ When a new draft is committed here:
    renamed, or removed upstream, update the manifest in
    `chapters/reader.js` to match — and on a rename, move the old
    basename into that entry's `aliases`.
+6. Re-encode any figure that changed. Upstream keeps the archival PNGs,
+   some over 5 MB, which is fine for print and not fine for a phone.
+   Quantizing to 64 colours costs nothing visible on ink-drawn art and
+   takes about a tenth of the bytes:
+
+   ```python
+   from PIL import Image
+   im = Image.open(src).convert("RGB")
+   im.quantize(colors=64, method=Image.MEDIANCUT).save(dst, optimize=True)
+   ```
+
+   Keep the pixel dimensions as they are — the figures are 1264px wide
+   and the reading column is 40em, so they are already exactly the 2×
+   source a high-DPI screen wants. If a figure that appears on the
+   landing page changes, rebuild `og-the-loop.png` too (see below).
 
 ## Analytics
 

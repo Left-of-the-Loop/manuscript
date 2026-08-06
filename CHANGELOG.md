@@ -11,6 +11,37 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-08-06 — manuscript `4344903`
+
+Site: `PENDING`
+
+A figures update. The four diagrams are now hand-drawn rather than
+vector, and they read as one set: ink on white over a faint grid, one
+warm-orange accent that means a human is deciding, and a diamond that
+means the merge gate.
+
+- All four figures replaced with the hand-drawn versions — the Loop, the
+  Desk, the Trireme fields, and the scattered loops
+- The Curse of Sisyphus: the Loop's gates are now labelled "merge gate",
+  the book's own coinage from later in the same chapter, and annotated
+  "the team decides" and "a human accepts", so the two human moments
+  bracket "machine speed"
+- The Trireme: the caption moved with its art — the overlap is now "the
+  spec" rather than "the work", and the agent runs from it rather than
+  in it
+- The Astrolabe: the loop-contained figure is cut. It illustrated
+  containment and a feedback arrow while the prose around it argues
+  centralized infrastructure and cost visibility, and it was close to a
+  redraw of the Loop besides
+- The scattered-loops figure is restyled but not final; its headings are
+  still typeset rather than hand-lettered
+- No prose changed beyond the Trireme caption and the cut figure's line
+
+The landing page gains the Loop figure, which is the one diagram that
+explains the book's title, and a social preview card built from it.
+Chapter pages serve the figures re-encoded for the web — same images,
+about a tenth of the bytes.
+
 ## 2026-07-28 — manuscript `4702417`
 
 Site: `2f406cd`
