@@ -181,6 +181,10 @@ The PDF and EPUB download links are tracked as GoatCounter click events
 on the file URLs (e.g. shared links, crawlers) bypass the page's JS
 entirely and are not counted. Acceptable for now.
 
+The Leanpub link is tracked the same way (`"leanpub"`), which is the only
+signal here for whether anyone takes the paid route — Leanpub's own stats
+aren't visible from this side.
+
 Chapter pages load the same GoatCounter script, so shared-chapter reads
 show up as pageviews on `/chapters/<slug>.html`.
 
