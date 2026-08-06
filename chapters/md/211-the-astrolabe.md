@@ -6,7 +6,7 @@
 
 Most developers are running their own agent.
 
-<!-- TODO: restyled but not final. Outstanding: the two headings and "x20" are typeset, not hand-lettered; the headings sit outside the panel frames instead of inside them; the grid stops at the panel edges instead of running behind the whole sheet; and a stray four-pointed sparkle sits in the bottom right of the right panel. -->
+<!-- TODO: restyled but not final. Outstanding: the two headings and "x20" are typeset, not hand-lettered; the headings sit outside the panel frames instead of inside them; and the grid stops at the panel edges instead of running behind the whole sheet. -->
 ![Twenty developers, twenty separate agent loops, versus one team running a single shared loop.](figures/scattered-loops.png)
 
 Not every team, every individual. Local machine. Local workflow. Local configuration. Local prompting habits built up through private experimentation that nobody else sees. The AGENTS.md[^c11-agents] file, if it exists at all, was written by whoever set up the project and hasn't been touched since. The skills and MCPs each engineer uses reflect their own discovery process alone.

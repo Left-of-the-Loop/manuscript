@@ -28,7 +28,12 @@ Live at [leftoftheloop.dev](https://leftoftheloop.dev).
   figure is 1.49:1; pointing the meta tags at the figure would let the
   platforms crop the LEFT/LOOP/RIGHT headings off the top. Rebuild it by
   trimming the figure to its ink and centring that on a 1200×630 white
-  canvas with a 48px margin.
+  canvas with a 48px margin. Two things to get right: flatten it onto
+  solid white, because a transparent og image composites to black on
+  several platforms, and threshold the alpha channel at ~25/255 before
+  taking the bounding box — the background removal leaves a noise floor,
+  so a bare `getbbox()` returns almost the whole canvas and the card ends
+  up mostly margin.
 - `CNAME` — GitHub Pages custom domain config.
 - `LICENSE` — CC BY-NC-ND 4.0.
 
@@ -128,20 +133,25 @@ When a new draft is committed here:
    `chapters/reader.js` to match — and on a rename, move the old
    basename into that entry's `aliases`.
 6. Re-encode any figure that changed. Upstream keeps the archival PNGs,
-   some over 5 MB, which is fine for print and not fine for a phone.
-   Quantizing to 64 colours costs nothing visible on ink-drawn art and
-   takes about a tenth of the bytes:
+   which is right for print and heavy for a phone. Quantizing to 128
+   colours costs nothing visible on ink-drawn art and takes about an
+   eighth of the bytes:
 
    ```python
    from PIL import Image
-   im = Image.open(src).convert("RGB")
-   im.quantize(colors=64, method=Image.MEDIANCUT).save(dst, optimize=True)
+   im = Image.open(src)                       # RGBA — do NOT convert("RGB")
+   im.quantize(colors=128, method=Image.FASTOCTREE).save(dst, optimize=True)
    ```
+
+   The figures are transparent PNGs, so the two details above are load-
+   bearing: `convert("RGB")` discards the alpha channel, and `FASTOCTREE`
+   is the only PIL quantizer that carries it through. Check the result
+   still reports `"transparency" in Image.open(dst).info`.
 
    Keep the pixel dimensions as they are — the figures are 1264px wide
    and the reading column is 40em, so they are already exactly the 2×
    source a high-DPI screen wants. If a figure that appears on the
-   landing page changes, rebuild `og-the-loop.png` too (see below).
+   landing page changes, rebuild `og-the-loop.png` too (see above).
 
 ## Analytics
 

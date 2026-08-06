@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The page has always been light-only, with hardcoded colours and no dark
+     variant. Saying so matters now that the figures are transparent PNGs:
+     the art is near-black ink, so a browser force-darkening the page would
+     composite it to invisible. Opting out keeps that from happening. -->
+<meta name="color-scheme" content="only light">
 <title>Left of the Loop — When AI writes the code, shared understanding becomes the scarce resource.</title>
 <meta name="description" content="When AI writes the code, shared understanding becomes the scarce resource. A book by Simon Schrottner. Working draft.">
 <link rel="canonical" href="https://leftoftheloop.dev">
@@ -26,6 +31,9 @@
 <meta name="twitter:image" content="https://leftoftheloop.dev/og-the-loop.png">
 
 <style>
+  :root {
+    color-scheme: only light;
+  }
   body {
     max-width: 40em;
     margin: 3em auto;
@@ -221,7 +229,7 @@ picture before we started building the thing.</p>
   <p>&copy; Simon Schrottner. Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</p>
   <details class="version-history">
     <summary>Version history</summary>
-    <p>Current draft &mdash; manuscript <code>4344903</code>, site <code>PENDING</code>, 2026-08-06.</p>
+    <p>Current draft &mdash; manuscript <code>5c4766f</code>, site <code>PENDING</code>, 2026-08-06.</p>
     <p>What changed in this and every earlier update: <a href="/changelog">changelog</a>.</p>
   </details>
 </footer>

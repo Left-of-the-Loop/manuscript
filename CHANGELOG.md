@@ -11,14 +11,14 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
-## 2026-08-06 — manuscript `4344903`
+## 2026-08-06 — manuscript `5c4766f`
 
 Site: `PENDING`
 
 A figures update. The four diagrams are now hand-drawn rather than
-vector, and they read as one set: ink on white over a faint grid, one
-warm-orange accent that means a human is deciding, and a diamond that
-means the merge gate.
+vector, and they read as one set: ink over a faint grid, one warm-orange
+accent that means a human is deciding, and a diamond that means the
+merge gate.
 
 - All four figures replaced with the hand-drawn versions — the Loop, the
   Desk, the Trireme fields, and the scattered loops
@@ -33,14 +33,21 @@ means the merge gate.
   containment and a feedback arrow while the prose around it argues
   centralized infrastructure and cost visibility, and it was close to a
   redraw of the Loop besides
-- The scattered-loops figure is restyled but not final; its headings are
-  still typeset rather than hand-lettered
+- All four figures then had their backgrounds removed. The scattered
+  loops had come back on a graded cream paper fill that printed as an
+  off-white rectangle on a white page; the other three sat on plain
+  white. None of them carries page colour now, and the stray artifact in
+  the corner of the scattered loops went with the cream
+- The scattered-loops figure is still not final; its headings are typeset
+  rather than hand-lettered
 - No prose changed beyond the Trireme caption and the cut figure's line
 
 The landing page gains the Loop figure, which is the one diagram that
 explains the book's title, and a social preview card built from it.
 Chapter pages serve the figures re-encoded for the web — same images,
-about a tenth of the bytes.
+an eighth of the bytes — and both pages now declare themselves
+light-only, so a browser that force-darkens the page can't composite
+near-black ink into an invisible figure.
 
 ## 2026-07-28 — manuscript `4702417`
 
