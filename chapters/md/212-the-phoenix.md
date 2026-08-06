@@ -1,8 +1,8 @@
-# The Phoenix
+# The Phoenix {-}
 
-*The phoenix is a mythical bird that burns at the end of its life and rises from its own ashes. Not despite the destruction — because of it.*
+*The phoenix is a mythical bird that burns at the end of its life and rises from its own ashes. Not despite the destruction, but because of it.*
 
-*If all of this is possible — what do you choose?*
+*If all of this is possible, what do you choose?*
 
 If you've felt something was wrong but couldn't point to it, this book was written for you.
 
@@ -12,7 +12,7 @@ Not for the confident adopters. Not for the organizations announcing their AI tr
 
 We've been here before.
 
-At some point — in your team, your organization, your career — someone decided that process and structure were slowing things down. The planning meetings, the reviews, the deliberate conversations before anyone wrote a line of code. Overhead. Friction. Things that got in the way of shipping.
+At some point in your team, your organization, or your career, someone decided that process and structure were slowing things down. The planning meetings, the reviews, the deliberate conversations before anyone wrote a line of code. Overhead. Friction. Things that got in the way of shipping.
 
 So they went. Or they shrank. Or they became ceremonies that everyone attended without really being present. And for a while it felt like freedom. Faster. Lighter. More autonomous.
 
@@ -32,7 +32,7 @@ But the room is emptier. The understanding is thinner. The junior is learning al
 
 ---
 
-What changed is the denominator. XP's practices were priced against implementation time, and that is no longer what the room is priced against. Whether your team has collected on that is the question the appendix prices. The rediscovery isn't nostalgia. The economics are flipping, unevenly, and the unevenness is the whole problem.
+What changed is the denominator. XP's practices were priced against implementation time, and that is no longer what the room is priced against. Whether your team has collected on that is the question Appendix A prices. The rediscovery isn't nostalgia. The economics are flipping, unevenly, and the unevenness is the whole problem.
 
 This book is an argument for a different choice.
 
@@ -40,9 +40,9 @@ The argument isn't against AI, and it isn't against speed. It's against the assu
 
 The Spec Session is slower than prompting alone. The Agora is harder to sustain than a solo workflow. The room where people say what they actually think is more fragile than a process that runs without it.
 
-Teams matter — not as an abstract principle, but because the forest produces something the desert cannot. Because the junior watching the senior think out loud is building something that no prompt will ever teach. Because the pushback that changes your direction before the agent runs is cheaper than the rework after. Because the room where uncertainty is discussable is the room where the right thing gets built.
+Teams matter, not as an abstract principle, but because the forest produces something the desert cannot. Because the junior watching the senior think out loud is building something that no prompt will ever teach. Because the pushback that changes your direction before the agent runs is cheaper than the rework after. Because the room where uncertainty is discussable is the room where the right thing gets built.
 
-And this isn't only conviction. The numbers from the measurement chapter point the same way[^c12-dora]: DORA's later data shows the throughput gain is real, but delivery instability keeps climbing, and a controlled trial found experienced developers working slower with AI even as they felt faster. Speed and safety turned out to be two different metrics, and only one of them moved. That gap is not just a feeling. The forest is still a bet, and predictability is how a team finds out whether it's paying.
+And this isn't only conviction. The numbers from the Oracle chapter point the same way[^c12-dora]: DORA's later data shows the throughput gain is real, but delivery instability keeps climbing, and a controlled trial found experienced developers working slower with AI even as they felt faster. Speed and safety turned out to be two different metrics, and only one of them moved. The forest is still a bet, and predictability is how a team finds out whether it's paying.
 
 ---
 
@@ -52,9 +52,9 @@ The question is whether we choose before the room goes completely quiet, or afte
 
 If you feel lost, you are not behind. You are noticing something that the metrics aren't capturing and the dashboards aren't showing.
 
-The Phoenix doesn't rise by accident; it chooses to. That choice is the difference between what happened to Sisyphus and what can happen here. Sisyphus had no choice but to push the boulder. Teams do. Organizations do. Individual engineers do. The drift toward the desert, toward individual speed, toward the ever-agreeing genie — none of it is inevitable. It's a series of small choices that compound quietly until the room goes empty.
+The Phoenix doesn't rise by accident; it chooses to. That choice is the difference between what happened to Sisyphus and what can happen here. Sisyphus had no choice but to push the boulder. Teams do. Organizations do. Individual engineers do. The drift toward the desert, toward individual speed, toward the ever-agreeing genie: none of it is inevitable. It's a series of small choices that compound quietly until the room goes empty.
 
-The renewal is also a choice. Keep the team. Protect the room. Slow down for the conversation that feels like it's getting in the way — because that conversation is often the work. Push back when the metric replaces the judgment. Say the thing that's uncomfortable to say in the Spec Session. Ask the question that surfaces the XY problem before the agent runs.
+The renewal is also a choice. Keep the team. Protect the room. Slow down for the conversation that feels like it's getting in the way, because that conversation is often the work. Push back when the metric replaces the judgment. Say the thing that's uncomfortable to say in the Spec Session. Ask the question that surfaces the XY problem before the agent runs.
 
 Choose the forest. Even when the desert feels faster. Especially when it feels faster.
 

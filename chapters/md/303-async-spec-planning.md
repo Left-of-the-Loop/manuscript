@@ -1,4 +1,4 @@
-# Appendix D: Async Spec Planning
+# Appendix D: Async Spec Planning {-}
 
 The Agora names the form and its sharpest risk. This is the full treatment, for the teams the Curse of Sisyphus was about, the ones the problem damages most: distributed, different timezones, permanently async. They deserve more than a synchronous prescription.
 
