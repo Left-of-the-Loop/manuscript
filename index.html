@@ -110,15 +110,14 @@
     color: #666;
     margin-top: 0.7em;
   }
-  /* The drawing carries small hand-lettered annotations that get tight at
-     the 40em measure, so it steps outside the column once the viewport can
-     seat it. The breakpoint clears 48em plus the body padding, so the
-     negative margins can never push it off-screen. */
-  @media (min-width: 56em) {
+  /* Inset to three-quarters of the measure, which sits the drawing on the
+     page rather than letting it dominate the opening. It stays full width
+     on a phone, where the column is narrow enough already, and the image
+     links to itself for anyone who wants to read the small annotations. */
+  @media (min-width: 40em) {
     .figure {
-      width: 48em;
-      margin-left: -4em;
-      margin-right: -4em;
+      width: 75%;
+      margin: 2em auto;
     }
   }
   .excerpt-note {
