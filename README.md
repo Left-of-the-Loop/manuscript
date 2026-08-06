@@ -139,19 +139,36 @@ When a new draft is committed here:
 
    ```python
    from PIL import Image
-   im = Image.open(src)                       # RGBA — do NOT convert("RGB")
-   im.quantize(colors=128, method=Image.FASTOCTREE).save(dst, optimize=True)
+   im = Image.open(src).convert("RGBA")       # RGBA — do NOT convert("RGB")
+   mask = im.getchannel("A").point(lambda p: 255 if p > 25 else 0)
+   l, t, r, b = mask.getbbox()
+   pad = 8
+   art = im.crop((max(0, l-pad), max(0, t-pad),
+                  min(im.width, r+pad), min(im.height, b+pad)))
+   art.quantize(colors=128, method=Image.FASTOCTREE).save(dst, optimize=True)
    ```
 
-   The figures are transparent PNGs, so the two details above are load-
-   bearing: `convert("RGB")` discards the alpha channel, and `FASTOCTREE`
-   is the only PIL quantizer that carries it through. Check the result
-   still reports `"transparency" in Image.open(dst).info`.
+   The figures are transparent PNGs, so two details are load-bearing:
+   `convert("RGB")` discards the alpha channel, and `FASTOCTREE` is the
+   only PIL quantizer that carries it through. Check the result still
+   reports `"transparency" in Image.open(dst).info`.
 
-   Keep the pixel dimensions as they are — the figures are 1264px wide
-   and the reading column is 40em, so they are already exactly the 2×
-   source a high-DPI screen wants. If a figure that appears on the
-   landing page changes, rebuild `og-the-loop.png` too (see above).
+   The crop matters as much as the encoding. Upstream's figures carry a
+   wide transparent margin — `the-loop.png` is blank for its top 151 of
+   848 rows — which on a web page reads as a large unexplained gap above
+   the drawing that no CSS margin explains, because it is inside the
+   image. Trimming it lets the stylesheet own the spacing. Threshold the
+   alpha before taking the bounding box: the background removal leaves a
+   noise floor, so a bare `getbbox()` returns almost the whole canvas.
+
+   Don't scale the figures down. They are 1264px wide against a 40em
+   column, which is already about the 2× source a high-DPI screen wants.
+
+   Cropping changes the pixel height, so update the `width`/`height`
+   attributes on the `<img>` in `index.html` to match — they are what
+   stops the page reflowing as the image loads. If a figure that appears
+   on the landing page changes, rebuild `og-the-loop.png` too (see
+   above).
 
 ## Analytics
 
