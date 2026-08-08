@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-08-08 — manuscript `5d8456f`
 
-Site: `PENDING`
+Site: `e89e66c`
 
 A cuts pass, a citation sweep, and the book gives up a word it had been
 leaning on. Fifteen commits across seven chapters, almost all of it text
