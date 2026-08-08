@@ -22,8 +22,6 @@ We had also stopped doing planning sessions. I'm not sure exactly when. It wasn'
 
 The missing thing wasn't documentation. It was the conversation that produced it. Better documents preserve understanding; they don't create it. The creating happened in the room. When the room went away, the understanding went with it. The documents stayed. But documents can't be asked. Documents can't notice when a technical decision made six weeks ago no longer fits what the system looks like.
 
-So the scoping document was always incomplete in a specific way. Not wrong at the top; the vision was usually fine. Missing in the middle, where the engineers who hadn't been in the discussion between seniors and the product manager needed to make real decisions, and had nothing to go on except a ticket and a Confluence page written for a different audience.
-
 And then I came along with an AI power tool and started shipping against that gap at three times the previous pace.
 
 The review bottleneck wasn't really about reviews. It was about shared understanding. Nobody could review fast because nobody had been in the room when the thinking happened, and half the thinking had never been written down at all.
@@ -46,7 +44,7 @@ Addy Osmani, writing about loop engineering in June 2026, quoted Boris Cherny, h
 
 The loop amplifies whatever understanding the team brings to it. If the team didn't build shared understanding before the loop ran, the loop executes the misalignment faster. The boulder doesn't just go up faster; it goes up faster in the wrong direction.
 
-Eliyahu Goldratt's Theory of Constraints[^c1-goldratt] says one simple thing: optimizing any part of a system that isn't the bottleneck doesn't improve throughput. It just moves work faster toward the constraint. If shared understanding is the bottleneck, if the team's ability to agree on what to build is what limits delivery, then making implementation faster doesn't help. It produces more output against a constraint that hasn't moved.
+Eliyahu Goldratt's Theory of Constraints[^c1-goldratt] says one simple thing: optimizing anything that isn't the bottleneck doesn't improve throughput. It just moves work faster toward the constraint. If shared understanding is the bottleneck, if the team's ability to agree on what to build is what limits delivery, then making implementation faster doesn't help. It produces more output against a constraint that hasn't moved.
 
 The boulder goes up faster. The constraint was never the pushing.
 
@@ -101,6 +99,6 @@ What I needed wasn't a better AI tool. I needed the team to converge on intent b
 The process was the problem. But the process isn't the only thing AI changes. It also changes what's left for the people inside it.
 
 [^c1-loop]: Addy Osmani, "Loop Engineering" (addyosmani.com/blog/loop-engineering/), quoting Boris Cherny of Anthropic.
-[^c1-goldratt]: Eliyahu M. Goldratt, *The Goal* (North River Press, 1984); the Theory of Constraints.
+[^c1-goldratt]: Eliyahu M. Goldratt and Jeff Cox, *The Goal* (North River Press, 1984); the Theory of Constraints.
 [^c1-argyris]: Chris Argyris and Donald Schön drew the distinction in *Theory in Practice: Increasing Professional Effectiveness* (Jossey-Bass, 1974); Argyris made it famous three years later in "Double Loop Learning in Organizations" (*Harvard Business Review*, September 1977). Single-loop learning corrects errors against goals it takes as given. Double-loop learning questions the goals. The agent loop is a single loop by construction, and the fastest one ever built: the goal is the prompt, and nothing inside the loop can reach it. The second loop is what the rest of this book is about.
 [^c1-codex]: OpenAI, "Harness Engineering: Leveraging Codex in an Agent-First World" (openai.com/index/harness-engineering/).

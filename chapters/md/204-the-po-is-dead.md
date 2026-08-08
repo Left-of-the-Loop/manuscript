@@ -35,7 +35,7 @@ In product teams the same chain exists, though the Curse of Sisyphus chapter's p
 
 The cost is rework. Delayed delivery. A PO who has to go back to a stakeholder and explain why what was built isn't what they meant. That conversation is never easy. And it keeps happening.
 
-Product Owner, product manager, "Product": the titles vary and the industry has never agreed on the boundary. This chapter is about the seat, not the title: whoever sits between the stakeholders and the team, carrying both the product thinking and the organizational interface.
+The titles vary and the industry has never agreed on the boundary. This chapter is about whoever sits between the stakeholders and the team, carrying both the product thinking and the organizational interface.
 
 The PO exists, in part, to manage that chain. To be the translation layer between what stakeholders want and what teams build. To carry the context that doesn't fit in a ticket. To field the questions that surface mid-implementation when something doesn't quite add up.
 
@@ -90,4 +90,4 @@ That person still matters, maybe more than before, and they just don't have to c
 Roles shift and responsibilities redistribute: the product thinking spreads into the team, and the organizational interface narrows to the one role that protects the room while the team does the thinking. All of it assumes the room exists. A place where the thinking actually happens, and a team that knows how to use it. That's the thing nobody has built yet.
 
 [^c4-mvc]: The name leans on minimum viable product; the discipline leans on the minimal reproducible example that open source and Stack Overflow have demanded for decades. Same instinct, aimed at understanding instead of bug reports.
-[^c4-bockeler]: Birgitta Böckeler, "Harness Engineering for Coding Agent Users," in the "Exploring Gen AI" series (martinfowler.com/articles/exploring-gen-ai/harness-engineering.html). "Harness engineering" is a shared term — OpenAI uses it too (the Curse of Sisyphus chapter); the two arrived at it independently.
+[^c4-bockeler]: Birgitta Böckeler, "Harness Engineering for Coding Agent Users," in the "Exploring Gen AI" series (martinfowler.com/articles/exploring-gen-ai/harness-engineering.html). "Harness engineering" is a shared term. OpenAI uses it too (the Curse of Sisyphus chapter), and Böckeler's earlier memo on it opens by saying she had just read their write-up, so this is one term spreading rather than two people coining it.

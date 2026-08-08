@@ -32,7 +32,9 @@ DORA's 2024 research on generative AI[^c8-dora] put numbers on this. For every 2
 
 These were correlations, and DORA was careful to say so. The explanation it offered was a hypothesis, not a finding: AI lets a team produce far more code in the same time, changesets grow, and bigger changes have always been slower to land and quicker to break. The time saved got lost downstream: in toil, in reviews that couldn't keep pace, in merges too large to be safe. The oracle measured the right things at the wrong level.
 
-The dividend arrives at the task level, the system can't absorb it, and that gap is what this book is about. DORA's 2024 numbers said throughput fell, not rose, the wrong direction for anyone who already believed implementation was abundant. DORA's 2025 report is the flip: throughput and time on valuable work both reversed positive.[^c8-dora] What didn't reverse is instability, still climbing on the far side of that flip, and the difference is everything upstream of the agent: the thin spec, the wrong thing built quickly, the rework nobody counts. METR supplies a different kind of evidence, not a dividend that failed to land, but one that wasn't there: experienced developers ran 19% slower on repositories they knew well and came away certain they'd gotten faster,[^c8-metr] the same failure to collect showing up as perception instead of throughput, at the scale of one developer instead of a team. A throughput gain a team cannot land safely is not a dividend it has cashed, and until the process lets it cash, the room costs principal. Appendix A's quarter is the test, and it names the measures. Flat after a quarter of full sessions, and the premise doesn't hold for that team.
+The dividend arrives at the task level and the system can't absorb it. DORA's 2024 numbers ran the wrong direction for anyone who already believed implementation was abundant. DORA's 2025 report is the flip: throughput and time on valuable work both reversed positive.[^c8-dora] What didn't reverse is instability, still climbing on the far side of that flip, and the difference is everything upstream of the agent: the thin spec, the wrong thing built quickly, the rework nobody counts.
+
+METR supplies a different kind of evidence, not a dividend that failed to land, but one that wasn't there: experienced developers ran 19% slower on repositories they knew well and came away certain they'd gotten faster,[^c8-metr] the same failure to collect showing up as perception instead of throughput, at the scale of one developer instead of a team. A throughput gain a team cannot land safely is not a dividend it has cashed, and until the process lets it cash, the room costs principal. Appendix A's quarter is the test, and it names the measures. Flat after a quarter of full sessions, and the premise doesn't hold for that team.
 
 ---
 
@@ -46,9 +48,9 @@ METR's developers were slower and certain they were faster, and the reason that 
 
 The metrics we use to measure engineering output were wrong before AI. AI just made them easier to game and faster to break.
 
-Lines of code. Story points. Number of review requests. Tokens burned. Each of these measures something real in isolation. Each becomes meaningless the moment it becomes a target.
+Lines of code. Story points. Number of review requests. Tokens burned. Each measures something real in isolation.
 
-Goodhart's Law[^c8-goodhart]: when a measure becomes a target, it ceases to be a good measure. The metric stops describing the thing that matters and starts describing the behavior the metric incentivizes.
+Goodhart's Law[^c8-goodhart]: when a measure becomes a target, it ceases to be a good measure. A metric stops describing what matters and starts describing the behavior it incentivizes.
 
 An AI power user can inflate every one of those metrics simultaneously. Lines of code go up. The agent writes more than a human would. Story points get closed faster. The agent implements tickets in hours. Review requests multiply. Why open one when five will do. Tokens burned increase, and that's just the cost of running the agent.
 

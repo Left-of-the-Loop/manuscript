@@ -11,6 +11,68 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-08-08 — manuscript `5d8456f`
+
+Site: `e89e66c`
+
+A cuts pass, a citation sweep, and the book gives up a word it had been
+leaning on. Fifteen commits across seven chapters, almost all of it text
+coming out — the draft ends a page shorter than it started.
+
+- The Agora drops *Bewusstsein*. The climbing circle now creates "a
+  shared awareness of where everyone is", and the callback at the end of
+  the passage is "that's the circle, before the agent runs". The German
+  term appeared nowhere else in the book, and the English says the same
+  thing without asking the reader to carry a loan word
+- The Agora also loses the tools survey's repeated gap and its second
+  ending — the survey had stated the single-developer gap twice and
+  closed twice
+- The Astrolabe: the paragraph summarizing the two above it is gone, and
+  the autonomy point is now a warning rather than an architecture to
+  adopt
+- The Oracle: two duplicated sentences cut, and the evidence paragraph
+  split so the studies stop arriving in one block
+- The Curse of Sisyphus: the scoping document was diagnosed twice, three
+  paragraphs apart; the second diagnosis goes, which also lets "that gap"
+  point at the understanding rather than at a restatement
+- The Agora then loses its closing recap as well, so the section ends on
+  the question it hands to the next chapter rather than on a summary
+- A Fool with a Tool: the private-learning passage stops listing what the
+  tool needed and simply says it
+- The Product Owner is Dead: the title inventory goes; the chapter was
+  already about the seat rather than the title, and said so twice
+- Both EPUBs now carry a valid `dc:date`
+
+All 44 footnotes were then checked against primary sources, and five
+were wrong:
+
+- *The Goal* is by Goldratt **and Jeff Cox**, who is credited on the
+  cover of every edition and was missing from the footnote
+- The Star and Griesemer quotation was not verbatim: it had dropped a
+  clause without an ellipsis, changed "yet" to "but", and paraphrased
+  "across sites". It is now quoted as written
+- Consent as a decision rule was formalized by Gerard Endenburg in the
+  early 1970s, not "in Sociocracy 3.0" — off by about forty years, and
+  at odds with the chapter's own line about sociocracy using it for
+  decades. "Consent, not consensus" loses its quotation marks, being a
+  slogan rather than a sourced quote
+- Fowler's piece is *The Phoenix Architecture*, singular and with the
+  article
+- The Thoughtworks Radar called the spec files lengthy, not the
+  workflows
+- The Product Owner chapter no longer says OpenAI and Böckeler arrived
+  at "harness engineering" independently. Böckeler's own earlier memo
+  opens by citing OpenAI's write-up, so the record shows a term
+  spreading rather than being coined twice — a weaker claim, and the
+  true one
+
+Nothing on the landing page changed: the introduction is untouched in
+this range, so the excerpt still matches.
+
+Back to the `latest` release for artifacts — CI ran on push and the
+release is built from `5d8456f`. 101 pages, and the EPUB's `dc:date`
+reads `2026-08-08` where it used to be malformed.
+
 ## 2026-08-06 — manuscript `c98ab45`
 
 Site: `6042ffe`
