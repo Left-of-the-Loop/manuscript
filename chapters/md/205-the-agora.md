@@ -24,13 +24,13 @@ That's why the path is the goal. A team could be handed a perfectly written spec
 
 ---
 
-I run climbing courses for children. At the start of every session we sit in a circle: everyone speaks, everyone listens, no rushing past. We reflect on the last time. We let the room breathe. We create what I think of as a shared Bewusstsein: a common consciousness of where everyone is before anyone starts climbing.[^c5-tomasello]
+I run climbing courses for children. At the start of every session we sit in a circle: everyone speaks, everyone listens, no rushing past. We reflect on the last time. We let the room breathe. We create a shared awareness of where everyone is before anyone starts climbing.[^c5-tomasello]
 
 Afterwards, the peer learning emerges. The child who felt heard speaks up on the wall. The one who listened offers help without being asked. The group becomes something that supports itself.
 
 When we skip the circle, whether because there's no time, the energy is off, or someone rushes past it, the session feels disconnected. Individuals climbing in parallel rather than a group climbing together. The difference is subtle, real, and almost impossible to point to for anyone who hasn't felt it.
 
-Software teams need the same thing, as a disposition the team carries continuously: the habit of making thinking visible before acting on it, of listening before building, of checking where everyone is before assuming the team already knows. The climbing circle is one way to make that instinct visible. Some teams do it in how they write issues, or in the way a senior pauses before running the agent to ask whether the spec is clear. The form doesn't matter, but the instinct does. That's the moment of shared Bewusstsein before the agent runs.
+Software teams need the same thing, as a disposition the team carries continuously: the habit of making thinking visible before acting on it, of listening before building, of checking where everyone is before assuming the team already knows. The climbing circle is one way to make that instinct visible. Some teams do it in how they write issues, or in the way a senior pauses before running the agent to ask whether the spec is clear. The form doesn't matter, but the instinct does. That's the circle, before the agent runs.
 
 The Spec Session is not a planning gate or waterfall with better tooling. The team still iterates. Still puts things in front of users. Still discovers that what got built isn't what was needed. The difference is that the team iterates with everyone holding the same picture, so when the direction turns out to be wrong, everyone understands why, and the correction is faster. In complex domains, where cause and effect only become visible in retrospect, the Spec Session doesn't replace iteration; it makes iteration less expensive by ensuring the team is wrong together.
 
@@ -92,7 +92,7 @@ The full form, its mechanics and its mitigations, is Appendix D.
 
 ---
 
-Tools are beginning to encode this instinct.[^c5-further] Birgitta Böckeler,[^c5-sdd] a Distinguished Engineer at ThoughtWorks, has analyzed the leading ones and identified the central gap: all of them assume a single developer does the requirements analysis. None address what happens when multiple people need to arrive at the same picture together. AWS's AI-DLC is the one exception, and it puts a room back: a ritual called mob elaboration, cross functional and hours long, before any agent runs.[^c5-aidlc] Then it bets everything downstream on the artifacts that room produced, which is the bet this book argues against. A tool can encode the instinct, but it can't replace the room. The record is not the theory, and the understanding does not live in the markdown.
+Tools are beginning to encode this instinct.[^c5-further] Birgitta Böckeler,[^c5-sdd] a Distinguished Engineer at ThoughtWorks, has analyzed the leading ones and identified the central gap: all of them assume a single developer does the requirements analysis. None address what happens when multiple people need to arrive at the same picture together. AWS's AI-DLC is the one exception, and it puts a room back: a ritual called mob elaboration, cross functional and hours long, before any agent runs.[^c5-aidlc] Then it bets everything downstream on the artifacts that room produced, which is the bet this book argues against. A tool can encode the instinct, but it can't replace the room.
 
 So start small. Smaller, even, than the team this book will argue for.
 

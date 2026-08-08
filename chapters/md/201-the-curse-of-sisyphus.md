@@ -22,8 +22,6 @@ We had also stopped doing planning sessions. I'm not sure exactly when. It wasn'
 
 The missing thing wasn't documentation. It was the conversation that produced it. Better documents preserve understanding; they don't create it. The creating happened in the room. When the room went away, the understanding went with it. The documents stayed. But documents can't be asked. Documents can't notice when a technical decision made six weeks ago no longer fits what the system looks like.
 
-So the scoping document was always incomplete in a specific way. Not wrong at the top; the vision was usually fine. Missing in the middle, where the engineers who hadn't been in the discussion between seniors and the product manager needed to make real decisions, and had nothing to go on except a ticket and a Confluence page written for a different audience.
-
 And then I came along with an AI power tool and started shipping against that gap at three times the previous pace.
 
 The review bottleneck wasn't really about reviews. It was about shared understanding. Nobody could review fast because nobody had been in the room when the thinking happened, and half the thinking had never been written down at all.

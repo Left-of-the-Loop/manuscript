@@ -43,7 +43,9 @@ The improvement that would have lived in one person's AGENTS.md file becomes the
 
 That's the rate at which the organization gets smarter about working with agents. The platform is valuable not because it saves money but because discoveries stop dying locally.
 
-The open/closed principle[^c11-ocp] applies. The foundation is closed: stable, trusted, maintained by people whose job it is to make it better. The team-specific layer is open: customizable, extensible, without breaking what the foundation provides. Teams are users of the platform who can also contribute upstream when they find something better. The same model open source has operated on for decades.
+The foundation is closed to ad hoc modification: stable, trusted, and maintained by people whose job it is to make it better. The team-specific layer is open, customizable, and extensible without breaking what the foundation provides. Teams that find something better contribute it upstream. That is the model open source has run on for decades.[^c11-ocp]
+
+Closing both layers is the failure worth naming, because it looks like success from the center: one configuration, one workflow, one set of prompts, nothing to audit. It also removes what this chapter is measuring for. A team that cannot change how it works cannot discover anything the platform does not already know, and the outlier signal goes quiet, not because nothing is wrong but because nothing can vary.
 
 The platform reaches the agent's memory too. The End of a Craft chapter warned about the version kept in one person's local setup, where the direction persisted but only for them, and any drift from a colleague's copy was written down where nobody else could see it. Held in the platform instead, that inverts: one shared picture, versioned and visible, handed to every agent in the organization. Someone still has to keep it true, but now it's one picture, in the open, where drift shows up instead of hiding.
 
@@ -71,7 +73,7 @@ A team that's an outlier in rerun rates gets a signal they didn't have before. I
 
 The platform team can facilitate that. They know which teams improved their rerun rates and what changed, and they can bring that to the outlier team, not as a top-down intervention but as "here's what we've seen work elsewhere."
 
-That's organizational learning at scale. The platform sees what works, the outlier gets a signal, the improvement spreads. The Alexandria Problem in reverse: knowledge flowing from the center outward, continuously, as the organization learns what good looks like.
+The Alexandria Problem in reverse: knowledge flowing from the center outward, continuously, as the organization learns what good looks like.
 
 The line is thin, and Goodhart's Law, from the Oracle chapter, applies: the moment the rerun count becomes a comparison, a leaderboard, a target a manager asks a team to improve, specs get narrow, ambitions shrink, and the number gets better while the learning stops. The signal works because the team reads it. The platform only carries the mirror.
 
@@ -86,5 +88,5 @@ That convergence is worth something, and it isn't validation. Nobody asked her, 
 A platform can make the cost visible. It can't make the choice. The data can show that the room is emptying, but whether it gets filled again is the one decision no instrument makes. That's the astrolabe: it tells you where you are, but never where you go.
 
 [^c11-agents]: AGENTS.md is discussed, with citation, in the End of a Craft chapter.
-[^c11-ocp]: The open/closed principle, one of the five SOLID principles, originated with Bertrand Meyer (*Object-Oriented Software Construction*, 1988) and was later popularized as part of SOLID by Robert C. Martin. Applied here metaphorically to platform architecture, not OOP design.
+[^c11-ocp]: This is the open/closed principle, one of the five SOLID principles: open for extension, closed for modification. It originated with Bertrand Meyer (*Object-Oriented Software Construction*, 1988) and was popularized as part of SOLID by Robert C. Martin. Applied here to platform architecture rather than to object design. Meyer's concern was dependency: a module others already rely on should not have to be edited to be extended. Read at the scale of an organization rather than a class, that becomes a question about who is allowed to change what, which is the part this chapter uses.
 [^c11-majors]: Charity Majors, "AI Demands More Engineering Discipline. Not Less." (charitydotwtf.substack.com, June 2026).

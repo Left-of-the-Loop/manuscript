@@ -11,6 +11,38 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-08-08 — manuscript `c31d7ee`
+
+Site: `PENDING`
+
+A cuts pass, and the book gives up a word it had been leaning on. Four
+chapters touched, all of them losing text rather than gaining it.
+
+- The Agora drops *Bewusstsein*. The climbing circle now creates "a
+  shared awareness of where everyone is", and the callback at the end of
+  the passage is "that's the circle, before the agent runs". The German
+  term appeared nowhere else in the book, and the English says the same
+  thing without asking the reader to carry a loan word
+- The Agora also loses the tools survey's repeated gap and its second
+  ending — the survey had stated the single-developer gap twice and
+  closed twice
+- The Astrolabe: the paragraph summarizing the two above it is gone, and
+  the autonomy point is now a warning rather than an architecture to
+  adopt
+- The Oracle: two duplicated sentences cut, and the evidence paragraph
+  split so the studies stop arriving in one block
+- The Curse of Sisyphus: the scoping document was diagnosed twice, three
+  paragraphs apart; the second diagnosis goes, which also lets "that gap"
+  point at the understanding rather than at a restatement
+- Both EPUBs now carry a valid `dc:date`
+
+Nothing on the landing page changed: the introduction is untouched in
+this range, so the excerpt still matches.
+
+Back to the `latest` release for artifacts — CI ran on push and the
+release is built from `c31d7ee`. 102 pages, and the EPUB's `dc:date`
+reads `2026-08-08` where it used to be malformed.
+
 ## 2026-08-06 — manuscript `c98ab45`
 
 Site: `6042ffe`
