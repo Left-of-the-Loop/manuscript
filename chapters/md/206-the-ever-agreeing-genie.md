@@ -66,7 +66,7 @@ Anthropic's own harness engineers supply the strongest version of the counterarg
 
 Here is what the harness does and doesn't do. It produces a better artifact, and the claim was never about the artifact. The evaluator has nothing to lose by saying no, so its validation carries no weight in the only sense that matters.
 
-Three roles, and that number is worth taking seriously: independently, without reading a word of this book, the harness converged on the same minimum a room needs to check itself. That is corroboration, not a rebuttal.
+Three roles, and that number is worth taking seriously. Without reading a word of this book, the harness converged on the same minimum a room needs to check itself.
 
 But a planner, a generator, and their evaluator are still a converged trio, not three independent rooms. Each has to be tuned differently, or it grades itself generously. However differently they're tuned, all three are handed the same framing. Any of them can challenge the stated assumptions; the unstated ones are as invisible to all three as to one, and for the same reason. Questioning a framing takes a standpoint outside it, and there is no outside inside a context window.
 

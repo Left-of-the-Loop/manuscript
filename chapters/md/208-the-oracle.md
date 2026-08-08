@@ -48,9 +48,9 @@ METR's developers were slower and certain they were faster, and the reason that 
 
 The metrics we use to measure engineering output were wrong before AI. AI just made them easier to game and faster to break.
 
-Lines of code. Story points. Number of review requests. Tokens burned. Each of these measures something real in isolation. Each becomes meaningless the moment it becomes a target.
+Lines of code. Story points. Number of review requests. Tokens burned. Each measures something real in isolation.
 
-Goodhart's Law[^c8-goodhart]: when a measure becomes a target, it ceases to be a good measure. The metric stops describing the thing that matters and starts describing the behavior the metric incentivizes.
+Goodhart's Law[^c8-goodhart]: when a measure becomes a target, it ceases to be a good measure. A metric stops describing what matters and starts describing the behavior it incentivizes.
 
 An AI power user can inflate every one of those metrics simultaneously. Lines of code go up. The agent writes more than a human would. Story points get closed faster. The agent implements tickets in hours. Review requests multiply. Why open one when five will do. Tokens burned increase, and that's just the cost of running the agent.
 

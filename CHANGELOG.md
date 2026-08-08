@@ -11,13 +11,13 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
-## 2026-08-08 — manuscript `c20b86f`
+## 2026-08-08 — manuscript `5d8456f`
 
-Site: `fe4adec`
+Site: `PENDING`
 
-A cuts pass, and the book gives up a word it had been leaning on. Six
-chapters touched, all of them losing text rather than gaining it — the
-draft comes out a page shorter than it went in.
+A cuts pass, a citation sweep, and the book gives up a word it had been
+leaning on. Fifteen commits across seven chapters, almost all of it text
+coming out — the draft ends a page shorter than it started.
 
 - The Agora drops *Bewusstsein*. The climbing circle now creates "a
   shared awareness of where everyone is", and the callback at the end of
@@ -43,11 +43,34 @@ draft comes out a page shorter than it went in.
   already about the seat rather than the title, and said so twice
 - Both EPUBs now carry a valid `dc:date`
 
+All 44 footnotes were then checked against primary sources, and five
+were wrong:
+
+- *The Goal* is by Goldratt **and Jeff Cox**, who is credited on the
+  cover of every edition and was missing from the footnote
+- The Star and Griesemer quotation was not verbatim: it had dropped a
+  clause without an ellipsis, changed "yet" to "but", and paraphrased
+  "across sites". It is now quoted as written
+- Consent as a decision rule was formalized by Gerard Endenburg in the
+  early 1970s, not "in Sociocracy 3.0" — off by about forty years, and
+  at odds with the chapter's own line about sociocracy using it for
+  decades. "Consent, not consensus" loses its quotation marks, being a
+  slogan rather than a sourced quote
+- Fowler's piece is *The Phoenix Architecture*, singular and with the
+  article
+- The Thoughtworks Radar called the spec files lengthy, not the
+  workflows
+- The Product Owner chapter no longer says OpenAI and Böckeler arrived
+  at "harness engineering" independently. Böckeler's own earlier memo
+  opens by citing OpenAI's write-up, so the record shows a term
+  spreading rather than being coined twice — a weaker claim, and the
+  true one
+
 Nothing on the landing page changed: the introduction is untouched in
 this range, so the excerpt still matches.
 
 Back to the `latest` release for artifacts — CI ran on push and the
-release is built from `c20b86f`. 101 pages, and the EPUB's `dc:date`
+release is built from `5d8456f`. 101 pages, and the EPUB's `dc:date`
 reads `2026-08-08` where it used to be malformed.
 
 ## 2026-08-06 — manuscript `c98ab45`
