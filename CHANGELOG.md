@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-08-08 — manuscript `c31d7ee`
 
-Site: `PENDING`
+Site: `f5b6818`
 
 A cuts pass, and the book gives up a word it had been leaning on. Four
 chapters touched, all of them losing text rather than gaining it.
