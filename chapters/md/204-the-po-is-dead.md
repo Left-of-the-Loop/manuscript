@@ -35,7 +35,7 @@ In product teams the same chain exists, though the Curse of Sisyphus chapter's p
 
 The cost is rework. Delayed delivery. A PO who has to go back to a stakeholder and explain why what was built isn't what they meant. That conversation is never easy. And it keeps happening.
 
-Product Owner, product manager, "Product": the titles vary and the industry has never agreed on the boundary. This chapter is about the seat, not the title: whoever sits between the stakeholders and the team, carrying both the product thinking and the organizational interface.
+The titles vary and the industry has never agreed on the boundary. This chapter is about whoever sits between the stakeholders and the team, carrying both the product thinking and the organizational interface.
 
 The PO exists, in part, to manage that chain. To be the translation layer between what stakeholders want and what teams build. To carry the context that doesn't fit in a ticket. To field the questions that surface mid-implementation when something doesn't quite add up.
 

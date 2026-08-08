@@ -110,8 +110,6 @@ A fuller starting shape waits in the working template at the back.
 
 ---
 
-Most teams struggle to make that space intentional. The thinking happens, but it happens in fragments. The Spec Session is the one place where the thinking that was happening anyway gets done together, gets documented, gets owned by the whole team. Not a ceremony added to a full calendar; the replacement for the fragments.
-
 The Spec Session is where the work happens. Which leaves one question worth sitting with: why does it have to be people in the room at all?
 
 [^c5-xp]: Kent Beck, *Extreme Programming Explained: Embrace Change* — discussed, with citation, in the introduction; "the planning game" is one of its practices.

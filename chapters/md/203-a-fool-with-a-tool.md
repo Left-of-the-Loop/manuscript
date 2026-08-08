@@ -19,7 +19,7 @@ A fool with a tool is still a fool.
 
 ---
 
-I got better over time. Prompts that would have taken me two days of burned tokens eventually took two hours. The tool started clicking once I understood what it needed to be told, what level of detail it required, where it would go wrong without guidance. But here's what I noticed about that learning: it was entirely private.
+I got better over time. Prompts that would have taken me two days of burned tokens eventually took two hours. I learned what the tool needed, where it would go wrong, and how much guidance to give it. But that learning was entirely private.
 
 I failed, observed, adjusted, retried. Nobody watched that process. Nobody else on the team went through it with me. I was building the understanding of how to specify, how to constrain, how to prompt for the kind of system we actually needed, and it lived in my head. It didn't transfer. It didn't accumulate anywhere the team could access it.
 

@@ -11,12 +11,13 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
-## 2026-08-08 — manuscript `c31d7ee`
+## 2026-08-08 — manuscript `c20b86f`
 
-Site: `f5b6818`
+Site: `PENDING`
 
-A cuts pass, and the book gives up a word it had been leaning on. Four
-chapters touched, all of them losing text rather than gaining it.
+A cuts pass, and the book gives up a word it had been leaning on. Six
+chapters touched, all of them losing text rather than gaining it — the
+draft comes out a page shorter than it went in.
 
 - The Agora drops *Bewusstsein*. The climbing circle now creates "a
   shared awareness of where everyone is", and the callback at the end of
@@ -34,13 +35,19 @@ chapters touched, all of them losing text rather than gaining it.
 - The Curse of Sisyphus: the scoping document was diagnosed twice, three
   paragraphs apart; the second diagnosis goes, which also lets "that gap"
   point at the understanding rather than at a restatement
+- The Agora then loses its closing recap as well, so the section ends on
+  the question it hands to the next chapter rather than on a summary
+- A Fool with a Tool: the private-learning passage stops listing what the
+  tool needed and simply says it
+- The Product Owner is Dead: the title inventory goes; the chapter was
+  already about the seat rather than the title, and said so twice
 - Both EPUBs now carry a valid `dc:date`
 
 Nothing on the landing page changed: the introduction is untouched in
 this range, so the excerpt still matches.
 
 Back to the `latest` release for artifacts — CI ran on push and the
-release is built from `c31d7ee`. 102 pages, and the EPUB's `dc:date`
+release is built from `c20b86f`. 101 pages, and the EPUB's `dc:date`
 reads `2026-08-08` where it used to be malformed.
 
 ## 2026-08-06 — manuscript `c98ab45`
