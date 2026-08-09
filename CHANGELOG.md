@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-08-09 — manuscript `5e68165`
 
-Site: `PENDING`
+Site: `6a65fb5`
 
 The book starts becoming a printed object. It is now trimmed to KDP's
 5.5×8.5 inches rather than A5, it carries an interim cover, and a
