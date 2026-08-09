@@ -47,6 +47,62 @@ img {
   height: auto;
 }
 
+/* The living resource pages (/template, /further-reading) carry tables and
+   fenced blocks. No chapter uses either, so this is the first styling for
+   both — without it markdown-it's bare <table> renders as unaligned runs
+   of text. */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+  font-size: 0.95em;
+}
+th,
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.5em 0.7em 0.5em 0;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #555;
+  border-bottom: 2px solid #ccc;
+}
+/* Every table here is short labels against one wide prose column, and
+   the browser's automatic widths starve the labels: "Session lead" and
+   "Read-back" both break in half. Keep the label column intact and let
+   the prose column take what's left. */
+td:first-child {
+  white-space: nowrap;
+  padding-right: 1em;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+pre {
+  background: #f6f5f1;
+  border: 1px solid #e3e0d8;
+  border-radius: 4px;
+  padding: 0.9em 1em;
+  overflow-x: auto;
+  font-size: 0.85em;
+  line-height: 1.45;
+}
+p code,
+li code,
+td code {
+  background: #f6f5f1;
+  border: 1px solid #e3e0d8;
+  border-radius: 3px;
+  padding: 0.05em 0.3em;
+  font-size: 0.9em;
+}
+
 blockquote {
   margin: 1.5em 0;
   padding-left: 1em;
