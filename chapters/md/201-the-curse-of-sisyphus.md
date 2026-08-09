@@ -98,7 +98,7 @@ What I needed wasn't a better AI tool. I needed the team to converge on intent b
 
 The process was the problem. But the process isn't the only thing AI changes. It also changes what's left for the people inside it.
 
-[^c1-loop]: Addy Osmani, "Loop Engineering" (addyosmani.com/blog/loop-engineering/), quoting Boris Cherny of Anthropic.
+[^c1-loop]: Addy Osmani, "Loop Engineering" ([addyosmani.com/blog/loop-engineering/](https://addyosmani.com/blog/loop-engineering/)), quoting Boris Cherny of Anthropic.
 [^c1-goldratt]: Eliyahu M. Goldratt and Jeff Cox, *The Goal* (North River Press, 1984); the Theory of Constraints.
 [^c1-argyris]: Chris Argyris and Donald Schön drew the distinction in *Theory in Practice: Increasing Professional Effectiveness* (Jossey-Bass, 1974); Argyris made it famous three years later in "Double Loop Learning in Organizations" (*Harvard Business Review*, September 1977). Single-loop learning corrects errors against goals it takes as given. Double-loop learning questions the goals. The agent loop is a single loop by construction, and the fastest one ever built: the goal is the prompt, and nothing inside the loop can reach it. The second loop is what the rest of this book is about.
-[^c1-codex]: OpenAI, "Harness Engineering: Leveraging Codex in an Agent-First World" (openai.com/index/harness-engineering/).
+[^c1-codex]: OpenAI, "Harness Engineering: Leveraging Codex in an Agent-First World" ([openai.com/index/harness-engineering/](https://openai.com/index/harness-engineering/)).

@@ -108,11 +108,22 @@ reviewed step.
 When a new draft is committed here:
 
 1. Replace `left-of-the-loop-draft.pdf` and/or `left-of-the-loop-draft.epub`
-   (same filenames, so the public download URLs don't change). The
-   upstream build publishes exactly two whole-book assets on its `latest`
-   release: `left-of-the-loop-a5-draft.pdf` becomes the PDF here, and
-   `left-of-the-loop-draft.epub` becomes the EPUB. The A4 and A5 combined
-   PDFs it used to also build are gone.
+   (same filenames, so the public download URLs don't change). Take
+   `left-of-the-loop-draft.pdf` and `left-of-the-loop-draft.epub` from
+   the `latest` release; both keep their names here.
+
+   Take **only** those two. The release also carries
+   `left-of-the-loop-print-interior.pdf`, which is the KDP print edition
+   — no cover, blanked versos, and typeset for a printer rather than a
+   screen — plus `left-of-the-loop-draft.md`, a sample EPUB, and one
+   EPUB per chapter. None of those belong on the site.
+
+   The reader-facing PDF was called `left-of-the-loop-a5-draft.pdf`
+   until the book retrimmed from A5 to KDP's 5.5×8.5 in August 2026, at
+   which point it took the plain name. If a future rename happens the
+   same way, the symptom is a `gh release download -p` that matches
+   nothing and silently leaves the old file in place — so check that the
+   PDF's page count actually moved before committing it.
 2. Re-check the introduction excerpt in `index.html` against the current
    `200-introduction.md` in the private repo, and update it in the same
    commit if the opening has changed. The excerpt is verbatim text, not a

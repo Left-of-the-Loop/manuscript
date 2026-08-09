@@ -11,6 +11,42 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-08-09 — manuscript `5e68165`
+
+Site: `6a65fb5`
+
+The book starts becoming a printed object. It is now trimmed to KDP's
+5.5×8.5 inches rather than A5, it carries an interim cover, and a
+separate print interior is built alongside the reader's copy. The draft
+runs 109 pages at the new size, up from 101 at the old one — the same
+book in a narrower measure, not a longer one.
+
+- New **Appendix E: Further reading**, readable at
+  /chapters/further-reading. The Agora's further-reading footnote had
+  grown into a survey of tools, papers and adjacent framings; it is an
+  appendix now, and the chapter points at it
+- Trim changed to 5.5×8.5 for KDP, with small caps restored in the
+  running heads and inserted versos left blank
+- Both whole-book EPUBs carry the interim cover
+- The DORA footnote is split so each citation carries its own report
+  rather than three sources sharing one marker
+- Typesetting: penalties set for widows, page-turn hyphens and final
+  hyphens, and the footnote citations are now links. TeX had been
+  inventing a hyphen inside `aihero.dev`
+- The em-dash law is restated to describe the manuscript as it stands,
+  and the one remaining splice is fixed
+- The section law is re-grounded on current text, cutting two seams
+- The doctrine fragment and the Trireme's close are repaired
+
+Nothing on the landing page changed beyond the footer: the introduction
+is untouched in this range, so the excerpt still matches.
+
+From the `latest` release, built at `5e68165` on push. Note for the next
+update: the reader-facing PDF is now published as
+`left-of-the-loop-draft.pdf`. It was `left-of-the-loop-a5-draft.pdf`
+until the retrim, and the release also carries a print interior that is
+not the file the site wants.
+
 ## 2026-08-08 — manuscript `5d8456f`
 
 Site: `e89e66c`

@@ -89,4 +89,4 @@ A platform can make the cost visible. It can't make the choice. The data can sho
 
 [^c11-agents]: AGENTS.md is discussed, with citation, in the End of a Craft chapter.
 [^c11-ocp]: This is the open/closed principle, one of the five SOLID principles: open for extension, closed for modification. It originated with Bertrand Meyer (*Object-Oriented Software Construction*, 1988) and was popularized as part of SOLID by Robert C. Martin. Applied here to platform architecture rather than to object design. Meyer's concern was dependency: a module others already rely on should not have to be edited to be extended. Read at the scale of an organization rather than a class, that becomes a question about who is allowed to change what, which is the part this chapter uses.
-[^c11-majors]: Charity Majors, "AI Demands More Engineering Discipline. Not Less." (charitydotwtf.substack.com, June 2026).
+[^c11-majors]: Charity Majors, "AI Demands More Engineering Discipline. Not Less." ([charitydotwtf.substack.com](https://charitydotwtf.substack.com), June 2026).

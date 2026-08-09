@@ -44,5 +44,5 @@ That's the argument the rest of this book has to earn. For now it's enough to sa
 So the craft survives, moved up to direction, the high, slow plane, where the system is headed over months. But the agent erodes judgment closer to the ground too: in what the tool quietly stops an engineer from noticing, one prompt at a time.
 
 [^c2-sennett]: Richard Sennett, *The Craftsman* (Yale University Press, 2008).
-[^c2-4d]: This is "Discernment" in the 4D Framework for AI Fluency — Delegation, Description, Discernment, Diligence — developed by Rick Dakan and Joseph Feller with Anthropic (aifluencyframework.org). The framework names the individual competencies for working with AI; this book is about the shared understanding a team builds before those competencies have anything reliable to act on.
+[^c2-4d]: This is "Discernment" in the 4D Framework for AI Fluency — Delegation, Description, Discernment, Diligence — developed by Rick Dakan and Joseph Feller with Anthropic ([aifluencyframework.org](https://aifluencyframework.org)). The framework names the individual competencies for working with AI; this book is about the shared understanding a team builds before those competencies have anything reliable to act on.
 [^c2-agents]: AGENTS.md is an open format for agent instruction files (agents.md), adopted across a range of coding agents.

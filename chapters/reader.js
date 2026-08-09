@@ -31,6 +31,7 @@
     { slug: "spec-session", file: "301-the-spec-session", title: "Appendix B: The Spec Session, a working template", aliases: ["80-the-spec-session"] },
     { slug: "session-that-failed-the-gate", file: "302-a-session-that-failed-the-gate", title: "Appendix C: A session that failed the gate", aliases: ["81-a-session-that-failed-the-gate"] },
     { slug: "async-spec-planning", file: "303-async-spec-planning", title: "Appendix D: Async Spec Planning", aliases: ["82-async-spec-planning"] },
+    { slug: "further-reading", file: "304-further-reading", title: "Appendix E: Further reading" },
     { slug: "acknowledgments", file: "400-acknowledgments", title: "Acknowledgments", aliases: ["90-acknowledgments"] },
     { slug: "glossary", file: "401-glossary", title: "Glossary", aliases: ["91-glossary"] },
     { slug: "about-the-author", file: "402-about-the-author", title: "About the Author", aliases: ["92-about-the-author"] }
