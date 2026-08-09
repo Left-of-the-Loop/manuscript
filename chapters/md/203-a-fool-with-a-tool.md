@@ -39,8 +39,6 @@ Nothing catastrophic. But in a feature flag backend, behavioral correctness isn'
 
 He was catching things I'd stopped looking for. Not because he was better than me. Because he was still looking at the thing my attention had drifted away from. He read for behavior. I'd started reading for structure, because structure was what the agent handed back to me and what the tests confirmed.
 
----
-
 The tool hadn't made me worse. It had reorganized where my expertise got applied. And the reorganization created a blind spot I couldn't see, because I was focused on the output the tool produced, not on what the output wasn't telling me.
 
 That blind spot only became visible because someone else on the team was still looking at the full picture.

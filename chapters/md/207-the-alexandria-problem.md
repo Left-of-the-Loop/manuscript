@@ -78,8 +78,6 @@ It runs both ways. We were evaluating high-availability tooling once: paid cachi
 
 You can't get that from a spec document or from reading the agent's output. None of this is formal teaching; nobody stands at a whiteboard. Experienced engineers make their thinking visible, and the junior learns how the answer gets found.
 
----
-
 If the team stops being the place where that transfer happens, everyone works alone with their own tools, and the next generation develops faster in some ways and not at all in the one that matters most.
 
 What builds that judgment is a career spent in rooms where people think out loud, ask hard questions, and show the junior what careful problem formulation looks like by doing it in front of them.
