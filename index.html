@@ -91,6 +91,22 @@
   .links li {
     margin: 0.3em 0;
   }
+  /* The book and the material it points at are two different offers, and
+     two boxes would have made the page read as a link farm. One box, one
+     hairline. */
+  .links .group + .group {
+    margin-top: 1.2em;
+    padding-top: 1.2em;
+    border-top: 1px solid #eee;
+  }
+  .links .group > p:first-child {
+    margin-top: 0;
+  }
+  .links .note {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 0;
+  }
   hr {
     border: none;
     border-top: 1px solid #ddd;
@@ -170,15 +186,27 @@ keep that friction will outperform teams that optimize it away.
 </figure>
 
 <div class="links">
-  <p>Download the draft:
-    <a href="left-of-the-loop-draft.pdf" data-goatcounter-click="pdf-download">PDF</a>,
-    <a href="left-of-the-loop-draft.epub" data-goatcounter-click="epub-download">EPUB</a>
-  </p>
-  <ul>
-    <li><a href="https://leanpub.com/leftoftheloop" data-goatcounter-click="leanpub">Buy it on Leanpub</a> &mdash; pay what you want, Kindle-ready, and you'll be notified as it grows</li>
-    <li><a href="https://github.com/Left-of-the-Loop/manuscript/issues">Leave feedback in the issue tracker</a></li>
-    <li><a href="https://schrottner.at/series/left-of-the-loop/">Read the blog series this book grew out of</a></li>
-  </ul>
+  <div class="group">
+    <p>Download the draft:
+      <a href="left-of-the-loop-draft.pdf" data-goatcounter-click="pdf-download">PDF</a>,
+      <a href="left-of-the-loop-draft.epub" data-goatcounter-click="epub-download">EPUB</a>
+    </p>
+    <ul>
+      <li><a href="https://leanpub.com/leftoftheloop" data-goatcounter-click="leanpub">Buy it on Leanpub</a> &mdash; pay what you want, Kindle-ready, and you'll be notified as it grows</li>
+      <li><a href="https://github.com/Left-of-the-Loop/manuscript/issues">Leave feedback in the issue tracker</a></li>
+      <li><a href="https://schrottner.at/series/left-of-the-loop/">Read the blog series this book grew out of</a></li>
+    </ul>
+  </div>
+  <div class="group">
+    <p>Take it to work:</p>
+    <ul>
+      <li><a href="/template" data-goatcounter-click="template">The Spec Session, a working template</a> &mdash; the run sheet, the spec file to drop in your repo, and the <a href="/template#async">async adaptation</a> for teams that are never in a room together</li>
+      <li><a href="/further-reading" data-goatcounter-click="further-reading">Further reading</a> &mdash; the running version of the list at the back of the book</li>
+    </ul>
+    <p class="note">The appendices freeze when the draft is printed; these two pages
+    keep moving. The templates are CC BY 4.0, so you can use and adapt them at
+    work without asking.</p>
+  </div>
 </div>
 
 <hr>

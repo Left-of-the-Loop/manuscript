@@ -22,6 +22,10 @@ Live at [leftoftheloop.dev](https://leftoftheloop.dev).
   reader as the chapter pages, and linked from the "Version history"
   details on the landing page.
 - `chapters/` — unlisted per-chapter reading pages (see below).
+- `resources/` — the living companion pages, rendered at `/template` and
+  `/further-reading` by the same reader (see below).
+- `templates/` — the two files readers are meant to take away. Served raw,
+  linked from `/template`, CC BY 4.0 rather than the book's licence.
 - `og-the-loop.png` — the social preview card, built from the Loop
   figure. It is its own file rather than a reference to
   `chapters/figures/the-loop.png` because the card is 1.91:1 and the
@@ -85,6 +89,44 @@ How they work — there is no build step and no page per chapter:
 
 To add a chapter: add one entry to the manifest in `reader.js` in
 reading order.
+
+## The living pages
+
+The book sends readers here for material that outlives a printing. Three
+places in the manuscript point at `leftoftheloop.dev`: Appendix D for
+"the fuller async build, as it evolves", Appendix E for "a running
+version of this list", and the acknowledgments for feedback. Those pages
+are the answer:
+
+- `/template` renders `resources/spec-session.md` — the Spec Session run
+  sheet, plus the async adaptation under the `#async` anchor. Linked from
+  the landing page.
+- `/further-reading` renders `resources/further-reading.md`.
+- `templates/spec.md` and `templates/spec-review-request.md` are the
+  take-away files, served raw. Browsers download rather than display
+  `text/markdown`, which is the intended behaviour: they are meant to
+  land in someone's repo.
+
+They ride the same 404 route as the chapter pages, through the `PAGES`
+map in `reader.js` rather than the chapter manifest. Only names in that
+map resolve at the top level; everything else falls through to "page not
+found", so chapters do not quietly gain a second URL at the root.
+
+Two things follow from these pages being editable between drafts:
+
+- **They are allowed to drift from the appendices, in one direction.**
+  The appendix is the snapshot, the page is the current version. Each
+  page carries a "What changed here" section for that reason. When an
+  appendix changes upstream, re-read the page against it — the page
+  should never be *behind* the printed text.
+- **The licence differs.** Appendix B is released CC BY 4.0 apart from
+  the rest of the book, so the two files in `templates/` and the parts of
+  `/template` derived from it are CC BY 4.0, not the site's CC BY-NC-ND.
+  Both pages say so, and the landing page says so.
+
+`reader.js` also assigns ids to `h2`/`h3` after rendering, which is what
+makes `/template#async` work. Chapter pages get section links out of it
+for free.
 
 `scripts/serve.py` mimics both GitHub Pages behaviors locally
 (extensionless URLs and the 404 fallback) for testing:
@@ -180,6 +222,11 @@ When a new draft is committed here:
    stops the page reflowing as the image loads. If a figure that appears
    on the landing page changes, rebuild `og-the-loop.png` too (see
    above).
+7. If Appendix B, D or E changed in this range, re-read
+   `resources/spec-session.md` and `resources/further-reading.md` against
+   them and add a dated bullet to that page's "What changed here" list.
+   The pages are the living version, so they may say more than the
+   appendix does; they must not say less.
 
 ## Analytics
 
@@ -196,8 +243,13 @@ The Leanpub link is tracked the same way (`"leanpub"`), which is the only
 signal here for whether anyone takes the paid route — Leanpub's own stats
 aren't visible from this side.
 
+The two living-page links are tracked the same way (`"template"` /
+`"further-reading"`), which is the signal for whether the book's promise
+of material beyond the draft is one anyone follows.
+
 Chapter pages load the same GoatCounter script, so shared-chapter reads
-show up as pageviews on `/chapters/<slug>.html`.
+show up as pageviews on `/chapters/<slug>.html`. `/template` and
+`/further-reading` do too, through the same 404 route.
 
 ## License
 

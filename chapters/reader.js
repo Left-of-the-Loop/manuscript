@@ -37,9 +37,15 @@
     { slug: "about-the-author", file: "402-about-the-author", title: "About the Author", aliases: ["92-about-the-author"] }
   ];
 
-  // Non-chapter markdown pages served through the same 404 route.
+  // Non-chapter markdown pages served through the same 404 route. The
+  // two under /resources/ are the living companions to appendices that
+  // freeze at printing: the book points readers here for the version
+  // that keeps moving, so these pages are edited between drafts and
+  // carry their own "What changed here" section.
   var PAGES = {
-    changelog: { path: "/CHANGELOG.md", title: "Changelog" }
+    changelog: { path: "/CHANGELOG.md", title: "Changelog" },
+    template: { path: "/resources/spec-session.md", title: "The Spec Session" },
+    "further-reading": { path: "/resources/further-reading.md", title: "Further reading" }
   };
 
   var content = document.getElementById("content");
@@ -50,9 +56,13 @@
   function requestedSlug() {
     var query = new URLSearchParams(location.search).get("chapter");
     if (query) { return query; }
-    var match = location.pathname.match(/^\/chapters\/([^/]+?)(?:\.html)?\/?$/) ||
-      location.pathname.match(/^\/(changelog)\/?$/);
-    return match ? match[1] : null;
+    var match = location.pathname.match(/^\/chapters\/([^/]+?)(?:\.html)?\/?$/);
+    if (match) { return match[1]; }
+    // Top-level names share this route, but only the ones in PAGES: left
+    // open, /agora would resolve as well as /chapters/agora and every
+    // chapter would have two URLs.
+    var page = location.pathname.match(/^\/([^/]+?)(?:\.html)?\/?$/);
+    return page && PAGES[page[1]] ? page[1] : null;
   }
 
   function renderMarkdown(text) {
@@ -61,6 +71,40 @@
     return window.markdownit({ html: true, typographer: true })
       .use(window.markdownitFootnote)
       .render(text);
+  }
+
+  // markdown-it emits no heading ids, so nothing inside a page can be
+  // linked to. The living resource pages need it — the book sends
+  // readers to the async half of the template, not the top of it — and
+  // chapters get section links out of the same few lines.
+  function addHeadingIds(root) {
+    var used = {};
+    root.querySelectorAll("h2, h3").forEach(function (h) {
+      var base = h.textContent.toLowerCase()
+        .replace(/[^\w\s-]/g, "")
+        .trim()
+        .replace(/\s+/g, "-");
+      if (!base) { return; }
+      used[base] = (used[base] || 0) + 1;
+      h.id = used[base] === 1 ? base : base + "-" + used[base];
+    });
+  }
+
+  // The ids arrive after the browser has already given up on the hash,
+  // so the jump has to be redone by hand once the markup is in the page.
+  // Two guards, both for things that land after the fetch resolves: the
+  // browser's own scroll restoration, which fires against an empty
+  // <main> and would otherwise put us back at the top, and layout that
+  // hasn't settled yet, which is why the scroll waits for a frame.
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+
+  function jumpToHash() {
+    if (!location.hash) { return; }
+    var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!target) { return; }
+    requestAnimationFrame(function () { target.scrollIntoView(); });
   }
 
   function notFound() {
@@ -88,8 +132,10 @@
       .then(function (text) {
         var body = document.createElement("div");
         body.innerHTML = renderMarkdown(text);
+        addHeadingIds(body);
         content.innerHTML = "";
         content.appendChild(body);
+        jumpToHash();
       })
       .catch(notFound);
     return;
@@ -126,6 +172,7 @@
 
       var body = document.createElement("div");
       body.innerHTML = renderMarkdown(text);
+      addHeadingIds(body);
 
       // The markdown references figures relative to the source repo root;
       // anchor them to /chapters/ regardless of the current URL's shape.
@@ -151,6 +198,7 @@
       content.appendChild(meta);
       content.appendChild(body);
       content.appendChild(nav);
+      jumpToHash();
     })
     .catch(function () {
       content.innerHTML = "";
