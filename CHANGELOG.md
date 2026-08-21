@@ -11,6 +11,37 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-08-21 — manuscript `c245db7`
+
+Site: `PENDING`
+
+The first reader round lands, and the book gains a shape it did not have
+before: every chapter now ends on a takeaway, one portable line set on
+its own.
+
+- **Takeaways.** Twelve chapters carry one, on blockquote syntax — `>`
+  is the only block container markdown gives that survives every build
+  natively. That meant reclaiming the syntax: a blockquote in this book
+  is now a takeaway, not a quotation, and Appendix C's spec lines moved
+  to a `spec` div instead. The chapter pages follow both changes
+- Reader round 1: four fixes from the notebook export, then the notes
+  that pass missed, plus an XP entry in the glossary
+- The Agora takes three patches from the reviewer round
+- The Spec Session inherits sprint planning, not refinement — said
+  plainly where it used to be implied
+- Appendix E gains the AI Unified Process, and says where the two books
+  part company
+- The back cover copy is run against the book's own rules
+- Print: hybrid paragraphs, indent plus a small gap
+
+The landing page's excerpt tracks the introduction, and the introduction
+changed twice inside it: the KubeCon paragraph now opens "The two of us"
+and closes on what the demo was for, and "we hadn't stopped to build the
+shared picture" is now "we never built" it.
+
+From the `latest` release, built at `c245db7` on push. 111 pages at
+5.5×8.5.
+
 ## 2026-08-09 — manuscript `5e68165`
 
 Site: `6a65fb5`

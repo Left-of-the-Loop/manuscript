@@ -58,7 +58,9 @@ The room works at this one for a while, because it feels like it must have an an
 
 The driver, who types only what the group says, tries to write the behavior sentence:
 
-> When a player begins a round, the game loads that player's history and adjusts difficulty accordingly.
+::: spec
+When a player begins a round, the game loads that player's history and adjusts difficulty accordingly.
+:::
 
 And stops. Because *that player* has no referent. The system has a controller ID. It does not have a person, it has never had a person, and there is no cheap path from one to the other that survives the constraint on the wall.
 
@@ -66,9 +68,11 @@ A sentence the driver cannot write down is a sentence the agent cannot run with.
 
 What the room can write, once it stops trying to write the other thing:
 
-> The system can attach state to a controller across rounds within a single power-on session.
->
-> It cannot attach state to a person, in any session, ever, without a registration step this spec has ruled out.
+::: spec
+The system can attach state to a controller across rounds within a single power-on session.
+
+It cannot attach state to a person, in any session, ever, without a registration step this spec has ruled out.
+:::
 
 Both true. Both writeable. Together they say the feature as scoped has no anchor.
 

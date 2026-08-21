@@ -103,7 +103,24 @@ td code {
   font-size: 0.9em;
 }
 
+/* A blockquote in this manuscript is a takeaway, not a quotation: the
+   chapter's one portable line. Upstream sets them centred and upright,
+   because italic is the epigraph register, so the old quotation styling
+   (left rule, grey) would have said the wrong thing about them. */
 blockquote {
+  margin: 2em 0;
+  text-align: center;
+  font-size: 1.05em;
+  color: #1a1a1a;
+}
+blockquote p {
+  margin: 0;
+}
+
+/* The register the blockquote vacated. These are genuine quotation, the
+   sentences the driver types on the shared screen in Appendix C, and they
+   arrive as a pandoc fenced div that reader.js converts. */
+.spec {
   margin: 1.5em 0;
   padding-left: 1em;
   border-left: 3px solid #ddd;

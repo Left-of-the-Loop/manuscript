@@ -78,7 +78,7 @@ Two things hold at any size. A team needs friction, because mirrors don't catch 
 
 The desert produces output. The forest produces learning. And the learning is the cost that stays quiet, which is why the desert always looks cheaper than it is.
 
-The forest grows slowly but survives what the desert cannot.
+> The forest grows slowly but survives what the desert cannot.
 
 [^c10-forest]: The forest-and-desert metaphor is Beth Andres-Beck and Kent Beck's. See "Forest & Desert," *Tidy First?* ([tidyfirst.substack.com/p/forest-and-desert](https://tidyfirst.substack.com/p/forest-and-desert)), and Martin Fowler, "Forest And Desert" ([martinfowler.com/bliki/ForestAndDesert.html](https://martinfowler.com/bliki/ForestAndDesert.html)).
 [^c10-xp]: Kent Beck, *Extreme Programming Explained: Embrace Change*, discussed with citation in the introduction.

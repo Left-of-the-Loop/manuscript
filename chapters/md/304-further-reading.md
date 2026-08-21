@@ -6,6 +6,8 @@ The landscape moves faster than a book can, so this is a snapshot rather than a 
 
 *Concept:* "Spec-Driven Development: From Code to Contract in the Age of AI Coding Assistants" ([arxiv.org/abs/2602.00180](https://arxiv.org/abs/2602.00180), 2026).
 
+*Process:* Simon Martinelli's AI Unified Process ([unifiedprocess.ai](https://unifiedprocess.ai)), set out in *Spec-Driven Development: From Specs to Code with AI Agents* (Apress, 2026). It is the most developed account of what happens after the room, and its loop starts one step to the right of this one: the workshop that produces the shared picture is named as the thing tools cannot replace, then sits outside the life cycle it feeds. Where the two part is what alignment runs on afterwards. Martinelli puts it in the artifact; this book leaves it with the people who built it.
+
 *Risks:* ThoughtWorks' Technology Radar, Volume 33 (2025) flags that the workflows "remain elaborate and opinionated" and that some tools "generate lengthy spec files that are hard to review."
 
 *Closest external framing:* Kief Morris, "Humans and Agents in Software Engineering Loops," "Exploring Gen AI" ([martinfowler.com](https://martinfowler.com)), on humans "on the loop," building and maintaining the harness. Morris solves where humans sit in the process; this book solves what they need to do before it starts.

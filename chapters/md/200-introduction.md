@@ -6,7 +6,7 @@ It looks like a book about AI: about agents, specs, workflows, and the changing 
 
 What the book is about started with a university friend and 18 PlayStation Move controllers.
 
-We were building a demo for KubeCon. The talk was called "18 Bluetooth Controllers Walk Into a Bar," about observability and runtime configuration for JoustMania, an open-source party game where players jostle motion controllers until someone falls over. Complex execution: multiple Bluetooth adapters, battery-powered devices, sensors firing at 100Hz. When a player complains their controller "felt different," how does anyone debug it at 2 a.m. at a convention?
+The two of us were building a demo for KubeCon. The talk was called "18 Bluetooth Controllers Walk Into a Bar," about observability and runtime configuration for JoustMania, an open-source party game where players jostle motion controllers until someone falls over. Complex execution: multiple Bluetooth adapters, battery-powered devices, sensors firing at 100Hz. When a player complains their controller “felt different,” how does anyone debug it at 2 a.m. at a convention? Our goal was to figure out what was actually happening while it was still happening.
 
 An interesting problem and two people who knew the domain and cared about the project.
 
@@ -14,7 +14,7 @@ As we had different schedules, we started hacking on our own. We both made progr
 
 And we never planned it together.
 
-The knowledge gap opened quietly. Decisions got made that the other person didn't know about. Assumptions turned out not to be shared. Work that should have built on itself didn't fit together. Not because either of us was wrong, but because we hadn't stopped to build the shared picture before we started building the thing.
+The knowledge gap opened quietly. Decisions got made that the other person didn't know about. Assumptions turned out not to be shared. Work that should have built on itself didn't fit together. Not because either of us was wrong, but because we never built the shared picture before we started building the thing.
 
 The fix wasn't better tools, a different framework, or a smarter approach to Bluetooth telemetry. What we'd skipped was the conversation.
 
@@ -22,7 +22,7 @@ This is happening to software teams everywhere right now, at a scale and speed t
 
 AI gave every engineer a tool that makes starting to hack immediately feel productive. The agent is ready. The prompt is right there. Why stop to talk? Why slow down for the conversation? The output is coming, it looks right, the ticket will close. And somewhere in the gap between all that individual motion, the understanding stops being shared.
 
-Engineers who go heads down with AI tools stop talking to each other. The output keeps coming, the confidence stays high, and the errors accumulate quietly, until someone external catches them, or until nobody does.
+Engineers who go heads down with AI tools stop talking to each other. The output keeps coming, the confidence stays high, and the errors accumulate quietly, until a teammate catches them, until production does, or until nobody does.
 
 AI has this problem for a structural reason. A model generates with the same confidence whether the output is right or wrong. The checks that catch it, the tests, the linters, the review, sit around the model, not inside it. Strip them away and nothing changes in the generation. No peer review. No colleague who reads it and says "that's not how it works."
 
@@ -36,7 +36,7 @@ Add the tool. Ship more. Reduce the headcount that feels redundant when the agen
 
 That's a familiar move. The industry has cut the deliberate conversation before, rationally, because the process it had was tedious and wasn't bringing value, and learned, sometimes painfully, that the conversation was the work. How that happened, and how AI is offering the same deal at a larger scale, is the Phoenix's story to tell.
 
-Extreme Programming understood what was at stake in the nineties.[^i-xp] Mob programming, pair programming, collective ownership: an entire practice built on the conviction that software development is a social activity. The understanding built through collaboration was the point.
+Extreme Programming (XP) understood what was at stake in the nineties.[^i-xp] Mob programming, pair programming, collective ownership: an entire practice built on the conviction that software development is a social activity. The understanding built through collaboration was the point.
 
 The industry moved on. Faster frameworks. Individual metrics. Optimized handoffs. The team became a coordination cost to minimize.
 
@@ -56,7 +56,7 @@ This has happened before, and the shape repeats. Assembly gave way to compilers 
 
 This is a practitioner's book. It doesn't claim to be the first to notice that teams matter or that shared understanding is valuable. Those ideas have lineage: Peter Naur's theory-building view,[^i-naur] XP, domain-driven design,[^i-ddd] collective code ownership, and an academic literature of their own.[^i-shared] What's new is the gap: every current tool and framework for AI-assisted development solves alignment between one person and one agent. None of them address what happens when the spec needs to emerge from a room of people who don't yet share the same understanding. The spec: what to build and why, held in common. Not a document.[^i-spec] This book is the argument for that layer, the human and social conditions that make any spec-first approach work.
 
-The conversation that feels slower than prompting alone is doing something the prompt cannot do.
+> The conversation that feels slower than prompting alone is doing something the prompt cannot do.
 
 ---
 

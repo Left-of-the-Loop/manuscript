@@ -26,7 +26,7 @@ The person doing the invisible work gets told it makes them look bad. Or loses t
 
 ---
 
-We used to confuse effort with value. AI lets us confuse output with value.
+> We used to confuse effort with value. AI lets us confuse output with value.
 
 DORA's 2024 research on generative AI[^c8-dora] put numbers on this. For every 25% increase in AI adoption, local process metrics improved: code quality, documentation, speed of code reviews. The same increase correlated with a 1.5% drop in overall delivery throughput and a 7.2% drop in delivery stability, and developers reported higher flow and personal satisfaction while spending less time on what DORA, that year, categorized as valuable work.
 

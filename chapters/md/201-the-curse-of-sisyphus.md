@@ -46,7 +46,7 @@ The loop amplifies whatever understanding the team brings to it. If the team did
 
 Eliyahu Goldratt's Theory of Constraints[^c1-goldratt] says one simple thing: optimizing anything that isn't the bottleneck doesn't improve throughput. It just moves work faster toward the constraint. If shared understanding is the bottleneck, if the team's ability to agree on what to build is what limits delivery, then making implementation faster doesn't help. It produces more output against a constraint that hasn't moved.
 
-The boulder goes up faster. The constraint was never the pushing.
+> The boulder goes up faster. The constraint was never the pushing.
 
 Some teams will read this and disagree. They removed the planning sessions, went AI-first, doubled their output, and things are working fine. They might be right. For now. What "for now" means varies: sometimes it's the first time a senior engineer leaves and the system becomes inexplicable to the people who remain. Sometimes it's the first time a feature request surfaces a decision nobody remembered making. Sometimes it's the moment the codebase gets complex enough that the informal knowledge can't hold it together anymore. Speed without shared understanding creates debt that compounds invisibly.
 
@@ -78,7 +78,7 @@ The shift has to happen before a line is written. Collaboration moves left: into
 
 If the team can be in the same room, or on the same call, that's the strongest version: synchronous, whole team, shared understanding built in real time. Everyone leaves with a spec and everyone in the room owns it.
 
-Not every team has that option. When the timezone gap is six hours, synchronous starts to mean someone sacrificing their morning or their evening on a regular basis. For teams in that situation, the planning needs a different form factor. But the outcome has to be the same. A shared decision, made by everyone who needs to act on it, recorded in a way the agent can work from.
+Not every team has that option. When the timezone gap is six hours, synchronous starts to mean someone sacrificing their morning or their evening on a regular basis. For teams in that situation, the planning needs a different form factor. But the outcome has to be the same. A shared decision, made by everyone who needs to act on it, recorded so the agent can build from it.
 
 Think of it like a review request. Not on code, on the spec itself. The spec opens for review. Anyone can comment. Decisions get made in the thread, not in a side conversation between the product manager and two seniors. And there's a merge condition: a moment where the team agrees this is decided, this is what we build from, the agent can run.
 
