@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-08-21 — manuscript `c245db7`
 
-Site: `PENDING`
+Site: `836d498`
 
 The first reader round lands, and the book gains a shape it did not have
 before: every chapter now ends on a takeaway, one portable line set on
