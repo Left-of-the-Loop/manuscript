@@ -45,7 +45,7 @@ The role doesn't have an off switch. Everything that can't be handled elsewhere 
 
 ---
 
-Implementation got cheap. Discovering it was wrong didn't.
+> Implementation got cheap. Discovering it was wrong didn't.
 
 In the open source example, the maintainer pays that cost. In a product team, the PO pays it first, then the team pays it in rework, then the stakeholder pays it in delayed delivery. The misunderstanding moves through the system and someone absorbs it at every stage.
 

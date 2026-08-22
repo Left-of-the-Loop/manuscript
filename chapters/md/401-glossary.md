@@ -12,6 +12,8 @@ The terms this book leans on, defined once. Some have ancestors, credited in the
 
 **Epistemic safety** — The conditions where people reveal what they don't know. Sharper than psychological safety: the junior asks without calculating the risk first, the senior shares the reasoning and not just the conclusion, the half-formed thought gets voiced. What the room runs on.
 
+**Extreme Programming (XP)** — Kent Beck's practice from the nineties, built on the conviction that software development is a social activity: pair programming, collective ownership, the planning game. This book leans on it as diagnosis rather than prescription. XP named what the collaboration was for long before agents existed, and lost on a cost calculation rather than an argument. What returns here returns repriced.
+
 **The forest and the desert** — Two working environments, borrowed from Beth Andres-Beck and Kent Beck. The desert is open, fast, unobstructed, where you can move without friction; the forest is dense and slower, where the ecosystem is richer and learning accumulates. AI is the most powerful desert tool ever built, which makes the forest more important than it's ever been, and more fragile. The forest earns its place by surviving what the desert can't.
 
 **The gate** — The pass condition that ends a Spec Session: intent stated, non-goals listed, edge cases answered or explicitly deferred, no sentence a new team member would misread. Also the unit of commitment: the team commits to specs through the gate, not to estimated capacity.
@@ -32,7 +34,7 @@ The terms this book leans on, defined once. Some have ancestors, credited in the
 
 **Spec review** — A review request on the spec instead of the code: the defined moment where the need gets validated before anything gets built. A checkpoint, not a planning ceremony, where the stakeholder can say "that's not what I meant" while it's still cheap to hear. The mechanism that closes the gap between what's asked and what's needed. Compare *Spec Session*, which is where the team builds the picture; the review is where whoever the outcome touches confirms it was the right one.
 
-**Spec Session** — The deliberate moment where a team converges on a spec before the agent runs: intent challenged, constraints named, edge cases answered, consent recorded. It inherits refinement's content and mob programming's mechanics, and it replaces the walk to the desk. When the room can't be shared, the same convergence runs async, as a review request on the spec. Compare *spec review*, which validates the need rather than building the understanding. A working template waits in Appendix B.
+**Spec Session** — The deliberate moment where a team converges on a spec before the agent runs: intent challenged, constraints named, edge cases answered, consent recorded. It inherits sprint planning's content and mob programming's mechanics, and it replaces the walk to the desk. When the room can't be shared, the same convergence runs async, as a review request on the spec. Compare *spec review*, which validates the need rather than building the understanding. A working template waits in Appendix B.
 
 **Stakeholder Navigator** — The role that owns the organizational interface after product thinking distributes into the team: carries the spec to whoever the outcome touches, manages the review cycle, and protects the room from the noise while the team thinks. The part of the old Product Owner that doesn't distribute.
 

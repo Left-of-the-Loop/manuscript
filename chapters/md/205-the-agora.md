@@ -6,15 +6,15 @@
 
 Every team has a place where the real thinking happens. Sometimes it's a meeting. More often it's a corridor conversation, a Slack thread, a one-on-one where someone finally said the thing they'd been sitting on for a week. The technical lead and the product manager talking through a problem before it becomes a ticket. The senior engineer pulling a junior aside to explain why the approach won't work. The offhand comment in a code review that reframes the whole feature. That thinking is the most valuable work the team does, and even in well-documented teams, part of it stays invisible, dependent on the right people being in the right conversation.
 
-The Spec Session is what happens when a team makes that space intentional, the whole team converging on one spec before the agent runs. XP called it the planning game.[^c5-xp] What's different is the stakes: where XP had an individual coder, the Spec Session has an agent. And the quality of the shared thinking before it runs determines everything that follows.
+The Spec Session is where a team makes that space intentional and the whole team converges on one spec before the agent runs. XP called it the planning game.[^c5-xp] What's different is the stakes: where XP had an individual coder, the Spec Session has an agent. And the quality of the shared thinking before the agent runs determines everything that follows.
 
-A reader running Scrum will have noticed that this is refinement. It is, and the activity is old. The name is different because the cadence is. One session, one spec, run when the work arrives rather than on a sprint boundary, and many of the teams this is for have no sprint to attach it to. What changed underneath is what waits at the end of it.
+If this sounds like Scrum or Kanban done right, that's because it is. The activity is old, and the baggage on the old names is real, but neither is the reason for a new one. What changed stands at the end of the session: an implementer that never gets stuck, and never walks over to ask. Sprint planning done right was enough, for the coder who could. The Spec Session is the same convergence, run for the one that can't.
 
-The individual coder was doing a second job nobody ever named. A human who doesn't understand what they're building gets uncomfortable, or stuck, and walks over to a desk and asks whether we meant this or that. That discomfort was a safety net no process designed: it caught planning failures in week two instead of production. An agent has no such habit. It runs with its best interpretation or it stops, neither walking over. It can ask a question, but it asks the person who wrote the prompt, from inside that framing. The old process could afford an ambiguous spec because the implementer and the circuit breaker were the same person. The agent split them apart, and the Spec Session is what replaces the walk to the desk: the same catch, moved to the cheapest moment.
+The individual coder was doing a second job nobody ever named. A human who doesn't understand what they're building gets uncomfortable, or stuck, and walks over to a desk and asks what was actually meant. That discomfort was a safety net nobody scheduled: it caught planning failures in week two instead of production. An agent has no such habit. It runs with its best interpretation or it stops, and neither one walks over. It can ask a question, but it asks the person who wrote the prompt, from inside the framing that prompt set. The old process could afford an ambiguous spec because the implementer and the circuit breaker were the same person. The agent split them apart, and the Spec Session is what replaces the walk to the desk: the same catch, moved to the cheapest moment.
 
 ![Before: the room hands off a ticket, and the implementer walks back to ask what it means. After: the room converges on a spec, and the agent runs from that directly.](figures/the-desk.png)
 
-A better agent closes some of this. One that notices the ambiguity and asks the room instead of the author would restore the walk to the desk, and that would be worth having. It would not do the other thing. A question answered well leaves the understanding with whoever answered it, and the session exists because the team has to hold it, not because the agent has to receive it.
+A better agent closes some of this. One that notices the ambiguity and asks the room instead of the author would restore the walk to the desk, and that would be worth having. It would still leave the understanding where it was answered, with one person. The session exists because the team has to hold it, not because the agent has to receive it.
 
 ---
 
@@ -34,13 +34,13 @@ Software teams need the same thing, as a disposition the team carries continuous
 
 The Spec Session is not a planning gate or waterfall with better tooling. The team still iterates. Still puts things in front of users. Still discovers that what got built isn't what was needed. The difference is that the team iterates with everyone holding the same picture, so when the direction turns out to be wrong, everyone understands why, and the correction is faster. In complex domains, where cause and effect only become visible in retrospect, the Spec Session doesn't replace iteration; it makes iteration less expensive by ensuring the team is wrong together.
 
-Iterating is often the better instrument, and it is worth being exact about when. A probe beats a room where the loop is short, the cost of being wrong is bounded, and the wrongness is legible when it arrives. Under those conditions building the thing is the cheapest way to learn what it should have been, and running a session first is ceremony.
+Iterating is often the better move, and it is worth being exact about when. A probe beats a room when three things hold: the loop is short, the cost of being wrong is bounded, and the wrongness is legible when it arrives. Under those conditions building the thing is the cheapest way to learn what it should have been, and running a session first is overhead.
 
-The room earns its place where the third condition fails. JoustMania's player history got built in full, storage and pipelines and recording and replay, and building it taught us nothing, because the feature was never wrong in its output. It had no referent. A controller ID is not a person, and no number of runs surfaces that. One question does.
+The room earns its place when the third condition fails. JoustMania's player history got built in full, storage and pipelines and recording and replay, and building it taught us nothing, because the feature was never wrong in its output. It was wrong about what it recorded. A controller ID is not a person, and no number of runs surfaces that. One question does.
 
-Iteration surfaces wrong answers. It does not surface wrong questions. A build that answers the wrong question doesn't fail a user test, it passes, and solves nothing. Which is also when being wrong together is worth something: reality corrects a wrong answer for everyone at once, and it never corrects a wrong question at all.
+Iteration surfaces wrong answers. It does not surface wrong questions. A build that answers the wrong question passes its user test and solves nothing. Which is also when being wrong together is worth something: reality corrects a wrong answer for everyone at once, and leaves a wrong question standing.
 
-What that condition makes possible is more than shared understanding. It makes trust possible.
+> What that condition builds is more than shared understanding. It makes trust possible.
 
 In climbing, trust has a physical form. Belaying, holding the rope that keeps another person safe, is the most literal expression of it. One person's life, in a meaningful sense, in another's hands. In my children's courses, we build to that point deliberately. The circle first. The shared awareness. The environment where everyone feels safe enough to be uncertain out loud. And then something that still surprises me happens. Five-year-olds belay each other. Supervised, of course, but the trust is real, the technique is real, and the care they take with each other is genuine. I have watched five-year-olds belay more attentively than adults I've seen on real rock, because the environment built the trust before the task required it. That's the standard software teams are measured against.
 
@@ -54,7 +54,7 @@ Psychological safety[^c5-edmondson] is the prerequisite for a Spec Session. With
 
 The Spec Session makes that culture structural rather than personal. It says: this is the time, this is the room, this is the moment where it's not just safe but expected to say what you think. The format protects the behavior that good leads were trying to create informally.
 
-Spec Sessions can become the new endless grooming when the team circles the problem, surfaces every concern, explores every edge case, and never converges. Three hours later there's a rich document and no decision.
+Spec Sessions can become the new endless ceremony when the team circles the problem, surfaces every concern, explores every edge case, and never converges. Three hours later there's a rich document and no decision.
 
 The antidote is a rotating session lead: someone whose job is to get to convergence, and to close the discussion when the understanding is good enough. Their job is also to protect the session from becoming the thing it was designed to replace.
 
@@ -66,9 +66,9 @@ The session needs to surface three things before it closes.
 
 What are we actually building. The specific behavior, the boundary conditions, the thing that would make a skeptic say "yes, that's done." The team needs to be able to describe it without looking at a document.
 
-Why this approach and not another. Not for the audit trail, but for the moment six months from now when the system has changed and someone needs to know whether to revisit this or discard it. The why is what survives the what becoming obsolete.
+Why this approach and not another. Not for the audit trail, but for the moment six months from now when the system has changed and someone needs to know whether to revisit this or discard it. What was built goes obsolete. Why it was built is what that decision runs on.
 
-What we're not building. The explicit scope boundary. The thing that's out of scope this iteration, that will be a different ticket. Without this, the agent fills the silence with reasonable guesses, wrong half the time.
+What we're not building. The explicit scope boundary. The thing that's out of scope this iteration, that will be a different ticket. Without this, the agent fills the silence with guesses that are reasonable and still wrong.
 
 When those three things are in the room and have been shared, challenged, and confirmed, the session is done.
 
@@ -92,7 +92,7 @@ The full form, its mechanics and its mitigations, is Appendix D.
 
 ---
 
-Tools are beginning to encode this instinct.[^c5-further] Birgitta Böckeler,[^c5-sdd] a Distinguished Engineer at ThoughtWorks, has analyzed the leading ones and identified the central gap: all of them assume a single developer does the requirements analysis. None address what happens when multiple people need to arrive at the same picture together. AWS's AI-DLC is the one exception, and it puts a room back: a ritual called mob elaboration, cross functional and hours long, before any agent runs.[^c5-aidlc] Then it bets everything downstream on the artifacts that room produced, which is the bet this book argues against. A tool can encode the instinct, but it can't replace the room.
+Tools are beginning to encode this instinct.[^c5-further] Birgitta Böckeler,[^c5-sdd] a Distinguished Engineer at ThoughtWorks, has analyzed the leading ones and identified the central gap: all of them assume a single developer does the requirements analysis. None address what happens when multiple people need to arrive at the same picture together. AWS's AI-DLC is the one exception, and it puts a room back: a ritual called mob elaboration, cross functional and hours long, before any agent runs.[^c5-aidlc] Then it bets everything downstream on the artifacts that room produced, which is the bet this book argues against. A tool can encode the instinct, but it can't replace the room.[^c5-aiup]
 
 So start small. Smaller, even, than the team this book will argue for.
 
@@ -106,7 +106,7 @@ If it didn't, ask why together. Where did the agent take the wrong turn? Would a
 
 Figure out what works, and build on it. One experiment at a time, one task at a time. That's the thing engineers are good at anyway: fixing broken things.
 
-A fuller starting shape waits in the working template at the back.
+A fuller starting shape waits in the working template in Appendix B.
 
 ---
 
@@ -122,3 +122,4 @@ The Spec Session is where the work happens. Which leaves one question worth sitt
 
 [^c5-sdd]: Birgitta Böckeler, "Understanding Spec-Driven Development: Kiro, Spec-Kit, and Tessl," "Exploring Gen AI" ([martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)). She analyzed Kiro, spec-kit, and Tessl.
 [^c5-aidlc]: Raja SP, "AI-Driven Development Life Cycle: Reimagining Software Engineering," AWS DevOps & Developer Productivity Blog ([aws.amazon.com/blogs/devops/ai-driven-development-life-cycle](https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle), 2025), and the AI-DLC Method Definition paper linked from it. The method assumes synchronous colocation — "a single room with a shared screen" — and persists every artifact it produces, from intent to test plan, as traceable context the AI references across the lifecycle.
+[^c5-aiup]: Simon Martinelli's *Spec-Driven Development: From Specs to Code with AI Agents* (Apress, 2026) is a book about the artifact, and it stops at the same line. The requirements workshop produces "a shared mental model that cannot be produced by tools alone," and "AI does not replace this human collaboration. Its role starts after the workshop." His life cycle then runs specify, generate, validate, review, refine, and the workshop is not one of the five. Where the two books part is in Appendix E.

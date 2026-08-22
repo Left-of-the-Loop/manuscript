@@ -2,7 +2,7 @@
 
 *A starting shape, frozen at printing. Take it, run it, and rebuild it for your team.*
 
-I don't have years of experience running these. Nobody does, because the ritual is younger than the problem it solves. What follows is a construction from the rituals we know, and it inherits from refinement, not sprint planning. Capacity stops being the constraint when the agent implements, so the capacity arithmetic of planning has nothing left to do. What survives is refinement's content with mob programming's mechanics. Run it, break it, tell me where it fails.
+I don't have years of experience running these. Nobody does, because the ritual is younger than the problem it solves. What follows is a construction from the rituals we know, and what it inherits from is sprint planning. Planning did two jobs: work out how much fits, and work out what the work actually is. Capacity stops being the constraint when the agent implements, so the first has nothing left to do. The second is the whole session, run with mob programming's mechanics. Run it, break it, tell me where it fails.
 
 ## Cadence and size
 
@@ -12,7 +12,7 @@ This is not a weekly ceremony. A team might run two or three of these in a day, 
 
 Three to seven people. Below three, someone is prompting with witnesses. That rule is about the standing session, not the first try: the pair experiment the Agora's door opens with is deliberately below this floor, and it's how you find out whether your team wants the real thing. Above seven, the session splits by domain, and the team accepts the coverage tension that comes with splitting.
 
-One session, one spec. No batch grooming of a backlog.
+One session, one spec. No batch refinement of a backlog.
 
 ## The fast path
 
@@ -20,7 +20,7 @@ Need the fast path? Skip the template. Grab one coworker, agree on intent and no
 
 ## What this replaces
 
-The session is not added to the ceremony stack; it retires most of it. Refinement and planning are settled above: one inherited outright, one left with nothing to do. That leaves the daily. Audit it: much of what a standup catches is fragments of understanding traded in status form, and the session now does that work properly, per piece of work. Keep the daily if it still earns its fifteen minutes; on many teams it thins to a blocker-ping. Then count ceremony hours before and after. The seven percent in Appendix A is not always net-new spend; for a team running full Scrum it is often a net cut. If the calendar grows when you adopt this, you didn't adopt it; you added a meeting.
+The session is not added to the ceremony stack; it retires most of it. Planning is settled above: half inherited outright, half left with nothing to do. Refinement goes with it, because the only sizing question left is whether the work fits in one session, and the gate answers that. That leaves the daily. Audit it: much of what a standup catches is fragments of understanding traded in status form, and the session now does that work properly, per piece of work. Keep the daily if it still earns its fifteen minutes; on many teams it thins to a blocker-ping. Then count ceremony hours before and after. The seven percent in Appendix A is not always net-new spend; for a team running full Scrum it is often a net cut. If the calendar grows when you adopt this, you didn't adopt it; you added a meeting.
 
 ## Roles, rotating per session
 

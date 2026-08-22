@@ -22,21 +22,21 @@ The first is *weighted validation*. When someone with their own hard-won experie
 
 Someone who has built observability pipelines telling me the foundation holds would settle something the model's agreement can't.
 
-AI agreement is cheap. Human agreement from the right person is not.
+> AI agreement is cheap. Human agreement from the right person is not.
 
 The second is scope judgment. Am I reaching too high or not high enough? Is an agentic nervous system too ambitious for a conference demo, or not ambitious enough to deserve a stage? I can't see that from inside it. An AI will help a person execute whatever direction they've chosen. That takes someone who has seen both failure modes: the plan that collapsed under its own weight and the one that never got anywhere, and can recognize, from the outside, which one the work is heading toward.
 
-The agent will hold any direction. It can't tell you yours is wrong.
+> The agent will hold any direction. It can't tell you yours is wrong.
 
 The third is the unknown unknown. The tool no one in the room is aware of. The approach that would make everything simpler but hasn't been encountered. If a framework already does what I built over the demo, the model and I are both searching for a name I don't know.
 
 AI can surface unknown unknowns within the space it has been pointed at. Ask it "what am I missing here" and it will often find something useful. The harder gap is context-specific: the thing someone with direct experience of the situation would see that neither you nor the model would think to name. That requires someone looking in from outside the framing.
 
-You can't prompt for what you don't know to name.
+> You can't prompt for what you don't know to name.
 
 The fourth is teaching. This one has no JoustMania version. There is a difference between a thing being explained and a thing being taught. AI explains well. It can walk a person through a concept, surface the relevant literature, answer follow-up questions patiently. But teaching requires someone who recognizes when the learner doesn't know something yet and can hold them through that state until the understanding arrives. The scar tissue matters, and so does the presence of someone who notices they're there and knows what to do about it.
 
-Research is a substitute for teaching, slower and lonelier.
+> Research is a substitute for teaching, slower and lonelier.
 
 ---
 
@@ -86,7 +86,7 @@ None of the four is a capability gap. Capability gaps close; that's what model r
 
 Understanding is only useful if it can be challenged. And the place where it gets challenged, by someone who doesn't have to agree, is the team.
 
-The friction is the point.
+> The friction is the point.
 
 Three of the four keep your judgment honest while you build. Teaching does something the other three don't. It is how the judgment survives the person who has it, and it is the first thing the agent takes. So where does the next person learn to be the one who doesn't have to agree, when the tool is always the faster answer?
 

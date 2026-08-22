@@ -47,7 +47,7 @@ What "a fool with a tool is still a fool" actually means isn't that AI makes eng
 
 ---
 
-The team is the check on what the tool can't see.
+> The team is the check on what the tool can't see.
 
 It works as a different set of eyes at a different level of the system. The junior was valuable because he was still reading the code the way you read code before you've developed the habit of trusting the agent's output. He was closer to the behavior than I was.
 

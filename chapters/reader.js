@@ -68,6 +68,17 @@
   function renderMarkdown(text) {
     // Strip pandoc heading attributes like "# Glossary {-}".
     text = text.replace(/^(#{1,6} .*?)\s*\{[^}]*\}\s*$/gm, "$1");
+    // Pandoc fenced divs (::: spec ... :::). Upstream reclaimed blockquote
+    // for takeaways and moved Appendix C's spec lines here; markdown-it has
+    // no notion of the syntax, so without this the fence markers render as
+    // literal ":::" text and the lines inside collapse into one paragraph.
+    // The blank lines around the body keep the markdown inside it parsed.
+    text = text.replace(
+      /^:::+[ \t]*([A-Za-z][\w-]*)[ \t]*\r?$([\s\S]*?)^:::+[ \t]*\r?$/gm,
+      function (whole, cls, body) {
+        return '<div class="' + cls + '">\n\n' + body.trim() + '\n\n</div>\n';
+      }
+    );
     return window.markdownit({ html: true, typographer: true })
       .use(window.markdownitFootnote)
       .render(text);

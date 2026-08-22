@@ -46,7 +46,7 @@ None of this is against pairing, or against the pair the Agora's door opens with
 
 Resilience reaches the same number by a different argument. One person holding critical system knowledge is a single point of failure. Two creates a dependency. Three creates a floor that survives someone going heads down, someone leaving, someone getting pulled onto something else.
 
-The minimum viable unit is three people.
+> The minimum viable unit is three people.
 
 ---
 

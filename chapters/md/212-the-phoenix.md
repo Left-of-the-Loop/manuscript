@@ -56,7 +56,7 @@ The Phoenix doesn't rise by accident; it chooses to. That choice is the differen
 
 The renewal is also a choice. Keep the team. Protect the room. Slow down for the conversation that feels like it's getting in the way, because that conversation is often the work. Push back when the metric replaces the judgment. Say the thing that's uncomfortable to say in the Spec Session. Ask the question that surfaces the XY problem before the agent runs.
 
-Choose the forest. Even when the desert feels faster. Especially when it feels faster.
+> Choose the forest. Even when the desert feels faster. Especially when it feels faster.
 
 Understanding what to build, together, before anyone builds it was always the hard part. AI didn't change that; it just made it easier to forget.
 
