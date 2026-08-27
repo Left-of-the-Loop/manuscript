@@ -10,7 +10,7 @@ AI is the most powerful desert tool ever built. A developer can move faster alon
 
 ---
 
-The Trireme gave the structure. But the structure depends on a precondition it can't supply: a room where uncertainty is discussable.
+The Astrolabe can price what the room costs. It can't supply what the Trireme's structure still depends on: a room where uncertainty is discussable.
 
 The Agora chapter called psychological safety the prerequisite. The sharper version is *epistemic safety*: the conditions where people reveal what they don't know. Where the junior asks the question without calculating the risk first. Where the senior shares the reasoning, not just the conclusion. Where the half-formed thought gets voiced instead of suppressed. Where assumptions become visible before they become decisions.
 

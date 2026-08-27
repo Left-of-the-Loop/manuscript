@@ -20,7 +20,7 @@ Someone who holds the system direction, the direction work from the End of a Cra
 
 Someone who watches the ground. The behavioral edge cases, the implementation details, the things that drift when nobody is looking. This is often where juniors do their most valuable work. The junior catching what the senior's attention has moved past, the dynamic from the Fool with a Tool chapter, is by design.
 
-Someone who manages the outside. Stakeholder pressure, organizational noise, the requests that arrive before anyone has had time to spec them. The Stakeholder Navigator from the Product Owner is Dead chapter. With that role filled, the room stays protected long enough to think.
+Someone who manages the outside. Stakeholder pressure, organizational noise, the requests that arrive before anyone has had time to spec them. The Stakeholder Navigator from the Product Owner is Dead chapter. With that role filled, the room stays protected long enough to think. That protection is a decision, not a default. A Navigator who lets every stakeholder request straight into the room has only relocated the noise. The judgment call, what gets deferred and what gets named as a problem in the next status update, sits with whoever holds that seat, and it looks like management from the outside because it is.
 
 The agent is the fourth, running only after the other three have done their work.
 

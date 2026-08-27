@@ -4,14 +4,14 @@
 
 *If one team can sustain it, how does it scale to many without thinning?*
 
-Most developers are running their own agent.
+The Trireme's structure buys aligned domains, not an aligned organization. Most developers are running their own agent.
 
 <!-- TODO: restyled but not final. Outstanding: the two headings and "x20" are typeset, not hand-lettered; the headings sit outside the panel frames instead of inside them; and the grid stops at the panel edges instead of running behind the whole sheet. -->
 ![Twenty developers, twenty separate agent loops, versus one team running a single shared loop.](figures/scattered-loops.png)
 
 Not every team, every individual. Local machine. Local workflow. Local configuration. Local prompting habits built up through private experimentation that nobody else sees. The AGENTS.md[^c11-agents] file, if it exists at all, was written by whoever set up the project and hasn't been touched since. The skills and MCPs each engineer uses reflect their own discovery process alone.
 
-A twenty-person engineering organization doesn't have four or five different agent configurations. It has twenty. The fragmentation is at the individual level, which makes it harder to see, harder to fix, and harder to improve.
+A twenty-person engineering organization doesn't have four or five different agent configurations. It has twenty. The fragmentation is at the individual level, which makes it harder to see, harder to fix, and harder to improve. That fix lives above any single team's backlog. It takes someone who can see all twenty configurations at once, and the budget to put people on the fragmentation ahead of the next feature. The organization has to decide whether that work is worth funding.
 
 This is where software teams were before platform engineering existed. Before anyone decided that deployment pipelines, observability stacks, and infrastructure configuration were too important to leave to individual teams with different standards and no shared visibility. Every team managed their own servers. Improvements stayed local and knowledge didn't transfer. The cost of doing it badly was paid independently by each team, invisibly, with no way to see the pattern across the organization.
 
