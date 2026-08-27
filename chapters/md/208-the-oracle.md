@@ -12,6 +12,8 @@ What I had been working on was a package-private, domain-driven setup for a Java
 
 I nodded and ignored it. The measurement seemed wrong and I knew the work was right. My role was eliminated shortly after. I've never been able to fully separate the two. When a metric doesn't see someone's work, the people reading the metric don't see it either.
 
+He had every reason to want a signal. He had his own reporting to do, a stakeholder above him asking what the team was shipping, and a demo channel was the only thing legible from outside the room. I had made my work easy to build and hard to see. It showed up in the codebase and stopped there. He wasn't managing me badly. He was managing the outside with the only instrument he had.
+
 What did I do after being told? I pushed back. I didn't start posting in the demo channel. I informed the team about what I'd been told, questioned it openly, and named it as a bad metric, in the same category as review request count, lines of code, or tokens burned. Metrics that measure activity rather than value, and that get gamed the moment they become targets.
 
 The metric couldn't see it. And when I think about what might have changed the outcome, it wasn't doing different work. It was being asked a different question. Not "why aren't you in the demo channel" but "what are you working on." The first has a measurable answer. The second requires a conversation.
@@ -86,7 +88,7 @@ A team with high velocity and low predictability is guessing fast. A team with l
 
 Predictability is also the metric that can't be easily gamed. Either it was called right or it wasn't. No amount of demo channel activity changes whether the thing shipped when the team said it would. No number of tokens burned makes a forecast accurate.
 
-And predictability is a team metric. One person can't be predictable alone. Predictability requires shared understanding of the work, shared ownership of the sizing, shared commitment to what goes through the gate. It requires the Spec Session, or something like it: a moment where the team agrees on what is being built and how big it is, while the work is still on the page.
+And predictability is a team metric. One person can't be predictable alone. Predictability requires shared understanding of the work, shared ownership of the sizing, shared commitment to what goes through the gate. It requires the Spec Session, or something like it: a moment where the team agrees on what is being built and how big it is, while the work is still on the page. That is also what the Stakeholder Navigator carries out of the room: a commitment the people outside it can rely on.
 
 No points, no poker. Estimation was how teams committed when implementation capacity was the constraint, and the constraint moved. What sizing looks like instead is in Appendix B. What the room costs, honestly counted, is Appendix A.
 

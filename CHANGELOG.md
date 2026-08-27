@@ -11,6 +11,38 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-08-27 — manuscript `2da3179`
+
+Site: `PENDING`
+
+Two chapters change places, and the introduction is rewritten around a
+story map that matches the book it introduces.
+
+- **The Astrolabe and The Forest and the Desert swap.** The Astrolabe is
+  now chapter 10 and the Forest chapter 11, so the book ends on the
+  forest rather than on the platform. Both files were renumbered
+  upstream and both keep their old basenames as URL aliases here, so
+  links shared under either number still resolve
+- **The introduction is rewritten.** The KubeCon scene is tightened
+  ("a KubeCon demo for a talk called…" rather than two sentences), the
+  question becomes "how do you find out what happened at 2 a.m.", and a
+  new line lands the gap in AI terms: ours took a week to surface, the
+  same gap now opens in the time it takes an agent to answer
+- The thesis gets its own takeaway, so the introduction ends on a
+  portable line like every chapter after it
+- The Lead/PM decision gets its own scene in three chapters rather than
+  being asserted
+- Book notes gain Laycock, and the disagreement about what is actually
+  scarce, plus Fiona Fung and the reasoning for keeping her out of the
+  manuscript
+
+The landing page's excerpt is regenerated from the rewritten
+introduction rather than patched: four of its eight paragraphs changed,
+which is past the point where hand-editing stays trustworthy.
+
+From the `latest` release, built at `2da3179` on push. 111 pages at
+5.5×8.5.
+
 ## 2026-08-21 — manuscript `c245db7`
 
 Site: `836d498`
