@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-08-27 — manuscript `2da3179`
 
-Site: `PENDING`
+Site: `4adc7b2`
 
 Two chapters change places, and the introduction is rewritten around a
 story map that matches the book it introduces.
