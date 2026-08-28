@@ -8,9 +8,9 @@
 
 Team sizes have always been a function of the bottleneck. In traditional agile, 7 to 10 people was the recommended unit, calibrated to sustain an implementation pipeline. The number was the answer to a specific question: how many people does it take to keep implementation moving?
 
-Agents change the answer, because they change the question. The Spec Session is now the bottleneck. It gets slower as the session fills up and convergence takes longer to build a shared picture.
+Agents change the answer, because they change the question. Convergence is now the bottleneck. As the session fills up, the shared picture takes longer to build.
 
-So the logic that produced 7-to-10 person teams no longer applies. The right team size is now the one that can run an effective Spec Session.
+So the logic that produced 7-to-10 person teams no longer applies. The right team size is now the largest group that can still converge.
 
 ---
 
