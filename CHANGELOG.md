@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-08-28 — manuscript `f100b03`
 
-Site: `PENDING`
+Site: `09dab50`
 
 One commit, six chapters, and the book stops letting a coined name carry
 an argument it never made.
