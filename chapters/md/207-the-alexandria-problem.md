@@ -68,9 +68,9 @@ The junior develops their own AI workflow in isolation, without the senior's eye
 
 ---
 
-The Spec Session is the new learning environment, arrived at by consequence rather than design.
+Teams build the room to decide. The learning is a consequence nobody designed.
 
-When the team is in the room together, building the spec before the agent runs, the junior watches how seniors frame problems. They see the questions that get asked before anyone proposes a solution. They see an experienced engineer push back on a direction not because the implementation is wrong but because the problem statement isn't tight enough. They see what "ready for the agent" looks like, and more importantly, what it doesn't look like yet. They learn it from watching humans think through what needs to be generated and why.
+When the team builds the spec together, the junior watches how seniors frame problems. They see the questions that get asked before anyone proposes a solution. They see an experienced engineer push back on a direction not because the implementation is wrong but because the problem statement isn't tight enough. They see what "ready for the agent" looks like, and more importantly, what it doesn't look like yet. They learn it from watching humans think through what needs to be generated and why.
 
 The mob exploration works the same way. A new library, a new approach, a PoC the team runs together. The junior isn't just evaluating the technology. They're watching how experienced engineers evaluate tradeoffs. What questions they ask. What concerns they raise. What "good enough for now" means versus "this will hurt us later."
 

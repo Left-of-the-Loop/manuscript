@@ -40,7 +40,7 @@ The fourth is teaching. This one has no JoustMania version. There is a differenc
 
 ---
 
-The Spec Session is where the first three happen, before the agent runs.
+The room is where the first three happen, before the agent runs.
 
 The distributed async team loses these things first. The timezone gap, the Kanban board, the scoping documents that arrive as finished artifacts, all of it slowly drains the moments where weighted validation happens, where someone challenges the scope, where an unknown unknown gets surfaced by someone who happened to know the thing no one else did.
 

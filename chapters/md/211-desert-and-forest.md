@@ -60,7 +60,7 @@ It's the same instinct as switching to English the moment I know there's someone
 
 The desert closes ranks: tight clusters, known quantities, optimized for the people already in the room, because sharing costs time it assumes it doesn't have. The forest leaves space before it's requested. It can afford to, because it assumes there is enough to go around, and it accepts the friction of the unexpected perspective because the unexpected perspective is often the one that matters.
 
-The Spec Session works the same way. The session that starts with "we've thought about this and here's what we're doing" has closed the circle. The one that starts with "we have some thinking but we haven't decided" leaves the gap. The junior's edge case, the stakeholder's clarification, the concern nobody voiced in the corridor: those arrive through the gap.
+The room works the same way. The session that starts with "we've thought about this and here's what we're doing" has closed the circle. The one that starts with "we have some thinking but we haven't decided" leaves the gap. The junior's edge case, the stakeholder's clarification, the concern nobody voiced in the corridor: those arrive through the gap.
 
 The gesture is small. The effect compounds.
 
@@ -68,7 +68,7 @@ Building the room is slower than moving alone. It requires attention to how thin
 
 It requires, sometimes, someone telling an engineer that their blog post links were not well received.
 
-A team with a safe room and moderate individual capability will outperform a collection of 10x engineers who broke the room, because the room is where the capability compounds. Where the junior's edge case catches the senior's blind spot. Where the Spec Session surfaces the misunderstanding before the agent burns the budget. Where the different perspective changes the direction before it's too late to change.
+A team with a safe room and moderate individual capability will outperform a collection of 10x engineers who broke the room, because the room is where the capability compounds. Where the junior's edge case catches the senior's blind spot. Where the misunderstanding surfaces before the agent burns the budget. Where the different perspective changes the direction before it's too late to change.
 
 ---
 

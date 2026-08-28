@@ -53,7 +53,7 @@ None of that is simple to build. Shared memory is the hard version, where the mo
 
 Operational knowledge that used to burn in Alexandria gets written into stone through infrastructure: the living artifact that encodes what the organization has learned about working with agents.
 
-But the platform only solves one layer of the Alexandria Problem. The deeper knowledge, meaning system understanding, architectural context, the reasoning behind past decisions, the edge cases discovered through years in the codebase, still lives in people. The platform can't capture it. The Spec Session is still the mechanism that keeps it shared and alive. The platform makes the operational foundation stable enough that the team's cognitive energy goes toward that deeper work instead of reinventing local agent configurations.
+But the platform only solves one layer of the Alexandria Problem. The deeper knowledge, meaning system understanding, architectural context, the reasoning behind past decisions, the edge cases discovered through years in the codebase, still lives in people. The platform can't capture it. The room is still where that knowledge stays shared and alive. The platform makes the operational foundation stable enough that the team's cognitive energy goes toward that deeper work instead of reinventing local agent configurations.
 
 Right now every engineer is simultaneously trying to be productive with AI tools and develop their own understanding of how to use them well. That's a significant overhead that experienced engineers absorb at the cost of other things, and that junior engineers struggle with because they're still building the foundation underneath it.
 
@@ -63,7 +63,7 @@ A platform removes that overhead from the individual and places it with the team
 
 A bad spec produces a rerun, and the rerun traces back to the spec, the spec to the team and the ticket. The cost shows up in the data.
 
-It's a feedback loop. For the first time, the organization can test whether the Spec Session matters.
+It's a feedback loop. For the first time, the organization can test whether the room pays for itself.
 
 Does shared understanding before the agent runs produce fewer reruns? Does spec quality correlate with first-run success? Does the team that invests in upfront alignment ship more predictably than the team that skips it?
 

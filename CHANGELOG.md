@@ -11,6 +11,43 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-08-28 — manuscript `f100b03`
+
+Site: `09dab50`
+
+One commit, six chapters, and the book stops letting a coined name carry
+an argument it never made.
+
+From the Agora onward, four topic sentences named *the Spec Session*
+where the subject was really the condition it produces. Every hedge the
+book makes about the ritual — "the form doesn't matter, but the instinct
+does", async as an equal form, the best room having no walls — lives
+inside the Agora, so past that chapter the proper noun was doing the
+arguing alone, and reading as the solution rather than one form of it.
+
+- The Genie and the Alexandria Problem take **the room**, which the
+  glossary already defines as the condition rather than a place
+- The Astrolabe asks whether **the room pays for itself**, which lands
+  the callback to Appendix A and stops the measurement chapter
+  mislabelling its own variable two lines before it asks about shared
+  understanding
+- The Trireme takes neither noun. Team size derives from a bounded
+  convergence, so "the right room size is the one that can be a room"
+  would be circular; the chapter now turns on **converging**, which is
+  also what lets its answer survive Appendix D, where there is no room
+  at all
+- The Forest and the Phoenix follow the same rule in passing
+
+Not a purge: the Oracle's "or something like it" already hedged, and the
+places where the ritual really is the subject keep the name.
+
+Nothing on the landing page changed beyond the footer — the introduction
+is untouched in this range — and no appendix changed, so the living
+`/template` and `/further-reading` pages need no re-reading against it.
+
+From the `latest` release, built at `f100b03` on push. 110 pages, one
+fewer than the last draft.
+
 ## 2026-08-27 — manuscript `2da3179`
 
 Site: `4adc7b2`

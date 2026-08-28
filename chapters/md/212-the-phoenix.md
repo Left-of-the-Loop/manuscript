@@ -54,7 +54,7 @@ If you feel lost, you are not behind. You are noticing something that the metric
 
 The Phoenix doesn't rise by accident; it chooses to. That choice is the difference between what happened to Sisyphus and what can happen here. Sisyphus had no choice but to push the boulder. Teams do. Organizations do. Individual engineers do. The drift toward the desert, toward individual speed, toward the ever-agreeing genie: none of it is inevitable. It's a series of small choices that compound quietly until the room goes empty.
 
-The renewal is also a choice. Keep the team. Protect the room. Slow down for the conversation that feels like it's getting in the way, because that conversation is often the work. Push back when the metric replaces the judgment. Say the thing that's uncomfortable to say in the Spec Session. Ask the question that surfaces the XY problem before the agent runs.
+The renewal is also a choice. Keep the team. Protect the room. Slow down for the conversation that feels like it's getting in the way, because that conversation is often the work. Push back when the metric replaces the judgment. Say the thing that's uncomfortable to say in the room. Ask the question that surfaces the XY problem before the agent runs.
 
 > Choose the forest. Even when the desert feels faster. Especially when it feels faster.
 
