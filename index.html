@@ -186,7 +186,7 @@
      the rest a click away. No autoplay — a line that vanishes mid-sentence
      costs more than the motion buys, and nothing else on this page moves. */
   .takeaways {
-    margin: 2.5em 0 0;
+    margin: 1.8em 0 2.2em;
     text-align: center;
     font-size: 1.1em;
   }
@@ -210,6 +210,9 @@
     color: #888;
     margin-top: 0.8em;
   }
+  /* Sized for a thumb, not just for the glyph: at the nav's 0.8em the
+     padding alone left them 23x26, under the 24x24 minimum and tight to
+     hit on a phone. */
   .takeaways .nav button {
     font: inherit;
     color: #1a4d8f;
@@ -217,6 +220,8 @@
     border: 1px solid #ddd;
     border-radius: 3px;
     padding: 0.15em 0.6em;
+    min-width: 36px;
+    min-height: 32px;
     cursor: pointer;
     line-height: 1.4;
   }
@@ -260,6 +265,27 @@
 <p class="byline">A book by Simon Schrottner</p>
 
 <p class="status">Working draft &mdash; feedback welcome</p>
+
+<!-- Every takeaway is real page content, not markup hidden for crawlers.
+     Without JavaScript all twelve render as a list; with it they become a
+     carousel. A reader and a crawler that runs scripts therefore see the
+     same thing, which is the difference between progressive enhancement
+     and cloaking. Upright rather than italic: in this book italic is the
+     epigraph register and a takeaway is deliberately not one. -->
+<div class="takeaways" id="takeaways">
+  <p>The boulder goes up faster. The constraint was never the pushing.</p>
+  <p>That division is the whole shape of the work now. The agent on implementation. The person on direction.</p>
+  <p>The team is the check on what the tool can't see.</p>
+  <p>Implementation got cheap. Discovering it was wrong didn't.</p>
+  <p>What that condition builds is more than shared understanding. It makes trust possible.</p>
+  <p>AI agreement is cheap. Human agreement from the right person is not.</p>
+  <p>We were still in the room together. We had stopped thinking together.</p>
+  <p>We used to confuse effort with value. AI lets us confuse output with value.</p>
+  <p>The minimum viable unit is three people.</p>
+  <p>The organization scales understanding by carrying patterns between rooms.</p>
+  <p>Without people saying what they actually think, nothing else holds.</p>
+  <p>Choose the forest. Even when the desert feels faster. Especially when it feels faster.</p>
+</div>
 
 <p>
 AI erodes the incidental friction that used to produce a shared picture
@@ -358,25 +384,6 @@ we started building the thing.</p>
       <li><span class="ch">The Forest and the Desert</span><span class="q">If the right structure holds understanding, what keeps it alive over time?</span></li>
       <li><span class="ch">The Phoenix</span><span class="q">If all of this is possible, what do you choose?</span></li>
   </ol>
-  <!-- Every takeaway is real page content, not markup hidden for crawlers.
-       Without JavaScript all twelve render as a list; with it, one is kept
-       at random and the rest are removed. A reader and a crawler that runs
-       scripts therefore see exactly the same thing, which is the difference
-       between progressive enhancement and cloaking. -->
-  <div class="takeaways" id="takeaways">
-      <p>The boulder goes up faster. The constraint was never the pushing.</p>
-      <p>That division is the whole shape of the work now. The agent on implementation. The person on direction.</p>
-      <p>The team is the check on what the tool can't see.</p>
-      <p>Implementation got cheap. Discovering it was wrong didn't.</p>
-      <p>What that condition builds is more than shared understanding. It makes trust possible.</p>
-      <p>AI agreement is cheap. Human agreement from the right person is not.</p>
-      <p>We were still in the room together. We had stopped thinking together.</p>
-      <p>We used to confuse effort with value. AI lets us confuse output with value.</p>
-      <p>The minimum viable unit is three people.</p>
-      <p>The organization scales understanding by carrying patterns between rooms.</p>
-      <p>Without people saying what they actually think, nothing else holds.</p>
-      <p>Choose the forest. Even when the desert feels faster. Especially when it feels faster.</p>
-  </div>
 </section>
 
 
@@ -403,6 +410,14 @@ we started building the thing.</p>
     var frame = document.createElement("div");
     frame.className = "frame";
     box.insertBefore(frame, box.firstChild);
+
+    // Detach all twelve up front. Without this the carousel shows the
+    // selected line inside the frame and leaves the other eleven sitting
+    // below it, which is the no-JS layout plus a frame rather than a
+    // carousel. `lines` keeps the references, so nothing is lost.
+    lines.forEach(function (line) {
+      if (line.parentNode) { line.parentNode.removeChild(line); }
+    });
 
     // Start somewhere random so a repeat visit opens on a different line.
     var i = Math.floor(Math.random() * lines.length);
