@@ -33,7 +33,7 @@ The platform won't be the only way to run an agent. Engineers will still experim
 
 But when agent work runs through the platform, something changes. Every run is traceable to a team, a ticket, a spec. Rerun rates become visible. The correlation between spec quality and expensive implementations becomes measurable. The organization can see, for the first time, what a bad prompt actually costs, then trace it back to the process failure that caused it.
 
-That's organizational telemetry for AI development. The same way a team instruments its system to understand its behavior, it instruments its agent platform to understand its process.
+That's organizational telemetry for AI development. The same way a team instruments its system to understand its behavior, the organization instruments its agent platform to understand its process.
 
 Historically, platform engineering worked not because individual teams couldn't build those things themselves. It worked because the platform team sees across every team at once: more signal, more patterns, more ability to spot what's working and what isn't, and the mandate and resources to act on it. One engineer figures out a better way to frame a class of problem. Under the current model that insight stays private, and when the engineer leaves it goes with them. Under the platform model it gets contributed, reviewed, and inherited by every team.
 
@@ -42,6 +42,8 @@ The same logic applies to agent infrastructure. An individual team maintains the
 The improvement that would have lived in one person's AGENTS.md file becomes the new default for the whole organization. One better skill, inherited by every team. One fixed prompt failure mode, gone everywhere at once. One shared MCP that three teams were building independently, now maintained centrally and available to all.
 
 That's the rate at which the organization gets smarter about working with agents. The platform is valuable not because it saves money but because discoveries stop dying locally.
+
+> The organization scales understanding by carrying patterns between rooms.
 
 The foundation is closed to ad hoc modification: stable, trusted, and maintained by people whose job it is to make it better. The team-specific layer is open, customizable, and extensible without breaking what the foundation provides. Teams that find something better contribute it upstream. That is the model open source has run on for decades.[^c11-ocp]
 
@@ -61,9 +63,9 @@ A platform removes that overhead from the individual and places it with the team
 
 ---
 
-A bad spec produces a rerun, and the rerun traces back to the spec, the spec to the team and the ticket. The cost shows up in the data.
+A bad spec produces a rerun, and the rerun traces back to the spec, the spec to the team and the ticket. The cost shows up in the data. It's a feedback loop.
 
-It's a feedback loop. For the first time, the organization can test whether the room pays for itself.
+> For the first time, the organization can test whether the room pays for itself.
 
 Does shared understanding before the agent runs produce fewer reruns? Does spec quality correlate with first-run success? Does the team that invests in upfront alignment ship more predictably than the team that skips it?
 

@@ -75,6 +75,8 @@ Something more like a Stakeholder Navigator, not a Product Owner in the agile se
 
 I know how that sounds. A rebranded PO. Partly yes. The difference is ownership. The old model has the PO owning product thinking and managing stakeholders. This one has the team owning product thinking and the navigator owning the organizational interface. That's a real split even if the job title looks similar from the outside. And it's a more sustainable job, more defined, with an off switch.
 
+> The team owns product thinking. The Stakeholder Navigator carries it to the people who can challenge it.
+
 ---
 
 The open source maintainer and the PO are dealing with the same structural problem from different angles.
