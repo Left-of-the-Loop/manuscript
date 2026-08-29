@@ -82,7 +82,7 @@ Consensus is too high a bar and too slow to reach. The Spec Session produces con
 
 ---
 
-The best room I have ever worked in had no walls at all.
+> The best room I have ever worked in had no walls at all.
 
 Async Spec Planning is the same thing with a different form factor: for distributed teams, the session becomes a review request on the spec, and the merge condition is that the team has converged. It's slower than a room and faster than a document that gets written, inherited, and silently misunderstood.
 

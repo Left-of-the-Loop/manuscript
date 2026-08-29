@@ -38,7 +38,7 @@ The terms this book leans on, defined once. Some have ancestors, credited in the
 
 **Stakeholder Navigator** — The role that owns the organizational interface after product thinking distributes into the team: carries the spec to whoever the outcome touches, manages the review cycle, and protects the room from the noise while the team thinks. The part of the old Product Owner that doesn't distribute.
 
-**The three functions** — The three kinds of attention a Spec Session needs in the room: someone holding the system direction, someone watching the ground for the edge cases that drift when nobody is looking, and someone managing the outside so the room stays protected long enough to think. The agent is the fourth, running only after the other three have done their work. The seats overlap and one person can hold two, but the minimum viable unit is three.
+**The three functions** — The three kinds of attention a room needs on the work: someone holding the system direction, someone watching the ground for the edge cases that drift when nobody is looking, and someone managing the outside so the room stays protected long enough to think. The agent is the fourth, running only after the other three have done their work. The seats overlap and one person can hold two, but the minimum viable unit is three.
 
 **Weighted validation** — Agreement from someone independent of your framing, with their own hard-won experience and their own reasons to disagree, who could have said no. It changes something an AI's agreement can't, because it costs the person something to give. Something only another person can provide, before the agent runs. Its dissenting form is *constructive friction*.
 

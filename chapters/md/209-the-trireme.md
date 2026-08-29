@@ -14,7 +14,7 @@ So the logic that produced 7-to-10 person teams no longer applies. The right tea
 
 ---
 
-The Spec Session needs three kinds of attention on the work.
+A functioning room needs three kinds of attention on the work.
 
 Someone who holds the system direction, the direction work from the End of a Craft chapter, now named as a role: the person who tracks what the system is becoming and whether the decisions being made are consistent with that, regardless of title or seniority. In a small team this is often the same person who runs the Spec Session. But there needs to be someone in every team.
 
@@ -50,7 +50,7 @@ Resilience reaches the same number by a different argument. One person holding c
 
 ---
 
-Still, some organizations will operate at 15 or 20 people, for good reasons: scale, domain breadth, regulatory complexity. What changes is how those teams structure themselves internally.
+Still, some organizations will have teams of 15 or 20 people, for good reasons: scale, domain breadth, regulatory complexity. What changes is how those teams structure themselves internally.
 
 The model that works is stream-aligned teams[^c9-tt]: smaller units, each running their own Spec Session on their slice of the problem, each holding deep shared understanding within their domain. Subject matter experts who own their territory. The larger team doesn't need a single room where everyone understands everything. It needs enough boundary knowledge between units that handoffs don't lose context.
 

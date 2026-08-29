@@ -68,7 +68,7 @@ The junior develops their own AI workflow in isolation, without the senior's eye
 
 ---
 
-Teams build the room to decide. The learning is a consequence nobody designed.
+> Teams build the room to decide. The learning is a consequence nobody designed.
 
 When the team builds the spec together, the junior watches how seniors frame problems. They see the questions that get asked before anyone proposes a solution. They see an experienced engineer push back on a direction not because the implementation is wrong but because the problem statement isn't tight enough. They see what "ready for the agent" looks like, and more importantly, what it doesn't look like yet. They learn it from watching humans think through what needs to be generated and why.
 

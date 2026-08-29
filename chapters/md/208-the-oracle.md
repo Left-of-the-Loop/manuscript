@@ -76,7 +76,7 @@ The output isn't the problem. The process that produces it is. Adding capability
 
 ---
 
-The metric that actually matters is predictability.
+> The metric that actually matters is predictability.
 
 Can the team tell a stakeholder when something will be done, and then actually do it by then?
 

@@ -11,6 +11,44 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-08-29 — manuscript `900ed8a`
+
+Site: `51ecded`
+
+The takeaways stop being one-per-chapter decoration and become a device
+with rules. Nine commits, seven chapters and the glossary.
+
+- **Five takeaways promoted, then two more.** The book now carries 23,
+  across 13 chapters. All five promotions were lines already standing
+  alone after a section break and already quotable cold; none was
+  written to fill a slot. The Astrolabe gets one on its falsifiability
+  line — "the organization can test whether the room pays for itself" is
+  where the book's claim stops being an argument and becomes something
+  data could refute — and the Product Owner chapter and the Astrolabe
+  each gain an argument quote
+- **The device now has two jobs and two tests**, recorded as law 6: a
+  takeaway is either the chapter's portable line or its argument quote,
+  and "this chapter has no argument quote" counts as a reason to add one
+  where "this line is good" does not
+- **Break adjacency was measured rather than argued.** Eight takeaways
+  touch a section break, six opening one and two closing it; the worry
+  was that a centred block's own spacing would collapse into the rule.
+  Measured on the print build, the rule draws in every case and the pair
+  reads two to fifteen points *more* open than a plain break
+- **The three functions belong to the room**, in the glossary and the
+  Trireme: three kinds of attention a room needs on the work, rather
+  than three the Spec Session needs in it — the same distinction the
+  previous update drew
+- The Forest and the Desert names its mechanism and drops a floating ego
+  line; the Trireme gives "those teams" an antecedent; the Astrolabe
+  names the second subject of its telemetry analogy
+
+Nothing on the landing page changed beyond the footer, and no appendix
+changed, so the living `/template` and `/further-reading` pages need no
+re-reading against the printed text.
+
+From the `latest` release, built at `900ed8a` on push. 111 pages.
+
 ## 2026-08-28 — manuscript `f100b03`
 
 Site: `09dab50`
