@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-08-29 — manuscript `900ed8a`
 
-Site: `PENDING`
+Site: `51ecded`
 
 The takeaways stop being one-per-chapter decoration and become a device
 with rules. Nine commits, seven chapters and the glossary.
