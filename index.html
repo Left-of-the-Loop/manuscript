@@ -136,6 +136,97 @@
     color: #666;
     margin-top: 1.5em;
   }
+  .map {
+    margin: 3em 0 0;
+  }
+  .map h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+  }
+  .map-note {
+    font-family: -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0;
+  }
+  /* Numbered by counter rather than by the list's own markers, so the number
+     sits in the margin and the two lines of each entry align to one another
+     instead of to the digit. */
+  .map ol {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: chapter;
+  }
+  .map li {
+    position: relative;
+    margin: 1em 0;
+    padding-left: 2.2em;
+  }
+  .map li::before {
+    counter-increment: chapter;
+    content: counter(chapter);
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    font-family: -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    color: #999;
+  }
+  .map .ch {
+    display: block;
+    font-weight: bold;
+  }
+  .map .q {
+    display: block;
+    color: #444;
+    font-style: italic;
+  }
+  /* Without JavaScript every takeaway renders as a plain centred list, which
+     is a fine way to read them. With it, they become a carousel: one shown,
+     the rest a click away. No autoplay — a line that vanishes mid-sentence
+     costs more than the motion buys, and nothing else on this page moves. */
+  .takeaways {
+    margin: 2.5em 0 0;
+    text-align: center;
+    font-size: 1.1em;
+  }
+  .takeaways p {
+    margin: 1em 0;
+  }
+  /* Scoped to the frame: an unscoped `p` here also matched the nav line and
+     stripped the margin that separates it from the quote. */
+  .takeaways.is-carousel .frame p {
+    margin: 0;
+  }
+  .takeaways .frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.5em;
+  }
+  .takeaways .nav {
+    font-family: -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 0.8em;
+  }
+  .takeaways .nav button {
+    font: inherit;
+    color: #1a4d8f;
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0.15em 0.6em;
+    cursor: pointer;
+    line-height: 1.4;
+  }
+  .takeaways .nav button:hover {
+    border-color: #bbb;
+  }
+  .takeaways .nav .count {
+    display: inline-block;
+    min-width: 4.5em;
+  }
   footer {
     font-family: -apple-system, Helvetica, Arial, sans-serif;
     font-size: 0.85em;
@@ -249,6 +340,46 @@ we started building the thing.</p>
 
 <p class="excerpt-note">The full draft continues in the PDF.</p>
 
+<section class="map">
+  <h2>The argument, chapter by chapter</h2>
+  <p class="map-note">Each chapter answers the question the one before it
+  raised. That chain is the book.</p>
+  <ol>
+      <li><span class="ch">The Curse of Sisyphus</span><span class="q">If implementation is the cheap part, where does the hard part go?</span></li>
+      <li><span class="ch">The End of a Craft?</span><span class="q">If the agent does the building, what's left that only a person can do?</span></li>
+      <li><span class="ch">A Fool with a Tool is Still a Fool</span><span class="q">If judgment is the craft that's left, what does it catch that the tool can't?</span></li>
+      <li><span class="ch">The Product Owner is Dead. Long Live Product Thinking.</span><span class="q">If the team can catch the wrong shape, who catches the wrong ask?</span></li>
+      <li><span class="ch">The Agora</span><span class="q">If no one person owns the understanding, how does a team build it together?</span></li>
+      <li><span class="ch">The Ever-Agreeing Genie</span><span class="q">If a team builds understanding together, what keeps it honest?</span></li>
+      <li><span class="ch">The Alexandria Problem</span><span class="q">If the understanding holds today, how does it survive the people who leave?</span></li>
+      <li><span class="ch">The Oracle</span><span class="q">If you can't see understanding, how do you know it's there?</span></li>
+      <li><span class="ch">The Trireme</span><span class="q">If predictability is the proof, what kind of team produces it?</span></li>
+      <li><span class="ch">The Astrolabe</span><span class="q">If one team can sustain it, how does it scale to many without thinning?</span></li>
+      <li><span class="ch">The Forest and the Desert</span><span class="q">If the right structure holds understanding, what keeps it alive over time?</span></li>
+      <li><span class="ch">The Phoenix</span><span class="q">If all of this is possible, what do you choose?</span></li>
+  </ol>
+  <!-- Every takeaway is real page content, not markup hidden for crawlers.
+       Without JavaScript all twelve render as a list; with it, one is kept
+       at random and the rest are removed. A reader and a crawler that runs
+       scripts therefore see exactly the same thing, which is the difference
+       between progressive enhancement and cloaking. -->
+  <div class="takeaways" id="takeaways">
+      <p>The boulder goes up faster. The constraint was never the pushing.</p>
+      <p>That division is the whole shape of the work now. The agent on implementation. The person on direction.</p>
+      <p>The team is the check on what the tool can't see.</p>
+      <p>Implementation got cheap. Discovering it was wrong didn't.</p>
+      <p>What that condition builds is more than shared understanding. It makes trust possible.</p>
+      <p>AI agreement is cheap. Human agreement from the right person is not.</p>
+      <p>We were still in the room together. We had stopped thinking together.</p>
+      <p>We used to confuse effort with value. AI lets us confuse output with value.</p>
+      <p>The minimum viable unit is three people.</p>
+      <p>The organization scales understanding by carrying patterns between rooms.</p>
+      <p>Without people saying what they actually think, nothing else holds.</p>
+      <p>Choose the forest. Even when the desert feels faster. Especially when it feels faster.</p>
+  </div>
+</section>
+
+
 <footer>
   <p>&copy; Simon Schrottner. Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</p>
   <details class="version-history">
@@ -257,6 +388,63 @@ we started building the thing.</p>
     <p>What changed in this and every earlier update: <a href="/changelog">changelog</a>.</p>
   </details>
 </footer>
+
+<script>
+  // The takeaways are real content in the markup, not markup hidden for
+  // crawlers: without this script all twelve render as a list, and with it
+  // they become a carousel. A reader and a crawler that runs scripts get the
+  // same page either way, which is what separates this from cloaking.
+  (function () {
+    var box = document.getElementById("takeaways");
+    if (!box) { return; }
+    var lines = Array.prototype.slice.call(box.getElementsByTagName("p"));
+    if (lines.length < 2) { return; }
+
+    var frame = document.createElement("div");
+    frame.className = "frame";
+    box.insertBefore(frame, box.firstChild);
+
+    // Start somewhere random so a repeat visit opens on a different line.
+    var i = Math.floor(Math.random() * lines.length);
+
+    var nav = document.createElement("p");
+    nav.className = "nav";
+    var prev = document.createElement("button");
+    prev.type = "button";
+    prev.textContent = "‹";
+    prev.setAttribute("aria-label", "Previous takeaway");
+    var next = document.createElement("button");
+    next.type = "button";
+    next.textContent = "›";
+    next.setAttribute("aria-label", "Next takeaway");
+    var count = document.createElement("span");
+    count.className = "count";
+
+    nav.appendChild(prev);
+    nav.appendChild(document.createTextNode(" "));
+    nav.appendChild(count);
+    nav.appendChild(document.createTextNode(" "));
+    nav.appendChild(next);
+    box.appendChild(nav);
+
+    // The live region announces the new line to a screen reader without
+    // moving focus, so the buttons stay usable for repeated presses.
+    frame.setAttribute("aria-live", "polite");
+
+    function show(n) {
+      i = (n + lines.length) % lines.length;
+      while (frame.firstChild) { frame.removeChild(frame.firstChild); }
+      frame.appendChild(lines[i]);
+      count.textContent = (i + 1) + " of " + lines.length;
+    }
+
+    prev.addEventListener("click", function () { show(i - 1); });
+    next.addEventListener("click", function () { show(i + 1); });
+
+    box.className += " is-carousel";
+    show(i);
+  })();
+</script>
 
 <script data-goatcounter="https://left-of-the-loop.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
