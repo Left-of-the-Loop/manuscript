@@ -24,7 +24,7 @@ What breaks the room is rarely dramatic. The subtler damage comes from well-inte
 
 The engineer who questions everything in a review request. Rigorous, thorough, evidence-based. From the inside it feels like raising the standard. From the outside it feels like being interrogated. The junior stops raising concerns because last time it became a debate. The senior stops sharing uncertain thinking because uncertain thinking gets challenged. The room gets quieter. Safer-feeling on the surface. More fragile underneath.
 
-Or the 10x engineer who is genuinely fast, genuinely capable, and experiences the team as an obstacle. Optimized for the desert. They've been rewarded for individual speed their whole career. The Spec Session feels like overhead. The review process feels like a bottleneck. The team feels like it's slowing them down, because it is, because that's partly what the team is for.
+Or the 10x engineer who is genuinely fast, genuinely capable, and experiences the team as an obstacle. Optimized for the desert. They've been rewarded for individual speed their whole career. Convergence feels like overhead. The review process feels like a bottleneck. The team feels like it's slowing them down, because it is, because that's partly what the team is for.
 
 I was somewhere on that spectrum. Not hoarding knowledge or dismissing others, but asking too many questions in the wrong format, ending messages with exclamation marks out of habit that read as aggression rather than enthusiasm, and once, memorably, sending colleagues links to blog posts explaining why direct messages destroy flow and that we should stick to processes.
 
@@ -48,7 +48,7 @@ Until the spec was wrong. Until the direction was off. Until the edge case surfa
 
 When the agent handles implementation, the bottleneck moves. The constraint becomes the quality of the understanding before the agent runs: the spec, the shared context, the room where the direction got challenged before anyone built anything. The engineer who improves the quality of that room now has more leverage than the engineer who writes code fastest.
 
-The 10x engineer of the AI era is the person who makes the room better. Who asks the question that surfaces the XY problem. Who creates the conditions where the junior speaks up. Who slows down the Spec Session just enough to catch the misunderstanding before it becomes rework.
+The 10x engineer of the AI era is the person who makes the room better. Who asks the question that surfaces the XY problem. Who creates the conditions where the junior speaks up. Who slows the room down just enough to catch the misunderstanding before it becomes rework.
 
 ---
 

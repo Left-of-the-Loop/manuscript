@@ -2,7 +2,7 @@
 
 The terms this book leans on, defined once. Some have ancestors, credited in the chapters that introduce them. The definitions here are how this book uses them.
 
-**The Agora** — The condition that makes a room more than a collection of individuals: the shared awareness a team builds before acting, and the disposition to keep building it. Not the session itself; what the session exists to produce. Named in the chapter of the same name.
+**The Agora** — Chapter five, and the ancient Greek public square its epigraph borrows: the place a city thought together rather than merely traded. Not a term of art in this book. What the chapter names is the room, what fills it is shared understanding, and what builds it is convergence; those three are the terms to look up.
 
 **The Alexandria Problem** — Not an event but a process: the library doesn't burn in one dramatic fire, it burns one skipped conversation at a time. The knowledge that used to accumulate through proximity and repetition stops the moment AI removes the friction of asking. Named for what happens when nobody notices the smoke until it's already gone.
 
@@ -34,7 +34,7 @@ The terms this book leans on, defined once. Some have ancestors, credited in the
 
 **Spec review** — A review request on the spec instead of the code: the defined moment where the need gets validated before anything gets built. A checkpoint, not a planning ceremony, where the stakeholder can say "that's not what I meant" while it's still cheap to hear. The mechanism that closes the gap between what's asked and what's needed. Compare *Spec Session*, which is where the team builds the picture; the review is where whoever the outcome touches confirms it was the right one.
 
-**Spec Session** — The deliberate moment where a team converges on a spec before the agent runs: intent challenged, constraints named, edge cases answered, consent recorded. It inherits sprint planning's content and mob programming's mechanics, and it replaces the walk to the desk. When the room can't be shared, the same convergence runs async, as a review request on the spec. Compare *spec review*, which validates the need rather than building the understanding. A working template waits in Appendix B.
+**Spec Session** — The deliberate moment where a team converges on a spec before the agent runs: intent challenged, constraints named, edge cases answered, consent recorded. It inherits sprint planning's content and mob programming's mechanics, and it replaces the walk to the desk. When the room can't be shared, the same convergence runs async, as a review request on the spec. Compare *spec review*, which validates the need rather than building the understanding. A working template waits in Appendix B. Appendix B is one shape of it, not the only one.
 
 **Stakeholder Navigator** — The role that owns the organizational interface after product thinking distributes into the team: carries the spec to whoever the outcome touches, manages the review cycle, and protects the room from the noise while the team thinks. The part of the old Product Owner that doesn't distribute.
 

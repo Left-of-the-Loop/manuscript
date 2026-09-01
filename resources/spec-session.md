@@ -23,7 +23,7 @@ Everything below is the short form. The reasoning behind each rule, and the argu
 
 **Cadence and size.** 60 to 90 minutes, hard stop. Overrun means the ticket wasn't ready or is too big, and both are findings, not failures. Three to seven people: below three, someone is prompting with witnesses; above seven, split by domain and accept the coverage tension that comes with splitting. One session, one spec. No batch grooming of a backlog.
 
-This is not a weekly ceremony. A team might run two or three in a day, with real breaks in between, because the session is the work now, not the meeting before the work.
+This is not a weekly ceremony. A team runs one when a piece of work is ready — most weeks that is two or three sessions, not two or three a day. Three in a day is a ceiling, not a target, and treating it as one wrecks people: sustained group thinking exhausts faster than solo implementation, and a tired room produces a worse spec. The session is the work now, not the meeting before the work.
 
 **Roles, rotating per session.**
 
@@ -96,7 +96,7 @@ A spec drafted by an agent and reviewed by an agent merges without anyone having
 
 The run will surface things the room didn't. That's another session, not an edit, and it's why sessions have to stay cheap enough to re-run.
 
-There is no estimation ritual anywhere. The sizing question moved: it is no longer how long this will take, it's whether this is small enough to spec in one session. The when comes from flow, counting gated specs finished rather than guessing.
+There is no estimation ritual anywhere. The sizing question moved: it is no longer how long this will take, it's whether this is small enough to spec in one session. A gated spec typically produces a single agent run and one review — small enough that the room's picture is still current when the output comes back. The when comes from flow, counting gated specs finished rather than guessing.
 
 A room can nod along the way a model does. The consent round forces everyone to answer, but consent can be performed just like silence can. The rotating lead helps, and it doesn't fix it.
 
@@ -104,6 +104,7 @@ A room can nod along the way a model does. The consent round forces everyone to 
 
 The template evolves faster than the draft does. Changes to this page and to the two files are listed here, newest first.
 
+- **2026-09-01** — cadence corrected to match Appendix B, which lowered it: two or three sessions in a *week*, with three in a day named as a ceiling rather than a target. This page had carried the older, harder claim. Sizing also picks up what a gated spec is sized to, one agent run and one review.
 - **2026-08-09** — first live version, matching Appendix B and Appendix D as printed in the 2026-08-09 draft.
 
 ---
