@@ -86,7 +86,7 @@ Seniors develop prompting habits nobody else sees. Architects discover patterns 
 
 When the senior's attention shifts upward, from implementation to architecture, the junior is often left downstream, catching the behavioral edge cases the senior no longer has the bandwidth to notice. That division of attention can work, but only if it's deliberate.
 
-The senior whose attention has shifted to the architectural plane has a new responsibility in the Spec Session: to pull the junior up with them. To ask the questions that make architectural thinking visible: why this approach, what happens at scale, what would break this in six months. And to ask them not just in private, but in the room, with the junior present and expected to engage. Otherwise the junior develops a different and narrower skill: valuable, but not the same as learning to think architecturally.
+The senior whose attention has shifted to the architectural plane has a new responsibility in the room: to pull the junior up with them. To ask the questions that make architectural thinking visible: why this approach, what happens at scale, what would break this in six months. And to ask them not just in private, but in the room, with the junior present and expected to engage. Otherwise the junior develops a different and narrower skill: valuable, but not the same as learning to think architecturally.
 
 The skill that makes a great engineer is the one thing the agent can't teach, because it's learned by watching a human do it. If the room goes quiet, the next generation inherits the tools without the judgment that makes the tools worth having.
 

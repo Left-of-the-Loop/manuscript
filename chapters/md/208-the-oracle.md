@@ -88,7 +88,7 @@ A team with high velocity and low predictability is guessing fast. A team with l
 
 Predictability is also the metric that can't be easily gamed. Either it was called right or it wasn't. No amount of demo channel activity changes whether the thing shipped when the team said it would. No number of tokens burned makes a forecast accurate.
 
-And predictability is a team metric. One person can't be predictable alone. Predictability requires shared understanding of the work, shared ownership of the sizing, shared commitment to what goes through the gate. It requires the Spec Session, or something like it: a moment where the team agrees on what is being built and how big it is, while the work is still on the page. That is also what the Stakeholder Navigator carries out of the room: a commitment the people outside it can rely on.
+And predictability is a team metric. One person can't be predictable alone. Predictability requires shared understanding of the work, shared ownership of the sizing, shared commitment to what goes through the gate. It requires a moment where the team agrees on what is being built and how big it is, while the work is still on the page. That is also what the Stakeholder Navigator carries out of the room: a commitment the people outside it can rely on.
 
 No points, no poker. Estimation was how teams committed when implementation capacity was the constraint, and the constraint moved. What sizing looks like instead is in Appendix B. What the room costs, honestly counted, is Appendix A.
 

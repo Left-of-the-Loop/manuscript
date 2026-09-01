@@ -11,6 +11,44 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-09-01 — manuscript `5482b4b`
+
+Site: `PENDING`
+
+One commit, and it lowers the book's own claims about itself. The Spec
+Session is reduced from the answer to one proposed shape of it, and the
+Agora stops being a term of art.
+
+- **The Spec Session is one form, not the form.** Appendix B marks "if
+  you run this form" on what it retires, the Agora chapter scopes its
+  template movement as one shape of the catch, and the glossary adds
+  that Appendix B is one shape of it rather than the only one. A team
+  whose refinement already builds a genuinely shared picture is running
+  a Spec Session under an older name
+- **The Agora is demoted to a title.** It was defined as the condition a
+  room produces; it is now the chapter name and the Greek square its
+  epigraph borrows, with the glossary pointing at the three terms that
+  do the work instead — the room, shared understanding, convergence
+- **The cadence claim is lowered.** Appendix B had a team running two or
+  three sessions in a day; it now runs two or three in a week, with
+  three in a day named as a ceiling that "wrecks people when treated as
+  a target"
+- A gated spec is now sized to what it produces: one agent run and one
+  review, small enough that the room's picture is still current when the
+  output comes back
+- The Curse of Sisyphus names the convergence practice in its
+  falsification test rather than "deliberate sessions", so what is being
+  tested is the mechanism and not the ritual; the Alexandria Problem
+  moves its senior responsibility from the session to the room
+
+The living `/template` page carried the older, harder cadence and is
+corrected to match, with the change recorded in its own "What changed
+here". That page is allowed to run ahead of the printed appendix and
+never behind it, and this is the first update where the rule had
+something to catch.
+
+From the `latest` release, built at `5482b4b` on push. 111 pages.
+
 ## 2026-08-29 — manuscript `900ed8a`
 
 Site: `51ecded`

@@ -24,7 +24,7 @@ XP didn't lose an argument. It lost a cost calculation. The practices demanded a
 
 AI is offering the same deal at a larger scale.
 
-Move faster. Skip the room. Optimize the individual. The tool is right there, frictionless, never tired, always ready to help. Why wait for the Spec Session? Why slow down for validation? Why sit in a room with people when the agent is ready to run?
+Move faster. Skip the room. Optimize the individual. The tool is right there, frictionless, never tired, always ready to help. Why wait for the session? Why slow down for validation? Why sit in a room with people when the agent is ready to run?
 
 The illusion is more powerful now. The output is real. The review requests are real. The tokens are burning, the tickets are closing, the demo channel is full. It looks like progress from every angle that gets measured.
 
@@ -38,7 +38,7 @@ This book is an argument for a different choice.
 
 The argument isn't against AI, and it isn't against speed. It's against the assumption that the team is overhead. Against the idea that shared understanding is a luxury you can't afford when the agent is ready to run. Against the optimization that removes the friction without noticing that the friction was doing something.
 
-The Spec Session is slower than prompting alone. The Agora is harder to sustain than a solo workflow. The room where people say what they actually think is more fragile than a process that runs without it.
+Convergence is slower than prompting alone. Shared understanding is harder to sustain than a solo workflow. The room where people say what they actually think is more fragile than a process that runs without it.
 
 Teams matter, not as an abstract principle, but because the forest produces something the desert cannot. Because the junior watching the senior think out loud is building something that no prompt will ever teach. Because the pushback that changes your direction before the agent runs is cheaper than the rework after. Because the room where uncertainty is discussable is the room where the right thing gets built.
 
