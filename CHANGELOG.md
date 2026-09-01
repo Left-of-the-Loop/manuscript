@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-09-01 — manuscript `5482b4b`
 
-Site: `PENDING`
+Site: `1c0c0ed`
 
 One commit, and it lowers the book's own claims about itself. The Spec
 Session is reduced from the answer to one proposed shape of it, and the
