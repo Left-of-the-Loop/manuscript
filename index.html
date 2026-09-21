@@ -78,7 +78,7 @@
   .wrap {
     max-width: 40em;
     margin: 0 auto;
-    padding: 0 1.4em;
+    padding: 3.4em 1.4em 0;
   }
 
   a { color: var(--link); }
@@ -138,7 +138,12 @@
     /* The floor tracks the art's own width, because the mark is square and
        the space beside the text is not: pick the height independently and the
        hero ends up as a band of empty red with a small logo floating in it. */
-    .hero { min-height: min(52vw, 620px); display: flex; align-items: center; }
+    /* The floor sits on the inner box rather than on the hero, and the art
+       is pinned to the same height: the takeaway band is a third child now,
+       and anything measured against the hero would drag the mark down past
+       the copy it is supposed to sit beside. */
+    .hero-inner { min-height: min(52vw, 620px); display: flex; align-items: center; }
+    .hero-art { bottom: auto; height: min(52vw, 620px); }
     .hero-inner {
       width: 100%;
       max-width: 62em;
@@ -242,8 +247,11 @@
       mask-image: none;
     }
     .hero-art img { height: auto; }
-    .hero { display: flex; flex-direction: column; padding-bottom: 2.5em; }
+    .hero { display: flex; flex-direction: column; }
     .hero-inner { padding: 2.6em 1.4em 1em; }
+    /* Last, under the mark: on a phone the hero reads top to bottom as the
+       cover does — title, then the art, then one line out of the book. */
+    .takeaways { order: 3; padding: 1.4em 1.4em 1.2em; margin-top: 1em; }
   }
 
   /* ------------------------------------------------------------------
@@ -253,38 +261,61 @@
      that vanishes mid-sentence costs more than the motion buys, and
      nothing else on this page moves.
      ------------------------------------------------------------------ */
+  /* It lives in the hero now. The hero had dead red below the copy at most
+     widths, and a line out of the book is a better thing to put there than
+     nothing — but only if it is visibly a different kind of thing. Centred
+     text under a hairline still read as a stray paragraph, so the band gets
+     its own darker field of the same red, edge to edge, and a short rule
+     above the line to mark it as pulled from somewhere.
+
+     Still deliberately quieter than the subtitle: the subtitle is the book's
+     claim, these are lines from inside it, and if the two compete the reader
+     cannot tell which is which. Upright, not italic — in this book italic is
+     the epigraph register and a takeaway is not one. */
   .takeaways {
-    margin: 0;
-    padding: 2.6em 0 2.2em;
+    padding: 1.5em 1.4em 1.3em;
     text-align: center;
-    font-size: 1.15em;
-    color: var(--ink-soft);
+    font-size: 1.05em;
+    color: var(--cream-bright);
+    background: rgba(0, 0, 0, 0.13);
+    border-top: 1px solid rgba(255, 246, 227, 0.22);
+  }
+  /* The band runs the full width; the line inside it does not. */
+  .takeaways .frame,
+  .takeaways .nav,
+  .takeaways > p {
+    max-width: 34em;
+    margin-left: auto;
+    margin-right: auto;
   }
   .takeaways p { margin: 1em 0; }
   /* Scoped to the frame: an unscoped `p` here also matched the nav line
      and stripped the margin that separates it from the quote. */
   .takeaways.is-carousel .frame p { margin: 0; }
+  /* Two lines' worth of reserved height, which is as long as these get at
+     the band's measure. It stops the band jumping as the lines cycle without
+     standing a one-line quote in a room of its own. */
   .takeaways .frame {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 5em;
+    min-height: 3.1em;
     line-height: 1.45;
   }
   .takeaways .nav {
     font-family: var(--sans);
     font-size: 0.8rem;
-    color: var(--muted);
-    margin-top: 1em;
+    color: var(--cream-bright);
+    margin-top: 0.6em;
   }
   /* Sized for a thumb, not just for the glyph: at the nav's small size
      the padding alone left them 23x26, under the 24x24 minimum and tight
      to hit on a phone. */
   .takeaways .nav button {
     font: inherit;
-    color: var(--link);
+    color: var(--cream-bright);
     background: none;
-    border: 1px solid var(--rule);
+    border: 1px solid rgba(255, 246, 227, 0.45);
     border-radius: 3px;
     padding: 0.15em 0.6em;
     min-width: 36px;
@@ -292,7 +323,10 @@
     cursor: pointer;
     line-height: 1.4;
   }
-  .takeaways .nav button:hover { border-color: var(--link); }
+  .takeaways .nav button:hover {
+    border-color: var(--cream-bright);
+    background: rgba(255, 246, 227, 0.1);
+  }
   .takeaways .nav .count {
     display: inline-block;
     min-width: 4.5em;
@@ -504,9 +538,6 @@
       </p>
     </div>
   </div>
-</header>
-
-<div class="wrap">
 
 <!-- Every takeaway is real page content, not markup hidden for crawlers.
      Without JavaScript all twelve render as a list; with it they become a
@@ -528,6 +559,11 @@
   <p>Without people saying what they actually think, nothing else holds.</p>
   <p>Choose the forest. Even when the desert feels faster. Especially when it feels faster.</p>
 </div>
+
+</header>
+
+<div class="wrap">
+
 
 <p class="lede">
 AI erodes the incidental friction that used to produce a shared picture
