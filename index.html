@@ -251,7 +251,7 @@
     .hero-inner { padding: 2.6em 1.4em 1em; }
     /* Last, under the mark: on a phone the hero reads top to bottom as the
        cover does — title, then the art, then one line out of the book. */
-    .takeaways { order: 3; padding: 2.1em 1.4em 1.8em; margin-top: 1.2em; }
+    .takeaways { order: 3; padding: 1.4em 1.4em 1.2em; margin-top: 1em; }
   }
 
   /* ------------------------------------------------------------------
@@ -273,7 +273,7 @@
      cannot tell which is which. Upright, not italic — in this book italic is
      the epigraph register and a takeaway is not one. */
   .takeaways {
-    padding: 2.4em 1.4em 1.9em;
+    padding: 1.5em 1.4em 1.3em;
     text-align: center;
     font-size: 1.05em;
     color: var(--cream-bright);
@@ -292,18 +292,21 @@
   /* Scoped to the frame: an unscoped `p` here also matched the nav line
      and stripped the margin that separates it from the quote. */
   .takeaways.is-carousel .frame p { margin: 0; }
+  /* Two lines' worth of reserved height, which is as long as these get at
+     the band's measure. It stops the band jumping as the lines cycle without
+     standing a one-line quote in a room of its own. */
   .takeaways .frame {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 4.4em;
+    min-height: 3.1em;
     line-height: 1.45;
   }
   .takeaways .nav {
     font-family: var(--sans);
     font-size: 0.8rem;
     color: var(--cream-bright);
-    margin-top: 0.8em;
+    margin-top: 0.6em;
   }
   /* Sized for a thumb, not just for the glyph: at the nav's small size
      the padding alone left them 23x26, under the 24x24 minimum and tight
