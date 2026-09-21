@@ -78,7 +78,7 @@
   .wrap {
     max-width: 40em;
     margin: 0 auto;
-    padding: 0 1.4em;
+    padding: 3.4em 1.4em 0;
   }
 
   a { color: var(--link); }
@@ -251,7 +251,7 @@
     .hero-inner { padding: 2.6em 1.4em 1em; }
     /* Last, under the mark: on a phone the hero reads top to bottom as the
        cover does — title, then the art, then one line out of the book. */
-    .takeaways { order: 3; padding: 1.7em 1.4em 2em; margin-top: 1.2em; }
+    .takeaways { order: 3; padding: 2.1em 1.4em 1.8em; margin-top: 1.2em; }
   }
 
   /* ------------------------------------------------------------------
@@ -273,20 +273,12 @@
      cannot tell which is which. Upright, not italic — in this book italic is
      the epigraph register and a takeaway is not one. */
   .takeaways {
-    padding: 1.9em 1.4em 2.1em;
+    padding: 2.4em 1.4em 1.9em;
     text-align: center;
     font-size: 1.05em;
     color: var(--cream-bright);
     background: rgba(0, 0, 0, 0.13);
     border-top: 1px solid rgba(255, 246, 227, 0.22);
-  }
-  .takeaways::before {
-    content: "";
-    display: block;
-    width: 2.2em;
-    height: 2px;
-    margin: 0 auto 1.3em;
-    background: rgba(255, 246, 227, 0.55);
   }
   /* The band runs the full width; the line inside it does not. */
   .takeaways .frame,
