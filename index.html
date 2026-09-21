@@ -6,11 +6,17 @@
 <!-- The page has always been light-only, with hardcoded colours and no dark
      variant. Saying so matters now that the figures are transparent PNGs:
      the art is near-black ink, so a browser force-darkening the page would
-     composite it to invisible. Opting out keeps that from happening. -->
+     composite it to invisible. Opting out keeps that from happening. It also
+     protects the cover palette below, which is a fixed two-colour scheme and
+     not a theme to be inverted. -->
 <meta name="color-scheme" content="only light">
 <title>Left of the Loop — When AI writes the code, shared understanding becomes the scarce resource.</title>
 <meta name="description" content="When AI writes the code, shared understanding becomes the scarce resource. A book by Simon Schrottner. Working draft.">
 <link rel="canonical" href="https://leftoftheloop.dev">
+
+<!-- One loop of the cover mark, cut from the same crop. -->
+<link rel="icon" type="image/png" href="/loop-badge.png">
+<link rel="apple-touch-icon" href="/loop-badge.png">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Left of the Loop">
@@ -31,193 +37,254 @@
 <meta name="twitter:image" content="https://leftoftheloop.dev/og-the-loop.png">
 
 <style>
+  /* ------------------------------------------------------------------
+     The cover palette, sampled off the cover art. The red is the one
+     place it departs: at the cover's own #e52a33 nothing clears 4.5:1,
+     not even pure white (4.46), so the eyebrow and the byline could not
+     pass at any colour. #dc2530 is the smallest step down that clears it
+     with the hero's cream-white, and the same value is baked into the
+     mark image, so the artwork and the page stay one flat field of red.
+     ------------------------------------------------------------------ */
   :root {
     color-scheme: only light;
+    --red: #dc2530;
+    --red-deep: #a8182a;
+    --cream: #fde59d;   /* the cover's cream, sampled */
+    --cream-bright: #fff6e3;
+    --paper: #fdf8ec;
+    --paper-raised: #fffdf7;
+    --ink: #211b19;
+    --ink-soft: #4a3f3a;
+    --muted: #6a5a51;
+    --rule: #e6dcc6;
+    --link: #b21f2c;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   }
+
+  * { box-sizing: border-box; }
+
   body {
-    max-width: 40em;
-    margin: 3em auto;
-    padding: 0 1.25em;
+    margin: 0;
     font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.55;
-    color: #1a1a1a;
-    background: #fdfdfb;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--paper);
+    -webkit-text-size-adjust: 100%;
   }
-  h1 {
-    font-size: 1.9em;
-    margin-bottom: 0.1em;
+
+  /* One measure for everything below the hero, so the page reads as a
+     column of text with a poster on top of it rather than as a series of
+     unrelated bands. */
+  .wrap {
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 0 1.4em;
   }
-  .subtitle {
-    font-size: 1.15em;
-    font-style: italic;
-    color: #333;
-    margin-top: 0;
-    margin-bottom: 0.6em;
+
+  a { color: var(--link); }
+  a:hover { color: var(--red-deep); }
+
+  /* ------------------------------------------------------------------
+     Hero. Full bleed crimson with the cover's own mark in it, running off
+     the edges the way it does on the cover: in from the right, three times
+     round, and out to the left. The mark is beside the copy on a desktop
+     and below it on a phone, never behind it — laying cream artwork under
+     cream text is exactly how a hero stops being readable.
+     ------------------------------------------------------------------ */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background: var(--red);
+    color: var(--cream-bright);
   }
-  .byline {
-    color: #555;
-    margin-top: 0;
-    margin-bottom: 1.5em;
+  /* The crop's own red is the page red, so the image has no visible edge on
+     three sides: the top rails run off the right of the viewport, the loops
+     sit in the column, and only the left cut needs hiding. The mask turns it
+     into a fade, which reads as the bottom rails coming out of the red rather
+     than as a photograph that stops. */
+  .hero-art {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(50%, 600px);
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 28%);
+    mask-image: linear-gradient(to right, transparent 0, #000 28%);
   }
-  .status {
-    display: inline-block;
-    font-family: -apple-system, Helvetica, Arial, sans-serif;
-    font-size: 0.75em;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #7a4a00;
-    background: #fdf1d6;
-    border: 1px solid #e8c477;
-    border-radius: 3px;
-    padding: 0.2em 0.5em;
-    margin-bottom: 1.2em;
-  }
-  .links {
-    font-family: -apple-system, Helvetica, Arial, sans-serif;
-    font-size: 0.95em;
-    margin: 1.5em 0 2em;
-    padding: 1em 1.2em;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background: #fff;
-  }
-  .links a {
-    font-weight: bold;
-  }
-  .links ul {
-    margin: 0.6em 0 0;
-    padding-left: 1.2em;
-  }
-  .links li {
-    margin: 0.3em 0;
-  }
-  /* The book and the material it points at are two different offers, and
-     two boxes would have made the page read as a link farm. One box, one
-     hairline. */
-  .links .group + .group {
-    margin-top: 1.2em;
-    padding-top: 1.2em;
-    border-top: 1px solid #eee;
-  }
-  .links .group > p:first-child {
-    margin-top: 0;
-  }
-  .links .note {
-    color: #666;
-    font-size: 0.9em;
-    margin-bottom: 0;
-  }
-  hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 2.5em 0;
-  }
-  .figure {
-    margin: 2em 0;
-  }
-  .figure img {
+  /* Contain, not cover: the mark is nearly square and the hero is not, so
+     filling the box would crop the loops down their middle. Contained, it is
+     whole and the leftover space top and bottom is the same red as the image,
+     so there is nothing to see where one ends and the other starts. */
+  .hero-art img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
   }
-  /* Inset to three-quarters of the measure, which sits the drawing on the
-     page rather than letting it dominate the opening. It stays full width
-     on a phone, where the column is narrow enough already, and the image
-     links to itself for anyone who wants to read the small annotations. */
-  @media (min-width: 40em) {
-    .figure {
-      width: 75%;
-      margin: 2em auto;
-    }
-  }
-  .excerpt-note {
-    font-family: -apple-system, Helvetica, Arial, sans-serif;
-    font-size: 0.85em;
-    color: #666;
-    margin-top: 1.5em;
-  }
-  .map {
-    margin: 3em 0 0;
-  }
-  .map h2 {
-    font-size: 1.2em;
-    margin-bottom: 0.2em;
-  }
-  .map-note {
-    font-family: -apple-system, Helvetica, Arial, sans-serif;
-    font-size: 0.85em;
-    color: #666;
-    margin-top: 0;
-  }
-  /* Numbered by counter rather than by the list's own markers, so the number
-     sits in the margin and the two lines of each entry align to one another
-     instead of to the digit. */
-  .map ol {
-    list-style: none;
-    padding-left: 0;
-    counter-reset: chapter;
-  }
-  .map li {
+  .hero-inner {
     position: relative;
-    margin: 1em 0;
-    padding-left: 2.2em;
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 4.5em 1.4em 4em;
   }
-  .map li::before {
-    counter-increment: chapter;
-    content: counter(chapter);
-    position: absolute;
-    left: 0;
-    top: 0.15em;
-    font-family: -apple-system, Helvetica, Arial, sans-serif;
-    font-size: 0.8em;
-    color: #999;
+  /* Wider than the text measure below it, so the copy sits in the left of
+     the poster rather than in the middle of it. The column is capped twice:
+     by a measure, and by half the viewport. The second cap is what keeps the
+     text clear of the ribbon at the awkward widths just past the breakpoint,
+     where a fixed measure would run under it. Percentage padding is not an
+     option here — it resolves against the hero, not against this box. */
+  @media (min-width: 46em) {
+    /* The floor tracks the art's own width, because the mark is square and
+       the space beside the text is not: pick the height independently and the
+       hero ends up as a band of empty red with a small logo floating in it. */
+    .hero { min-height: min(52vw, 620px); display: flex; align-items: center; }
+    .hero-inner {
+      width: 100%;
+      max-width: 62em;
+      padding: 4em 1.6em;
+    }
+    .hero-text { max-width: min(30em, 46vw); }
   }
-  .map .ch {
-    display: block;
-    font-weight: bold;
+
+  .eyebrow {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cream-bright);
+    border: 1px solid rgba(255, 246, 227, 0.55);
+    border-radius: 2em;
+    padding: 0.35em 0.9em;
+    margin: 0 0 1.6em;
   }
-  .map .q {
-    display: block;
-    color: #444;
-    font-style: italic;
+
+  /* Letterspaced caps in the book's own serif, which is how the title is
+     set on the cover. No webfont: the page has never loaded one and the
+     hero should not be the thing that makes it start. */
+  h1 {
+    font-size: clamp(2.1rem, 7.5vw, 3.4rem);
+    font-weight: normal;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    line-height: 1.12;
+    margin: 0 0 0.5em;
+    color: var(--cream);
   }
-  /* Without JavaScript every takeaway renders as a plain centred list, which
-     is a fine way to read them. With it, they become a carousel: one shown,
-     the rest a click away. No autoplay — a line that vanishes mid-sentence
-     costs more than the motion buys, and nothing else on this page moves. */
-  .takeaways {
-    margin: 1.8em 0 2.2em;
-    text-align: center;
-    font-size: 1.1em;
+  h1 .nb { white-space: nowrap; }
+  .subtitle {
+    font-size: clamp(1.05rem, 2.6vw, 1.3rem);
+    line-height: 1.45;
+    margin: 0 0 1.1em;
+    color: var(--cream-bright);
   }
-  .takeaways p {
-    margin: 1em 0;
+  .byline {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 2em;
+    color: var(--cream-bright);
   }
-  /* Scoped to the frame: an unscoped `p` here also matched the nav line and
-     stripped the margin that separates it from the quote. */
-  .takeaways.is-carousel .frame p {
+
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7em;
+    align-items: center;
     margin: 0;
   }
+  /* 44px of target on a phone without the label having to be huge. */
+  .btn {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 0.72em 1.25em;
+    border: 1px solid transparent;
+    min-height: 44px;
+    line-height: 1.5;
+  }
+  .btn-solid {
+    background: var(--cream);
+    color: #6d1119;
+    border-color: var(--cream);
+  }
+  .btn-solid:hover {
+    background: var(--cream-bright);
+    color: #6d1119;
+  }
+  .btn-ghost {
+    color: var(--cream-bright);
+    border-color: rgba(255, 246, 227, 0.6);
+  }
+  .btn-ghost:hover {
+    color: var(--cream-bright);
+    border-color: var(--cream-bright);
+    background: rgba(255, 246, 227, 0.1);
+  }
+
+  @media (max-width: 46em) {
+    /* Below the copy, whole, and uncropped: the mark is very nearly square,
+       so at phone widths the full crop fits across the column and both sets
+       of rails run off the screen edges exactly as they do on the cover. */
+    .hero-art {
+      position: static;
+      order: 2;
+      width: 100%;
+      height: auto;
+      margin-top: 0.8em;
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+    .hero-art img { height: auto; }
+    .hero { display: flex; flex-direction: column; padding-bottom: 2.5em; }
+    .hero-inner { padding: 2.6em 1.4em 1em; }
+  }
+
+  /* ------------------------------------------------------------------
+     Takeaways. Without JavaScript every line renders as a plain centred
+     list, which is a fine way to read them. With it, they become a
+     carousel: one shown, the rest a click away. No autoplay — a line
+     that vanishes mid-sentence costs more than the motion buys, and
+     nothing else on this page moves.
+     ------------------------------------------------------------------ */
+  .takeaways {
+    margin: 0;
+    padding: 2.6em 0 2.2em;
+    text-align: center;
+    font-size: 1.15em;
+    color: var(--ink-soft);
+  }
+  .takeaways p { margin: 1em 0; }
+  /* Scoped to the frame: an unscoped `p` here also matched the nav line
+     and stripped the margin that separates it from the quote. */
+  .takeaways.is-carousel .frame p { margin: 0; }
   .takeaways .frame {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 4.5em;
+    min-height: 5em;
+    line-height: 1.45;
   }
   .takeaways .nav {
-    font-family: -apple-system, Helvetica, Arial, sans-serif;
-    font-size: 0.8em;
-    color: #888;
-    margin-top: 0.8em;
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 1em;
   }
-  /* Sized for a thumb, not just for the glyph: at the nav's 0.8em the
-     padding alone left them 23x26, under the 24x24 minimum and tight to
-     hit on a phone. */
+  /* Sized for a thumb, not just for the glyph: at the nav's small size
+     the padding alone left them 23x26, under the 24x24 minimum and tight
+     to hit on a phone. */
   .takeaways .nav button {
     font: inherit;
-    color: #1a4d8f;
+    color: var(--link);
     background: none;
-    border: 1px solid #ddd;
+    border: 1px solid var(--rule);
     border-radius: 3px;
     padding: 0.15em 0.6em;
     min-width: 36px;
@@ -225,46 +292,221 @@
     cursor: pointer;
     line-height: 1.4;
   }
-  .takeaways .nav button:hover {
-    border-color: #bbb;
-  }
+  .takeaways .nav button:hover { border-color: var(--link); }
   .takeaways .nav .count {
     display: inline-block;
     min-width: 4.5em;
   }
+
+  .lede {
+    font-size: 1.08em;
+    margin: 0 0 2em;
+  }
+  /* A wash rather than a highlighter: the phrase is the book's thesis and
+     should catch the eye once, not shout from inside the paragraph. */
+  .lede strong {
+    font-weight: normal;
+    box-shadow: inset 0 -0.45em 0 rgba(212, 36, 50, 0.14);
+  }
+
+  /* ------------------------------------------------------------------
+     The figure sits on its own white plate. The art is near-black ink on
+     transparency; on the warm paper it reads as slightly grubby, and a
+     plate with a hairline says "this is a plate from the book" rather
+     than "this image failed to load its background".
+     ------------------------------------------------------------------ */
+  .figure {
+    margin: 2.5em 0;
+    padding: 1.2em;
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  .figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .figure figcaption {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 0.9em;
+  }
+
+  /* ------------------------------------------------------------------
+     The book and the material it points at are two different offers, and
+     two boxes would have made the page read as a link farm. One card,
+     one hairline between the groups, and a crimson spine so it belongs
+     to the cover rather than to the browser's default chrome.
+     ------------------------------------------------------------------ */
+  .links {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin: 2.5em 0;
+    padding: 1.4em 1.5em;
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--red);
+    border-radius: 4px;
+  }
+  .links h2 {
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--red-deep);
+    margin: 0 0 0.7em;
+  }
+  .links a { font-weight: 600; }
+  .links ul {
+    margin: 0.6em 0 0;
+    padding-left: 1.2em;
+  }
+  .links li { margin: 0.45em 0; }
+  .links .group + .group {
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--rule);
+  }
+  .links .group > p:first-of-type { margin-top: 0; }
+  .links .note {
+    color: var(--muted);
+    font-size: 0.88rem;
+    margin-bottom: 0;
+  }
+
+  /* A plain hairline. The mark is the cover's, not something to redraw at
+     ornament size, and a scaled-down copy of the hero image here would be a
+     red postage stamp in the middle of a page of text. */
+  .rule {
+    border: none;
+    border-top: 2px solid var(--red);
+    width: 4em;
+    margin: 3.5em 0 2.5em;
+  }
+
+  .excerpt-note {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    padding-top: 1em;
+    margin-top: 2em;
+  }
+
+  /* ------------------------------------------------------------------
+     Chapter map. Numbered by counter rather than by the list's own
+     markers, so the number sits in the margin and the two lines of each
+     entry align to one another instead of to the digit.
+     ------------------------------------------------------------------ */
+  .map { margin: 3.5em 0 0; }
+  .map h2 {
+    font-size: 1.25em;
+    margin-bottom: 0.2em;
+  }
+  .map-note {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0;
+  }
+  .map ol {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: chapter;
+    margin: 1.8em 0 0;
+  }
+  .map li {
+    position: relative;
+    margin: 0;
+    padding: 0.85em 0 0.85em 2.8em;
+    border-top: 1px solid var(--rule);
+  }
+  .map li:last-child { border-bottom: 1px solid var(--rule); }
+  .map li::before {
+    counter-increment: chapter;
+    content: counter(chapter);
+    position: absolute;
+    left: 0;
+    top: 0.95em;
+    width: 1.9em;
+    text-align: right;
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--red);
+  }
+  .map .ch {
+    display: block;
+    font-weight: bold;
+  }
+  .map .q {
+    display: block;
+    color: var(--muted);
+    font-style: italic;
+  }
+
   footer {
-    font-family: -apple-system, Helvetica, Arial, sans-serif;
-    font-size: 0.85em;
-    color: #666;
-    margin-top: 3em;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 4em;
+    border-top: 1px solid var(--rule);
+    padding: 2em 0 3em;
   }
   footer summary {
     cursor: pointer;
-    color: #888;
+    color: var(--muted);
   }
-  footer .version-history p {
-    margin: 0.5em 0 0;
-  }
+  footer .version-history p { margin: 0.5em 0 0; }
   footer .version-history ul {
     margin: 0.4em 0 0;
     padding-left: 1.2em;
   }
-  footer .version-history li {
-    margin: 0.2em 0;
-  }
-  footer code {
-    font-size: 0.95em;
-  }
-  a { color: #1a4d8f; }
+  footer .version-history li { margin: 0.2em 0; }
+  footer code { font-size: 0.95em; }
 </style>
 </head>
 <body>
 
-<h1>Left of the Loop</h1>
-<p class="subtitle">When AI writes the code, shared understanding becomes the scarce resource.</p>
-<p class="byline">A book by Simon Schrottner</p>
+<header class="hero">
+  <!-- The mark itself, cut from the cover art (scripts/cut-cover-mark.py) and
+       not redrawn. A hand-built approximation got the palette and the rhythm
+       right and still read as a different logo; there is no version of that
+       which is better than the thing it is imitating.
 
-<p class="status">Working draft &mdash; feedback welcome</p>
+       The crop keeps the rails running off both edges, because that is the
+       whole gesture: the line arrives from the right, goes three times round,
+       and leaves to the left. Decorative, so it is empty-alt and hidden from
+       assistive tech — the title says what the drawing says. -->
+  <div class="hero-art" aria-hidden="true">
+    <img src="loop-mark.png" width="1240" height="1263" alt="" fetchpriority="high">
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Working draft &mdash; feedback welcome</p>
+      <!-- The break is forced rather than left to the box: at phone widths
+           the natural wrap is "LEFT OF THE / LOOP", which orphans the word
+           the title is about. Keeping "THE LOOP" together gives the same
+           two-line lockup at every width. -->
+      <h1>Left of <span class="nb">the Loop</span></h1>
+      <p class="subtitle">When AI writes the code, shared understanding becomes the scarce resource.</p>
+      <p class="byline">A book by Simon Schrottner</p>
+      <p class="cta">
+        <a class="btn btn-solid" href="left-of-the-loop-draft.pdf" data-goatcounter-click="pdf-download">Download the PDF</a>
+        <a class="btn btn-ghost" href="left-of-the-loop-draft.epub" data-goatcounter-click="epub-download">EPUB</a>
+        <a class="btn btn-ghost" href="https://leanpub.com/leftoftheloop" data-goatcounter-click="leanpub">Buy on Leanpub</a>
+      </p>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
 
 <!-- Every takeaway is real page content, not markup hidden for crawlers.
      Without JavaScript all twelve render as a list; with it they become a
@@ -287,12 +529,12 @@
   <p>Choose the forest. Even when the desert feels faster. Especially when it feels faster.</p>
 </div>
 
-<p>
+<p class="lede">
 AI erodes the incidental friction that used to produce a shared picture
-of what to build and why as a byproduct of the work. That makes shared
-understanding the scarce resource, and constructive friction the
-mechanism that protects it. This book is the argument for why teams that
-keep that friction will outperform teams that optimize it away.
+of what to build and why as a byproduct of the work. That makes
+<strong>shared understanding the scarce resource</strong>, and constructive
+friction the mechanism that protects it. This book is the argument for why
+teams that keep that friction will outperform teams that optimize it away.
 </p>
 
 <figure class="figure">
@@ -300,10 +542,12 @@ keep that friction will outperform teams that optimize it away.
     <img src="chapters/figures/the-loop.png" width="1264" height="635"
          alt="Three zones, left to right. LEFT: the room, drawn as four joined dots, becomes the spec — the merged record of what and why. A merge gate, where the team decides, passes it into LOOP: the agent generates, reviews, and iterates at machine speed. A second merge gate, where a human accepts, passes the result into RIGHT: production.">
   </a>
+  <figcaption>Left of the loop is where the understanding gets built. The loop is where the code gets written.</figcaption>
 </figure>
 
 <div class="links">
   <div class="group">
+    <h2>Read it</h2>
     <p>Download the draft:
       <a href="left-of-the-loop-draft.pdf" data-goatcounter-click="pdf-download">PDF</a>,
       <a href="left-of-the-loop-draft.epub" data-goatcounter-click="epub-download">EPUB</a>
@@ -318,7 +562,7 @@ keep that friction will outperform teams that optimize it away.
     while there's still time to shape what it becomes.</p>
   </div>
   <div class="group">
-    <p>Take it to work:</p>
+    <h2>Take it to work</h2>
     <ul>
       <li><a href="/template" data-goatcounter-click="template">The Spec Session, a working template</a> &mdash; the run sheet, the spec file to drop in your repo, and the <a href="/template#async">async adaptation</a> for teams that are never in a room together</li>
       <li><a href="/further-reading" data-goatcounter-click="further-reading">Further reading</a> &mdash; the running version of the list at the back of the book</li>
@@ -329,7 +573,7 @@ keep that friction will outperform teams that optimize it away.
   </div>
 </div>
 
-<hr>
+<hr class="rule">
 
 <p>This book is not what it looks like.</p>
 
@@ -386,7 +630,6 @@ we started building the thing.</p>
   </ol>
 </section>
 
-
 <footer>
   <p>&copy; Simon Schrottner. Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</p>
   <details class="version-history">
@@ -395,6 +638,8 @@ we started building the thing.</p>
     <p>What changed in this and every earlier update: <a href="/changelog">changelog</a>.</p>
   </details>
 </footer>
+
+</div>
 
 <script>
   // The takeaways are real content in the markup, not markup hidden for
