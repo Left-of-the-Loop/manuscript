@@ -2,7 +2,7 @@
 
 This book is not what it looks like.
 
-It looks like a book about AI: about agents, specs, workflows, and the changing shape of software development. Those things are in here. But they're not what the book is about.
+It looks like a book about AI: about agents, specs, workflows, and the changing shape of software development. It might look like a book about a new process for working with them. Those things are in here. But they're not what the book is about.
 
 What the book is about started with a university friend and 18 PlayStation Move controllers.
 
@@ -32,7 +32,7 @@ The industry's response to AI has been, mostly, to go faster.
 
 Add the tool. Ship more. Reduce the headcount that feels redundant when the agent can implement. Optimize the individual. Measure the output. Skip the room.
 
-That's a familiar move. The industry has cut the deliberate conversation before, rationally, because the process it had was tedious and wasn't bringing value, and learned, sometimes painfully, that the conversation was the work. Extreme Programming (XP) understood what was at stake in the nineties.[^i-xp] Pair programming, mob programming, collective ownership: an entire practice built on the conviction that software development is fundamentally a social activity. The understanding built through collaboration was the point.
+That's a familiar move. The industry has cut the deliberate conversation before, rationally, because the process it had was tedious and wasn't bringing value, and learned, sometimes painfully, that the conversation was the work. Extreme Programming (XP) understood what was at stake in the nineties.[^i-xp] Pair programming, mob programming, collective ownership: an entire practice built on the conviction that software development is fundamentally a social activity. The understanding those practices built together mattered as much as the code they produced.
 
 The industry moved on. Faster frameworks. Individual metrics. Optimized handoffs. The team became a coordination cost to minimize. Now, under the pressure of AI, we are rediscovering what XP already knew.
 
@@ -56,7 +56,7 @@ The shift:
 
 The practice:
 
-*The Agora.* If no one person owns the understanding, how does a team build it together?
+*The Agora.* If no one person owns the understanding, what does it take for a team to build it together?
 
 *The Ever-Agreeing Genie.* If a team builds understanding together, what keeps it honest?
 

@@ -8,6 +8,8 @@ The landscape moves faster than a book can, so this is a snapshot rather than a 
 
 *Process:* Simon Martinelli's AI Unified Process ([unifiedprocess.ai](https://unifiedprocess.ai)), set out in *Spec-Driven Development: From Specs to Code with AI Agents* (Apress, 2026). It is the most developed account of what happens after the room, and its loop starts one step to the right of this one: the workshop that produces the shared picture is named as the thing tools cannot replace, then sits outside the life cycle it feeds. Where the two part is what alignment runs on afterwards. Martinelli puts it in the artifact; this book leaves it with the people who built it.
 
+*Organizational layer:* Martin Eriksson's *The Decision Stack: How Strategic Clarity Unlocks Organizational Momentum* (2026, [thedecisionstack.com](https://www.thedecisionstack.com)) traces the chain that runs from vision and strategy down to the calls a team makes without escalating, and argues that companies fail on shared context rather than on execution. That is this book's claim one floor up: Eriksson is about how a company gives direction, this book is about how the people in a room do.
+
 *Risks:* ThoughtWorks' Technology Radar, Volume 33 (2025) flags that the workflows "remain elaborate and opinionated" and that some tools "generate lengthy spec files that are hard to review."
 
 *Closest external framing:* Kief Morris, "Humans and Agents in Software Engineering Loops," "Exploring Gen AI" ([martinfowler.com](https://martinfowler.com)), on humans "on the loop," building and maintaining the harness. Morris solves where humans sit in the process; this book solves what they need to do before it starts.

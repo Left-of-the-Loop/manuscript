@@ -58,13 +58,13 @@ The team is the environment where independent judgment can happen, the place whe
 
 AI is frictionless by design. It finds a way to make an instinct seem reasonable. It smooths the edges off the direction already chosen. That's useful for execution and dangerous for judgment.
 
-The team has friction by nature. Different experience, different exposure, different mental models of where the system is going and why. That friction is the mechanism. The reason the team's judgment is different from the AI's agreement is precisely that the team doesn't have to agree.
+The team has friction by nature. Different experience, different exposure, different mental models of where the system is going and why. The reason the team's judgment is different from the AI's agreement is precisely that the team doesn't have to agree.
 
 A form of friction can be engineered from an AI: build the context to argue back, load it with counterarguments, instruct it to push back. But the pushback is still downstream of the maker's framing. The AI can challenge stated assumptions. The unstated ones are invisible to it.[^c6-qwen]
 
 Anthropic's own harness engineers supply the strongest version of the counterargument: a planner, a generator, and a skeptical evaluator, converging on a spec before anything runs.[^c6-harness] Scope challenged, validation adversarial by design, and a human in the loop reading the result; the room, the argument goes, automated down to one reader. Even the argument doesn't claim teaching.
 
-Here is what the harness does and doesn't do. It produces a better artifact, and the claim was never about the artifact. The evaluator has nothing to lose by saying no, so its validation carries no weight in the only sense that matters.
+It produces a better artifact, and the claim was never about the artifact. The evaluator has nothing to lose by saying no, so its validation carries no weight in the only sense that matters.
 
 Three roles, and that number is worth taking seriously. Without reading a word of this book, the harness converged on the same minimum a room needs to check itself.
 
@@ -72,9 +72,9 @@ But a planner, a generator, and their evaluator are still a converged trio, not 
 
 Which leaves the human reading the converged result, and the Agora already named that seat: a team handed a perfectly written spec owns none of it, having inherited someone else's thinking. The harness is the strongest tool yet for writing the record. The theory still lives where it always did.
 
-There is a name for what a convergence ritual invites, and the reader who knows it has been waiting for it: groupthink. Three people in a room can lock onto a shared error faster than one alone, because now the error has social endorsement.
+There is a name for what a convergence ritual invites: groupthink. Three people in a room can lock onto a shared error faster than one alone, because now the error has social endorsement.
 
-The symmetry is worth naming, since it was just used against someone else's system: a room is handed one framing too, and the assumptions nobody in it states are invisible to all three for the same reason they're invisible to the planner, the generator, and the evaluator. If that objection lands against the harness, it lands here.
+A room is handed one framing too, and the assumptions nobody in it states are invisible to all three for the same reason they're invisible to the planner, the generator, and the evaluator. If that objection lands against the harness, it lands here.
 
 No control makes a room immune to it, but its convergence is never total: three people carrying three different decades that predate the team, not one shared tuning. Its composition can change too, a junior added, a lead rotated, someone pulled in from outside the domain. The trio's spread is bounded by how it was tuned; the room's is bounded by who gets let in, which is why consent instead of consensus and a lead who rotates exist in the first place, not to make the room immune, but because rooms converge.
 
@@ -82,7 +82,7 @@ No control makes a room immune to it, but its convergence is never total: three 
 
 The alternative to imperfect controls is not immunity either: a developer alone with an agent is the most converged group of all, a groupthink of one with an amplifier. The room at least contains controls. The desk contains none.
 
-None of the four is a capability gap. Capability gaps close; that's what model releases do. Wanting takes two things a release doesn't ship: a standpoint outside your framing, and something to lose by using it. Weighted validation, scope judgment, and the unknown unknown all need the first, and this chapter has already watched two attempts fail to manufacture it, the engineered pushback and the converged trio, both still working downstream of the maker's framing. Weighted validation needs the second too: an evaluator tuned to withhold agreement pays nothing for the withholding, while a person who says no carries the consequence of having said it. That's why the human doesn't move out of the loop as the model improves. We were never in it because we were better at something. We're in it because the loop is for us.
+None of the four is a capability gap. Capability gaps close; that's what model releases do. Wanting takes two things a release doesn't ship: a standpoint outside your framing, and something to lose by using it. Weighted validation, scope judgment, and the unknown unknown all need the first, which neither the engineered pushback nor the converged trio could manufacture, both still working downstream of the maker's framing. Weighted validation needs the second too: an evaluator tuned to withhold agreement pays nothing for the withholding, while a person who says no carries the consequence of having said it. That's why the human doesn't move out of the loop as the model improves. We were never in it because we were better at something. We're in it because the loop is for us.
 
 Understanding is only useful if it can be challenged. And the place where it gets challenged, by someone who doesn't have to agree, is the team.
 

@@ -14,7 +14,7 @@ I learned that most deeply in open source. Suddenly the person reading the issue
 
 That's a harder discipline than explaining something to a colleague who shares the same background. A colleague fills in the gaps from shared experience. A stranger doesn't. Open source teaches the contributor to make the problem legible to someone with no obligation to figure out what they meant.
 
-But there's a second discipline open source teaches that's equally important. Not over-sharing.
+But open source teaches a second discipline. Not over-sharing.
 
 As little as possible, as much as needed. Too little context and the stranger can't engage. Too much and the contributor has made their problem the stranger's problem. They have to sort through noise to find what actually matters. The discipline is knowing what to leave out: what's assumed, what's load-bearing, what would change the answer if it were different.
 

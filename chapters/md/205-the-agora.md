@@ -2,7 +2,7 @@
 
 *The agora was the heart of the ancient Greek city, a public space where citizens gathered not just to trade, but to think, argue, and decide together. It was where the polis became more than a collection of individuals.*
 
-*If no one person owns the understanding, how does a team build it together?*
+*If no one person owns the understanding, what does it take for a team to build it together?*
 
 Every team has a place where the real thinking happens. Sometimes it's a meeting. More often it's a corridor conversation, a Slack thread, a one-on-one where someone finally said the thing they'd been sitting on for a week. The technical lead and the product manager talking through a problem before it becomes a ticket. The senior engineer pulling a junior aside to explain why the approach won't work. The offhand comment in a code review that reframes the whole feature. That thinking is the most valuable work the team does, and even in well-documented teams, part of it stays invisible, dependent on the right people being in the right conversation.
 
@@ -18,9 +18,9 @@ A better agent closes some of this. One that notices the ambiguity and asks the 
 
 ---
 
-What follows is one form of that catch, not the only one. I describe it because a team with nothing needs a shape to start from. If your refinement already builds a genuinely shared picture, you are running a Spec Session under an older name, and this chapter is confirmation, not news. If you already have a room, keep it and steal the gate.
+What follows is one form of that catch, not the only one. I describe it because a team without an established practice needs a shape to start from. If your refinement already builds a genuinely shared picture, you are running a Spec Session under an older name, and this chapter is confirmation, not news. If you already have a room, keep it and steal the gate.
 
-Before the Spec Session starts, there needs to be a reason to build anything at all. The business need, the user problem, and the organizational imperative matter equally. The session aligns the team on what gets built and how, not whether it's worth building. Without a clear need, the best-run session produces a beautifully shared understanding of the wrong thing. This is a dedicated space and not a meeting: meetings have agendas, action items, owners. It produces something different: a room full of people who hold the same picture of what's being built, why, and what done looks like. The document is the record of that convergence. It doesn't need everyone to read it the same way, only to keep pointing at the same thing.[^c5-boundary]
+Before the Spec Session starts, there needs to be a reason to build anything at all. The business need, the user problem, and the organizational imperative matter equally. The session aligns the team on what gets built and how, not whether it's worth building. Without a clear need, the best-run session produces a beautifully shared understanding of the wrong thing. This is a dedicated space and not a meeting: meetings have agendas, action items, owners. It produces a room full of people who hold the same picture of what's being built, why, and what done looks like. The document is the record of that convergence. It doesn't need everyone to read it the same way, only to keep pointing at the same thing.[^c5-boundary]
 
 That's why the path is the goal. A team could be handed a perfectly written spec and skip the session. They'd own none of it, having inherited someone else's thinking rather than built their own. And when the agent runs and something unexpected surfaces, the team that built the understanding together knows what to do. The team that received the spec has to go find the person who wrote it.
 
@@ -32,7 +32,9 @@ Afterwards, the peer learning emerges. The child who felt heard speaks up on the
 
 When we skip the circle, whether because there's no time, the energy is off, or someone rushes past it, the session feels disconnected. Individuals climbing in parallel rather than a group climbing together. The difference is subtle, real, and almost impossible to point to for anyone who hasn't felt it.
 
-Software teams need the same thing, as a disposition the team carries continuously: the habit of making thinking visible before acting on it, of listening before building, of checking where everyone is before assuming the team already knows. The climbing circle is one way to make that instinct visible. Some teams do it in how they write issues, or in the way a senior pauses before running the agent to ask whether the spec is clear. The form doesn't matter, but the instinct does. That's the circle, before the agent runs.
+Software teams need the same thing, as a disposition the team carries continuously: the habit of making thinking visible before acting on it, of listening before building, of checking where everyone is before assuming the team already knows. The climbing circle is one way to make that instinct visible. Some teams do it in how they write issues, or in the way a senior pauses before running the agent to ask whether the spec is clear. That's the circle, before the agent runs.
+
+> The form doesn't matter, but the instinct does.
 
 The Spec Session is not a planning gate or waterfall with better tooling. The team still iterates. Still puts things in front of users. Still discovers that what got built isn't what was needed. The difference is that the team iterates with everyone holding the same picture, so when the direction turns out to be wrong, everyone understands why, and the correction is faster. In complex domains, where cause and effect only become visible in retrospect, the session doesn't replace iteration; it makes iteration less expensive by ensuring the team is wrong together.
 

@@ -2,7 +2,7 @@
 
 The Agora names the form and its sharpest risk. This is the full treatment, for the teams the Curse of Sisyphus was about, the ones the problem damages most: distributed, different timezones, permanently async. They deserve more than a synchronous prescription.
 
-The session becomes a review request on the spec. The draft opens. Comments come in. The what, the why, and the not-building get challenged asynchronously. The merge condition is when the team has converged, meaning the concerns have been addressed and the understanding is shared.
+The session becomes a review request on the spec. The draft opens. Comments come in. The what, the why, and the not-building get challenged asynchronously. The merge condition is convergence: the concerns addressed, the understanding shared.
 
 The phases map directly. The draft carries intent, constraints, and non-goals before it opens. The comment thread is the challenge phase, and silence is still not an answer; every named reviewer responds or the spec doesn't merge. The consent round is the approval set, with objections as blocking comments. The timebox becomes a deadline: two working days, not two weeks.
 

@@ -141,3 +141,103 @@ write("robots.txt", "User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SIT
 print("living pages: %d" % len(LIVING))
 print("chapter pages: %d (noindex)" % len(chapters))
 print("sitemap entries: %d" % len(indexable))
+
+# ---------------------------------------------------------------------------
+# The landing page's three generated blocks.
+#
+# All three quote the book, and all three have gone stale silently at least
+# once: the map kept a guiding question the Agora had rewritten, and the
+# excerpt kept a paragraph the introduction had replaced. Nothing failed, the
+# page simply said something the book no longer said. Regenerating them from
+# chapters/md on every run is the only way that stops being a thing to
+# remember.
+
+import textwrap
+
+
+def curl(text):
+    """Pair straight quotes into entities; the page has no typographer pass."""
+    out, opening = [], True
+    for ch in text:
+        if ch == '"':
+            out.append("&ldquo;" if opening else "&rdquo;")
+            opening = not opening
+        else:
+            out.append(ch)
+    return "".join(out)
+
+
+def to_html(text):
+    text = text.replace("\u201c", '"').replace("\u201d", '"')
+    text = curl(text)
+    return (text.replace("\u2019", "'").replace("\u2018", "'")
+                .replace("\u2014", "&mdash;"))
+
+
+def paragraphs(basename):
+    raw = open(os.path.join(ROOT, "chapters", "md", basename + ".md"),
+               encoding="utf-8").read().replace("\r\n", "\n")
+    return [b.strip() for b in raw.split("\n\n")
+            if b.strip() and not b.strip().startswith("#")]
+
+
+def landing():
+    page = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
+
+    # 1. The excerpt: verbatim introduction, from its opening line to the
+    #    shared-picture paragraph, which is where index.html cuts.
+    intro = paragraphs("200-introduction")
+    start = next(i for i, b in enumerate(intro)
+                 if b.startswith("This book is not what it looks like"))
+    end = next(i for i, b in enumerate(intro)
+               if "started building the thing" in b)
+    excerpt = "\n\n".join(
+        "<p>" + "\n".join(textwrap.wrap(to_html(b), 70)) + "</p>"
+        for b in intro[start:end + 1])
+    page = re.sub(
+        r"<p>This book is not what it looks like\.</p>.*?building the thing\.</p>",
+        lambda m: excerpt, page, flags=re.S)
+
+    # 2. The map and 3. the carousel, both from the body chapters. The
+    #    introduction is skipped: its takeaway is already the page's opening
+    #    paragraph, and it has no guiding question.
+    titles = dict((f, t) for f, t in
+                  [(re.search(r'file:\s*"([^"]+)"', e).group(1),
+                    re.search(r'title:\s*"([^"]+)"', e).group(1))
+                   for e in re.findall(r"\{\s*slug:.*?\}(?=,?\s*(?:\n|$))",
+                                       re.search(r"var CHAPTERS = \[([\s\S]*?)\n  \];",
+                                                 open(os.path.join(ROOT, "chapters", "reader.js"),
+                                                      encoding="utf-8").read()).group(1), re.S)])
+
+    rows = []
+    for name in sorted(os.listdir(os.path.join(ROOT, "chapters", "md"))):
+        base = name[:-3]
+        if not base.startswith("2") or base == "200-introduction":
+            continue
+        body = open(os.path.join(ROOT, "chapters", "md", name),
+                    encoding="utf-8").read().replace("\r\n", "\n")
+        q = re.search(r"^\*(If [^*]+\?)\*$", body, re.M)
+        t = re.search(r"^> (.+)$", body, re.M)
+        if not (q and t):
+            raise SystemExit("no question or takeaway in " + name)
+        rows.append((titles[base], q.group(1).strip(), t.group(1).strip()))
+
+    items = "\n".join(
+        '      <li><span class="ch">%s</span><span class="q">%s</span></li>'
+        % (to_html(t), to_html(q)) for t, q, _ in rows)
+    page = re.sub(r"(<section class=\"map\">[\s\S]*?<ol>\n)[\s\S]*?(\n  </ol>)",
+                  lambda m: m.group(1) + items + m.group(2), page)
+
+    quotes = "\n".join("  <p>%s</p>" % to_html(k) for _, _, k in rows)
+    page = re.sub(r"(<div class=\"takeaways\" id=\"takeaways\">\n)[\s\S]*?(\n</div>)",
+                  lambda m: m.group(1) + quotes + m.group(2), page)
+
+    with open(os.path.join(ROOT, "index.html"), "w",
+              encoding="utf-8", newline="") as fh:
+        fh.write(page)
+    return len(intro[start:end + 1]), len(rows)
+
+
+paras, mapped = landing()
+print("landing page: %d excerpt paragraphs, %d chapters mapped, %d takeaways"
+      % (paras, mapped, mapped))

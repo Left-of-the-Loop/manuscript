@@ -36,7 +36,7 @@ The room was telling me the room was breaking, and not gently.
 
 The ego that breaks the room isn't usually the ego that knows it's an ego.
 
-It's the engineer who cares deeply, has strong opinions, asks hard questions, and doesn't yet know how the questions land. The desert virtues, namely rigorous, fast, evidence-based, and process-oriented, are genuinely good engineering habits. They just work differently in the forest.
+It's the engineer who cares deeply, has strong opinions, asks hard questions, and doesn't yet know how the questions land. The desert virtues are genuinely good engineering habits: rigorous, fast, evidence-based, process-oriented. They just work differently in the forest.
 
 In the desert, questioning everything in a review request optimizes for correctness. In the forest, it optimizes for silence. The question that makes someone feel tested produces a room where people stop volunteering the uncomfortable truth. And the uncomfortable truth is exactly what the room needs.
 

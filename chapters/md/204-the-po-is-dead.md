@@ -31,7 +31,7 @@ It doesn't prevent the problem. It makes it cheaper. And in open source, that's 
 
 ---
 
-In product teams the same chain exists, though the Curse of Sisyphus chapter's product manager and this chapter's Product Owner (PO) are different roles that land in the same seat, not one person renamed. A stakeholder has a need. A PO interprets it. The team builds the interpretation. Somewhere in that chain the actual need gets distorted through the normal compression that happens at every handoff. By the time it surfaces, something is already built.
+In product teams the same chain exists, with a Product Owner (PO) where the Curse of Sisyphus had a product manager. Different roles, the same place in the chain. A stakeholder has a need. A PO interprets it. The team builds the interpretation. Somewhere in that chain the actual need gets distorted through the normal compression that happens at every handoff. By the time it surfaces, something is already built.
 
 The cost is rework. Delayed delivery. A PO who has to go back to a stakeholder and explain why what was built isn't what they meant. That conversation is never easy. And it keeps happening.
 
@@ -55,7 +55,7 @@ A spec written before implementation starts and reviewed by the stakeholder catc
 
 I do a lighter version of this without a spec at all. When a PO brings a ticket, I ask what the motivation behind it is: the need the ticket is standing in for. Often that need is smaller than the ticket. It could have been solved with something simpler, but the ticket had already been engineered into a full solution before anyone checked whether the need required one. The same wrong level as the open source contribution: a thorough answer to a question nobody validated. The question catches it one ticket at a time, before the build.
 
-In the open source world that's a fast experiment before a sophisticated solution. In a product team it's a spec review before implementation starts, a review request on the spec instead of the code. The form is different. The principle is the same: validate the need before the thing gets built.
+In the open source world that's a fast experiment before a sophisticated solution. In a product team it's a spec review before implementation starts, a review request on the spec instead of the code. The need gets validated before the thing gets built.
 
 ---
 
@@ -89,7 +89,7 @@ The role evolution is a consequence of that. When the spec carries the shared un
 
 That person still matters, maybe more than before, and they just don't have to carry everything anymore.
 
-Roles shift and responsibilities redistribute: the product thinking spreads into the team, and the organizational interface narrows to the one role that protects the room while the team does the thinking. All of it assumes the room exists. A place where the thinking actually happens, and a team that knows how to use it. That's the thing nobody has built yet.
+The product thinking spreads into the team, and the organizational interface narrows to the one role that protects the room while the team does the thinking. All of it assumes the room exists. A place where the thinking actually happens, and a team that knows how to use it. That's the thing nobody has built yet.
 
 [^c4-mvc]: The name leans on minimum viable product; the discipline leans on the minimal reproducible example that open source and Stack Overflow have demanded for decades. Same instinct, aimed at understanding instead of bug reports.
 [^c4-bockeler]: Birgitta Böckeler, "Harness Engineering for Coding Agent Users," in the "Exploring Gen AI" series ([martinfowler.com/articles/exploring-gen-ai/harness-engineering.html](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html)). "Harness engineering" is a shared term. OpenAI uses it too (the Curse of Sisyphus chapter), and Böckeler's earlier memo on it opens by saying she had just read their write-up, so this is one term spreading rather than two people coining it.

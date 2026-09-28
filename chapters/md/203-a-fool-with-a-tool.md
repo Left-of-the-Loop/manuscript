@@ -13,7 +13,7 @@ A week later I tried again. Same task, same tool. It worked.
 
 The difference was that I now understood the system well enough to tell it what I actually needed. I'd failed my way into the right level of specification. I knew what to point out, what to constrain, what to leave open. The prompt was better because my thinking was better.
 
-That's the thing that gets lost in the enthusiasm about AI coding tools. The tool doesn't make the engineer smarter. It makes the engineer faster, but only at the level of thinking they already have. If the engineer's understanding is shallow, it produces shallow output quickly. If the specification is vague, it fills the vagueness with confident guesses.
+The tool doesn't make the engineer smarter. It makes the engineer faster, but only at the level of thinking they already have. If the engineer's understanding is shallow, it produces shallow output quickly. If the specification is vague, it fills the vagueness with confident guesses.
 
 A fool with a tool is still a fool.
 
