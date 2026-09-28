@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-09-28 — manuscript `288b143`
 
-Site: `PENDING`
+Site: `971029b`
 
 Ten commits, most of them the introduction and the chapter openings
 arguing rather than announcing.
