@@ -41,7 +41,7 @@ The same logic applies to agent infrastructure. An individual team maintains the
 
 The improvement that would have lived in one person's AGENTS.md file becomes the new default for the whole organization. One better skill, inherited by every team. One fixed prompt failure mode, gone everywhere at once. One shared MCP that three teams were building independently, now maintained centrally and available to all.
 
-That's the rate at which the organization gets smarter about working with agents. The platform is valuable not because it saves money but because discoveries stop dying locally.
+The platform is valuable not because it saves money but because discoveries stop dying locally.
 
 > The organization scales understanding by carrying patterns between rooms.
 
@@ -55,7 +55,7 @@ None of that is simple to build. Shared memory is the hard version, where the mo
 
 Operational knowledge that used to burn in Alexandria gets written into stone through infrastructure: the living artifact that encodes what the organization has learned about working with agents.
 
-But the platform only solves one layer of the Alexandria Problem. The deeper knowledge, meaning system understanding, architectural context, the reasoning behind past decisions, the edge cases discovered through years in the codebase, still lives in people. The platform can't capture it. The room is still where that knowledge stays shared and alive. The platform makes the operational foundation stable enough that the team's cognitive energy goes toward that deeper work instead of reinventing local agent configurations.
+But the platform only solves one layer of the Alexandria Problem. The deeper knowledge still lives in people: system understanding, architectural context, the reasoning behind past decisions, the edge cases discovered through years in the codebase. The platform can't capture it. The room is still where that knowledge stays shared and alive. The platform makes the operational foundation stable enough that the team's cognitive energy goes toward that deeper work instead of reinventing local agent configurations.
 
 Right now every engineer is simultaneously trying to be productive with AI tools and develop their own understanding of how to use them well. That's a significant overhead that experienced engineers absorb at the cost of other things, and that junior engineers struggle with because they're still building the foundation underneath it.
 

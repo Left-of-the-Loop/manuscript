@@ -23,10 +23,15 @@ Missing something that belongs here? [Say so in the issue tracker](https://githu
 
 - **Kief Morris, "Humans and Agents in Software Engineering Loops"**, in "Exploring Gen AI" at [martinfowler.com](https://martinfowler.com), on humans *on* the loop, building and maintaining the harness. Morris solves where humans sit in the process; this book solves what they need to do before it starts.
 
+## Organizational layer
+
+- **Martin Eriksson, *The Decision Stack: How Strategic Clarity Unlocks Organizational Momentum*** (2026, [thedecisionstack.com](https://www.thedecisionstack.com)), tracing the chain from vision and strategy down to the calls a team makes without escalating, and arguing that companies fail on shared context rather than on execution. That is this book's claim one floor up: Eriksson is about how a company gives direction, this book is about how the people in a room do.
+
 ## What changed here
 
 Newest first.
 
+- **2026-09-28** — Eriksson's *Decision Stack* added as a new *Organizational layer* section, following Appendix E. The page was behind the printed appendix on this one, which is the wrong direction for it to drift.
 - **2026-08-09** — first live version, matching Appendix E as printed in the 2026-08-09 draft, plus Simon Martinelli's AI Unified Process under Tools. That one is the first entry the printed appendix doesn't carry, which is the whole reason this page exists.
 
 ---

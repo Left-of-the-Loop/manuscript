@@ -2,7 +2,7 @@
 
 The terms this book leans on, defined once. Some have ancestors, credited in the chapters that introduce them. The definitions here are how this book uses them.
 
-**The Agora** — Chapter five, and the ancient Greek public square its epigraph borrows: the place a city thought together rather than merely traded. Not a term of art in this book. What the chapter names is the room, what fills it is shared understanding, and what builds it is convergence; those three are the terms to look up.
+**The Agora** — The ancient Greek public square, the place a city thought together rather than merely traded, and the title of the chapter that borrows it. Not a term of art in this book. What the chapter names is the room, what fills it is shared understanding, and what builds it is convergence; those three are the terms to look up.
 
 **The Alexandria Problem** — Not an event but a process: the library doesn't burn in one dramatic fire, it burns one skipped conversation at a time. The knowledge that used to accumulate through proximity and repetition stops the moment AI removes the friction of asking. Named for what happens when nobody notices the smoke until it's already gone.
 
@@ -14,7 +14,7 @@ The terms this book leans on, defined once. Some have ancestors, credited in the
 
 **Extreme Programming (XP)** — Kent Beck's practice from the nineties, built on the conviction that software development is a social activity: pair programming, collective ownership, the planning game. This book leans on it as diagnosis rather than prescription. XP named what the collaboration was for long before agents existed, and lost on a cost calculation rather than an argument. What returns here returns repriced.
 
-**The forest and the desert** — Two working environments, borrowed from Beth Andres-Beck and Kent Beck. The desert is open, fast, unobstructed, where you can move without friction; the forest is dense and slower, where the ecosystem is richer and learning accumulates. AI is the most powerful desert tool ever built, which makes the forest more important than it's ever been, and more fragile. The forest earns its place by surviving what the desert can't.
+**The forest and the desert** — Two working environments, borrowed from Beth Andres-Beck and Kent Beck. The desert runs on the assumption that there is never enough, not enough time, not enough trust, not enough slack, so everyone moves fast and alone. The forest runs on the assumption of enough, so its paths are shared and learning accumulates. AI is the most powerful desert tool ever built, which makes the forest more important than it's ever been, and more fragile. The forest earns its place by surviving what the desert can't.
 
 **The gate** — The pass condition that ends a Spec Session: intent stated, non-goals listed, edge cases answered or explicitly deferred, no sentence a new team member would misread. Also the unit of commitment: the team commits to specs through the gate, not to estimated capacity.
 

@@ -22,7 +22,7 @@ The metric was visibility. The work was invisible. The oracle gave a true signal
 
 Teams have always rewarded the visible over the valuable. The feature over the refactor. The new thing over the stable thing. The demo over the test suite.
 
-But AI makes it catastrophic. Because now the demo channel can be full every day without much effort. Ship a feature, open a review request, close a ticket. The numbers look incredible. And the invisible work, meaning the quality, the structure, the foundation, gets starved of attention because it doesn't register anywhere that matters.
+But AI makes it catastrophic. Because now the demo channel can be full every day without much effort. Ship a feature, open a review request, close a ticket. The numbers look incredible. And the invisible work, the quality, the structure, the foundation, gets starved of attention because it doesn't register anywhere that matters.
 
 The person doing the invisible work gets told it makes them look bad. Or loses their role. Or quietly stops doing the work that nobody can see.
 
@@ -94,7 +94,7 @@ No points, no poker. Estimation was how teams committed when implementation capa
 
 None of this makes predictability immune to gaming. A team can pad the estimate, promise six weeks for work that takes three, and hit the date every time. But that only holds as long as nobody outside the team asks why three-week features take six, and stakeholders eventually do. Sandbagging predictability takes the whole team agreeing to the same lie and holding it quarter after quarter. Inflating throughput takes one person and an agent for an afternoon.
 
-Teams have always known that upfront alignment produces better estimates, and that's not a new idea. What's new is that AI makes the alternative, skipping the alignment, running the agent, seeing what happens, feel so productive in the moment that the incentive to do the upfront work disappears.
+Teams have always known that upfront alignment produces better estimates. What's new is that AI makes the alternative, skipping the alignment, running the agent, seeing what happens, feel so productive in the moment that the incentive to do the upfront work disappears.
 
 The demo channel fills up. The forecast gets noisier. From the outside, everything looks great.
 

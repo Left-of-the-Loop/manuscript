@@ -120,4 +120,4 @@ The gate failing is not the session going wrong. It is the session working. The 
 
 ---
 
-*One more time, because the arithmetic is the point: one session against the weeks Appendix A prices. The agent wrote it in an afternoon. That was never the expensive part.*
+*One more time: one session against the weeks Appendix A prices. The agent wrote it in an afternoon. That was never the expensive part.*

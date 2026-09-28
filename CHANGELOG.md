@@ -11,6 +11,40 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-09-28 — manuscript `288b143`
+
+Site: `971029b`
+
+Ten commits, most of them the introduction and the chapter openings
+arguing rather than announcing.
+
+- **The introduction stops pre-spending what comes later.** It no longer
+  borrows the Genie's takeaway, the XP closer argues instead of
+  summarising — the practices' understanding "mattered as much as the
+  code they produced" rather than simply being "the point" — and the
+  opening concedes what the book also looks like: a book about a new
+  process for working with agents
+- **The Agora asks what it takes.** Its guiding question moves from "how
+  does a team build it together?" to "what does it take for a team to
+  build it together?", and its takeaway becomes "The form doesn't
+  matter, but the instinct does"
+- **Appendix E gains Martin Eriksson's *The Decision Stack*** as the
+  organizational layer: the chain from vision down to the calls a team
+  makes without escalating, and the claim that companies fail on shared
+  context rather than execution. One floor up from this book's own
+  argument
+- A new interim cover, and every built artifact stops stamping "build
+  unknown"
+- The README, the outline and the voice guide catch up to the chapters
+
+Both living pages moved. `/further-reading` gains the Decision Stack,
+which it was missing; `/template` was corrected in the previous update.
+The landing page's excerpt, chapter map and takeaway carousel are all
+regenerated from the synced markdown rather than edited, and three of
+them had drifted.
+
+From the `latest` release, built at `288b143` on push. 110 pages.
+
 ## 2026-09-01 — manuscript `5482b4b`
 
 Site: `1c0c0ed`

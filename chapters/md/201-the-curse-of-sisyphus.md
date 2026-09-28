@@ -24,7 +24,7 @@ The missing thing wasn't documentation. It was the conversation that produced it
 
 And then I came along with an AI power tool and started shipping against that gap at three times the previous pace.
 
-The review bottleneck wasn't really about reviews. It was about shared understanding. Nobody could review fast because nobody had been in the room when the thinking happened, and half the thinking had never been written down at all.
+Nobody could review fast because nobody had been in the room when the thinking happened, and half the thinking had never been written down at all.
 
 ---
 
