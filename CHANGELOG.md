@@ -11,6 +11,37 @@ Each entry has two commit references:
 - **Manuscript** — the commit in the private `aepfli/left-of-the-loop`
   source repo the build was pulled from.
 
+## 2026-10-02 — manuscript `93dd34f`
+
+Site: `e0cac20`
+
+Five commits, and only the introduction changed in the book itself. It
+now orients in one line and puts the promise after the diagnosis.
+
+- **The opening is one paragraph instead of three.** "This book is not
+  what it looks like" is gone; the book now says in a single move what
+  it looks like, that none of that is what it is about, and what it is
+  about — what a team is for when implementation is no longer the hard
+  part
+- The vantage point is named, and four cross-references the manuscript
+  had moved past are corrected
+- The argument about the conversation lands after the JoustMania
+  diagnosis rather than before it: it is the work rather than the
+  overhead before the work, and the cheaper building gets, the more
+  skipping it costs
+- The story bible gains an altitude contract and a device test, and
+  section 6's laws 4, 6 and 7 are compressed to half length
+
+The landing page's excerpt is seven paragraphs now rather than eight,
+because the opening three became two. It is regenerated rather than
+retyped, and the generator needed a repair to do it: it had anchored the
+excerpt's start on the sentence "This book is not what it looks like",
+which this update deleted. The excerpt now simply starts at the
+introduction's first paragraph, and the block is delimited in
+`index.html` by comment markers rather than by its own prose.
+
+From the `latest` release, built at `93dd34f` on push. 110 pages.
+
 ## 2026-09-28 — manuscript `288b143`
 
 Site: `971029b`

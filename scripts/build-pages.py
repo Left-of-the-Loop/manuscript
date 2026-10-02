@@ -184,19 +184,29 @@ def paragraphs(basename):
 def landing():
     page = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
 
-    # 1. The excerpt: verbatim introduction, from its opening line to the
-    #    shared-picture paragraph, which is where index.html cuts.
+    # 1. The excerpt: the introduction verbatim, from its first paragraph to
+    #    the shared-picture one, which is where index.html cuts.
+    #
+    #    No opening anchor. This used to key on "This book is not what it
+    #    looks like", and that sentence was rewritten away - the first
+    #    paragraph is simply the first paragraph. The cut point still needs
+    #    one, so it fails loudly rather than guessing if that goes too.
     intro = paragraphs("200-introduction")
-    start = next(i for i, b in enumerate(intro)
-                 if b.startswith("This book is not what it looks like"))
-    end = next(i for i, b in enumerate(intro)
-               if "started building the thing" in b)
+    end_i = next((i for i, b in enumerate(intro)
+                  if "started building the thing" in b), None)
+    if end_i is None:
+        raise SystemExit(
+            "200-introduction.md no longer has the paragraph the excerpt cuts "
+            "at. Choose the new cut point and update this script: the landing "
+            "page quotes the book verbatim, so it must not be guessed at.")
     excerpt = "\n\n".join(
         "<p>" + "\n".join(textwrap.wrap(to_html(b), 70)) + "</p>"
-        for b in intro[start:end + 1])
-    page = re.sub(
-        r"<p>This book is not what it looks like\.</p>.*?building the thing\.</p>",
-        lambda m: excerpt, page, flags=re.S)
+        for b in intro[:end_i + 1])
+    page, n = re.subn(
+        r"(<!-- excerpt:start[\s\S]*?-->\n)[\s\S]*?(\n<!-- excerpt:end -->)",
+        lambda m: m.group(1) + excerpt + m.group(2), page)
+    if n != 1:
+        raise SystemExit("excerpt markers missing from index.html")
 
     # 2. The map and 3. the carousel, both from the body chapters. The
     #    introduction is skipped: its takeaway is already the page's opening
@@ -235,7 +245,7 @@ def landing():
     with open(os.path.join(ROOT, "index.html"), "w",
               encoding="utf-8", newline="") as fh:
         fh.write(page)
-    return len(intro[start:end + 1]), len(rows)
+    return end_i + 1, len(rows)
 
 
 paras, mapped = landing()
