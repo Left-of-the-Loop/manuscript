@@ -1,12 +1,10 @@
 # Introduction {-}
 
-This book is not what it looks like.
+This book looks like a book about AI: agents, specs, workflows, the changing shape of software development. All of that is in here, and none of it is what the book is about. It is about what a team is for when implementation is no longer the hard part.
 
-It looks like a book about AI: about agents, specs, workflows, and the changing shape of software development. It might look like a book about a new process for working with them. Those things are in here. But they're not what the book is about.
+What that means started with a university friend and 18 PlayStation Move controllers.
 
-What the book is about started with a university friend and 18 PlayStation Move controllers.
-
-The two of us were building a KubeCon demo for a talk called "18 Bluetooth Controllers Walk Into a Bar." It was about observability and runtime configuration for JoustMania, an open-source party game where players jostle motion controllers until someone falls over. Complex execution: multiple Bluetooth adapters, battery-powered devices, sensors firing at 100Hz. When a player complains their controller "felt different," how do you find out what happened at 2 a.m. at a convention? We wanted to figure out what was actually happening while it was still happening.
+The two of us were building a KubeCon demo for a talk called "18 Bluetooth Controllers Walk Into a Bar." We talked about observability and runtime configuration for JoustMania, an open-source party game where players jostle motion controllers until someone falls over. Complex execution: multiple Bluetooth adapters, battery-powered devices, sensors firing at 100Hz. When a player complains their controller "felt different," how do you find out what happened at 2 a.m. at a convention? We wanted to figure out what was actually happening while it was still happening.
 
 An interesting problem, and two people who knew the domain and cared about the project.
 
@@ -14,9 +12,11 @@ Because we had different schedules, we just started hacking on our own. We both 
 
 And we never planned it together.
 
-The knowledge gap opened quietly. Decisions got made that the other person didn't know about. Assumptions turned out not to be shared. Work that should have built on itself didn't fit. Not because either of us was wrong, but because we never built the shared picture before we started building the thing.
+The knowledge gap opened quietly and decisions got made that the other person didn't know about. Assumptions turned out not to be shared and work that should have built on itself didn't fit. Not because either of us was wrong, but because we never built the shared picture before we started building the thing.
 
 The fix wasn't better tools, a different framework, or a smarter approach to Bluetooth telemetry. What we'd skipped was the conversation.
+
+This book is an argument about that conversation: that it is the work rather than the overhead before the work, and that the cheaper building gets, the more skipping it costs.
 
 Our gap took a week to surface. The same gap now opens in the time it takes an agent to answer.
 
@@ -83,6 +83,8 @@ The spec: what to build and why, held in common. Not a document.[^i-spec] This b
 The conversation that feels slower than prompting alone is doing something the prompt cannot do.
 
 ---
+
+I wrote this book from the engineer's side of the room, as that is where I have stood most of the time. But there are more roles shaping it: the lead who protects the time to think, the product person who brings the real need rather than a finished answer, the manager who decides whether a team is measured for output or trusted for judgment.
 
 There is an absence that runs the length of the book. The failures in it happened, and I was there for all of them. The practice I propose has no comparable record, because nobody has been running it long enough to have one, and the session in Appendix C is one I reconstructed rather than one I sat in. The diagnosis is evidence. The prescription is a bet, and I would rather you took it knowing that.
 

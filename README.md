@@ -47,7 +47,13 @@ Live at [leftoftheloop.dev](https://leftoftheloop.dev).
   question or a takeaway is rewritten upstream — which has happened,
   silently, more than once. Run the script after every sync and read the
   `index.html` diff: it is the report of what the book changed about
-  itself.
+  itself. The excerpt sits between `<!-- excerpt:start -->` and
+  `<!-- excerpt:end -->` markers, and starts at the introduction's first
+  paragraph, because an anchor made of prose breaks the moment the prose
+  is rewritten — which is how the opening sentence it used to key on was
+  lost. If the script exits saying it cannot find the cut point, the
+  introduction has been restructured and the new cut has to be chosen by
+  hand; it refuses to guess.
 - `CNAME` — GitHub Pages custom domain config.
 - `LICENSE` — CC BY-NC-ND 4.0.
 
