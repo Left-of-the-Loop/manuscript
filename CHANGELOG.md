@@ -13,7 +13,7 @@ Each entry has two commit references:
 
 ## 2026-10-02 — manuscript `93dd34f`
 
-Site: `PENDING`
+Site: `e0cac20`
 
 Five commits, and only the introduction changed in the book itself. It
 now orients in one line and puts the promise after the diagnosis.
