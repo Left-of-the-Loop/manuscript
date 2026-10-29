@@ -13,10 +13,12 @@ Live at [leftoftheloop.dev](https://leftoftheloop.dev).
 
 - `index.html` — the landing page. Hand-written HTML/CSS, no framework, no
   build step.
-- `left-of-the-loop-draft.pdf` — the current working draft (PDF). Stable
-  filename; the URL never changes, only the file behind it.
-- `left-of-the-loop-draft.epub` — the current working draft (EPUB). Same
-  stable-filename convention as the PDF.
+- `left-of-the-loop-draft.pdf` — the last working draft published here
+  (PDF). No longer linked from any page: the book is offered through
+  [Leanpub](https://leanpub.com/leftoftheloop) only. The file stays so
+  links shared before the switch keep working.
+- `left-of-the-loop-draft.epub` — the same, as EPUB. Also unlinked, also
+  kept for old links.
 - `CHANGELOG.md` — what changed in the manuscript between each PDF/EPUB
   update, newest first. Rendered at `/changelog` by the same client-side
   reader as the chapter pages, and linked from the "Version history"
@@ -26,6 +28,9 @@ Live at [leftoftheloop.dev](https://leftoftheloop.dev).
   `/further-reading` by the same reader (see below).
 - `templates/` — the two files readers are meant to take away. Served raw,
   linked from `/template`, CC BY 4.0 rather than the book's licence.
+- `cover.jpg` — the book cover, shown at thumbnail size beside the
+  Leanpub link in the landing page's "Read it" box, and a link there
+  itself. Replace it in place when the cover changes.
 - `og-the-loop.png` — the social preview card, built from the Loop
   figure. It is its own file rather than a reference to
   `chapters/figures/the-loop.png` because the card is 1.91:1 and the
@@ -174,7 +179,7 @@ for free.
 
 ## How feedback flows
 
-1. Readers download the PDF or EPUB from this site and leave feedback as
+1. Readers get the PDF or EPUB from Leanpub and leave feedback as
    [issues on this repo](https://github.com/Left-of-the-Loop/manuscript/issues).
 2. Feedback is incorporated in the private working repo.
 3. The PDF and EPUB are rebuilt there and committed here manually,
@@ -210,7 +215,7 @@ When a new draft is committed here:
    `200-introduction.md` in the private repo, and update it in the same
    commit if the opening has changed. The excerpt is verbatim text, not a
    summary — it should read exactly as edited, cut where marked "The full
-   draft continues in the PDF."
+   draft continues on Leanpub."
 3. Add an entry to the top of `CHANGELOG.md`: the date, the manuscript
    commit the build was pulled from, this repo's commit once it exists,
    and a plain-language bullet list of what changed upstream since the
@@ -274,14 +279,15 @@ Pageviews are tracked with [GoatCounter](https://www.goatcounter.com/),
 same account as schrottner.at, under a separate site code
 (`left-of-the-loop.goatcounter.com`).
 
-The PDF and EPUB download links are tracked as GoatCounter click events
-(`data-goatcounter-click="pdf-download"` / `"epub-download"`). Direct hits
-on the file URLs (e.g. shared links, crawlers) bypass the page's JS
-entirely and are not counted. Acceptable for now.
-
-The Leanpub link is tracked the same way (`"leanpub"`), which is the only
-signal here for whether anyone takes the paid route — Leanpub's own stats
-aren't visible from this side.
+The Leanpub links are tracked as GoatCounter click events
+(`data-goatcounter-click="leanpub"`; the cover thumbnail beside them is
+`"leanpub-cover"`, so it shows whether the image or the text gets the
+click). Since the site stopped linking its
+own PDF/EPUB, that is the only download route it promotes, and the click
+count is the only signal here for how many readers head there — Leanpub's
+own stats aren't visible from this side. The old `"pdf-download"` /
+`"epub-download"` events stop at the switch; direct hits on the old file
+URLs were never counted.
 
 The two living-page links are tracked the same way (`"template"` /
 `"further-reading"`), which is the signal for whether the book's promise
