@@ -172,14 +172,13 @@
     .then(function (text) {
       // No per-chapter download: the upstream build stopped producing a
       // file per chapter, so linking one would mean shipping a copy that
-      // silently drifts from the prose above it. The whole-book downloads
-      // are the two artifacts that stay current.
+      // silently drifts from the prose above it. The whole book is on
+      // Leanpub, which is the one place it is offered for download.
       var meta = document.createElement("p");
       meta.className = "chapter-meta";
       meta.innerHTML =
-        "Working draft — download the full draft: " +
-        "<a href=\"/left-of-the-loop-draft.pdf\">PDF</a>" +
-        " · <a href=\"/left-of-the-loop-draft.epub\">EPUB</a>";
+        "Working draft — get the full draft " +
+        "<a href=\"https://leanpub.com/leftoftheloop\">on Leanpub</a>";
 
       var body = document.createElement("div");
       body.innerHTML = renderMarkdown(text);
@@ -217,8 +216,8 @@
       p.className = "reader-error";
       p.textContent = "Couldn’t load this chapter. ";
       var a = document.createElement("a");
-      a.href = "/left-of-the-loop-draft.pdf";
-      a.textContent = "Download the full draft (PDF) instead.";
+      a.href = "https://leanpub.com/leftoftheloop";
+      a.textContent = "Get the full draft on Leanpub instead.";
       p.appendChild(a);
       content.appendChild(p);
     });
