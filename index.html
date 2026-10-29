@@ -407,6 +407,35 @@
     border-top: 1px solid var(--rule);
   }
   .links .group > p:first-of-type { margin-top: 0; }
+
+  /* The cover sits beside the one offer it belongs to, at thumbnail size,
+     and is itself a link there: readers click a book cover before they
+     click a sentence about one. Not in the hero, which already carries the
+     mark cut from this same artwork. */
+  .links .book {
+    display: flex;
+    gap: 1.2em;
+    align-items: flex-start;
+  }
+  .links .cover {
+    flex: none;
+    width: 120px;
+    line-height: 0;
+  }
+  .links .cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(33, 27, 25, 0.18), 0 4px 12px rgba(33, 27, 25, 0.12);
+  }
+  .links .book-text { min-width: 0; }
+  .links .book-text ul { margin-top: 0; }
+  /* Side by side, a phone leaves the links a column too narrow to read;
+     stacked, the cover heads the offer instead. */
+  @media (max-width: 30em) {
+    .links .book { flex-direction: column; gap: 1em; }
+    .links .cover { width: 96px; }
+  }
   .links .note {
     color: var(--muted);
     font-size: 0.88rem;
@@ -582,6 +611,12 @@ teams that keep that friction will outperform teams that optimize it away.
 <div class="links">
   <div class="group">
     <h2>Read it</h2>
+    <div class="book">
+    <a class="cover" href="https://leanpub.com/leftoftheloop" data-goatcounter-click="leanpub-cover">
+      <img src="cover.jpg" width="528" height="816" loading="lazy"
+           alt="The cover of Left of the Loop: cream lines looping three times on red, beside the title. Get it on Leanpub.">
+    </a>
+    <div class="book-text">
     <ul>
       <li><a href="https://leanpub.com/leftoftheloop" data-goatcounter-click="leanpub">Get it on Leanpub</a> &mdash; PDF and EPUB, pay what you want, Kindle-ready, and you'll be notified as it grows</li>
       <li><a href="https://github.com/Left-of-the-Loop/manuscript/issues">Leave feedback in the issue tracker</a></li>
@@ -590,6 +625,8 @@ teams that keep that friction will outperform teams that optimize it away.
     <p class="note">Buying it early is the most useful kind of support there
     is: it says the book is worth finishing while there's still time to shape
     what it becomes.</p>
+    </div>
+    </div>
   </div>
   <div class="group">
     <h2>Take it to work</h2>

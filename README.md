@@ -28,6 +28,9 @@ Live at [leftoftheloop.dev](https://leftoftheloop.dev).
   `/further-reading` by the same reader (see below).
 - `templates/` — the two files readers are meant to take away. Served raw,
   linked from `/template`, CC BY 4.0 rather than the book's licence.
+- `cover.jpg` — the book cover, shown at thumbnail size beside the
+  Leanpub link in the landing page's "Read it" box, and a link there
+  itself. Replace it in place when the cover changes.
 - `og-the-loop.png` — the social preview card, built from the Loop
   figure. It is its own file rather than a reference to
   `chapters/figures/the-loop.png` because the card is 1.91:1 and the
@@ -277,7 +280,9 @@ same account as schrottner.at, under a separate site code
 (`left-of-the-loop.goatcounter.com`).
 
 The Leanpub links are tracked as GoatCounter click events
-(`data-goatcounter-click="leanpub"`). Since the site stopped linking its
+(`data-goatcounter-click="leanpub"`; the cover thumbnail beside them is
+`"leanpub-cover"`, so it shows whether the image or the text gets the
+click). Since the site stopped linking its
 own PDF/EPUB, that is the only download route it promotes, and the click
 count is the only signal here for how many readers head there — Leanpub's
 own stats aren't visible from this side. The old `"pdf-download"` /
